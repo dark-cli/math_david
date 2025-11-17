@@ -6,7 +6,7 @@ A comprehensive collection of mathematical problems, solutions, and fundamental 
 
 - [Fundamentals](#fundamentals)
 - [Problems](#problems)
-- [Darty Problems Collection](#darty-problems-collection)
+- [Dirty Problems Collection](#dirty-problems-collection)
 - [Rules and Guidelines](#rules-and-guidelines)
 
 ## 📖 Fundamentals
@@ -40,33 +40,33 @@ Individual math problems with detailed solutions:
   - Vector calculus with parameterized curves
   - Component-wise integration
 
-## 📚 Darty Problems Collection
+## 📚 Dirty Problems Collection
 
-A collection of 214 problems extracted from `the_darty_file.pdf`. Problems are numbered sequentially from `problem_1.md` to `problem_214.md`.
+A collection of 214 problems extracted from `the_dirty_file.pdf`. Problems are numbered sequentially from `problem_1.md` to `problem_214.md`.
 
 ### Completed Problems (1-21)
 
-- [Problem 1: Compute Circulation About a Circle](./darty_problems/problem_1.md)
-- [Problem 2: Evaluate Line Integral Over Closed Curve](./darty_problems/problem_2.md)
-- [Problem 3: Evaluate Line Integral Along Cycloid](./darty_problems/problem_3.md)
-- [Problem 4: Find Area Bounded by One Arch of Cycloid](./darty_problems/problem_4.md)
-- [Problem 5: Evaluate Vector Integrals](./darty_problems/problem_5.md) *(placeholder)*
-- [Problem 6: Vector Cross Product Integrals](./darty_problems/problem_6.md) *(placeholder)*
-- [Problem 7: Vector Calculus Problem](./darty_problems/problem_7.md) *(placeholder)*
-- [Problem 8: Evaluate Line Integral Along Path Segments](./darty_problems/problem_8.md)
-- [Problem 9: Evaluate Line Integral Using Green's Theorem](./darty_problems/problem_9.md)
-- [Problem 10: Find Area of Loop of Four-Leafed Rose](./darty_problems/problem_10.md)
-- [Problem 11: Discuss Transformation W = sin(z)](./darty_problems/problem_11.md)
-- [Problem 12: Find Area of Both Loops of Lemniscate](./darty_problems/problem_12.md)
-- [Problem 13: Prove W = Z/(1-Z) Maps Upper Half-Plane](./darty_problems/problem_13.md)
-- [Problem 14: Find Image of Circle Under Linear Transformation](./darty_problems/problem_14.md)
-- [Problem 15: Show Function is Analytic Using Harmonic Functions](./darty_problems/problem_15.md)
-- [Problem 16: Complex Potential of Upward Parallel Flow](./darty_problems/problem_16.md)
-- [Problem 17: Derivative of Complex Function in Polar Coordinates](./darty_problems/problem_17.md)
-- [Problem 18: Partial Derivatives in Polar Coordinates](./darty_problems/problem_18.md)
-- [Problem 19: Evaluate Line Integral Along Parametric Curve](./darty_problems/problem_19.md)
-- [Problem 20: Complex Derivative in Polar Form](./darty_problems/problem_20.md)
-- [Problem 21: Relationship Between Polar and Cartesian Derivatives](./darty_problems/problem_21.md)
+- [Problem 1: Compute Circulation About a Circle](./dirty_problems/problem_1.md)
+- [Problem 2: Evaluate Line Integral Over Closed Curve](./dirty_problems/problem_2.md)
+- [Problem 3: Evaluate Line Integral Along Cycloid](./dirty_problems/problem_3.md)
+- [Problem 4: Find Area Bounded by One Arch of Cycloid](./dirty_problems/problem_4.md)
+- [Problem 5: Evaluate Vector Integrals](./dirty_problems/problem_5.md) *(placeholder)*
+- [Problem 6: Vector Cross Product Integrals](./dirty_problems/problem_6.md) *(placeholder)*
+- [Problem 7: Vector Calculus Problem](./dirty_problems/problem_7.md) *(placeholder)*
+- [Problem 8: Evaluate Line Integral Along Path Segments](./dirty_problems/problem_8.md)
+- [Problem 9: Evaluate Line Integral Using Green's Theorem](./dirty_problems/problem_9.md)
+- [Problem 10: Find Area of Loop of Four-Leafed Rose](./dirty_problems/problem_10.md)
+- [Problem 11: Discuss Transformation W = sin(z)](./dirty_problems/problem_11.md)
+- [Problem 12: Find Area of Both Loops of Lemniscate](./dirty_problems/problem_12.md)
+- [Problem 13: Prove W = Z/(1-Z) Maps Upper Half-Plane](./dirty_problems/problem_13.md)
+- [Problem 14: Find Image of Circle Under Linear Transformation](./dirty_problems/problem_14.md)
+- [Problem 15: Show Function is Analytic Using Harmonic Functions](./dirty_problems/problem_15.md)
+- [Problem 16: Complex Potential of Upward Parallel Flow](./dirty_problems/problem_16.md)
+- [Problem 17: Derivative of Complex Function in Polar Coordinates](./dirty_problems/problem_17.md)
+- [Problem 18: Partial Derivatives in Polar Coordinates](./dirty_problems/problem_18.md)
+- [Problem 19: Evaluate Line Integral Along Parametric Curve](./dirty_problems/problem_19.md)
+- [Problem 20: Complex Derivative in Polar Form](./dirty_problems/problem_20.md)
+- [Problem 21: Relationship Between Polar and Cartesian Derivatives](./dirty_problems/problem_21.md)
 
 ### Remaining Problems (22-214)
 
@@ -87,15 +87,15 @@ See [rules.md](./rules.md) for the complete set of formatting and organizational
 ## 🔧 Technical Details
 
 - **Format**: All problems are written in Markdown with LaTeX equations
-- **Source**: Problems extracted from scanned PDF (`the_darty_file.pdf`)
+- **Source**: Problems extracted from scanned PDF (`the_dirty_file.pdf`)
 - **Image Processing**: PDF pages converted to PNG images for text extraction
-- **Total Problems**: 214 problems in the darty collection
+- **Total Problems**: 214 problems in the dirty collection
 
 ## 📊 Progress
 
 - **Fundamentals**: 2 complete reference guides
 - **Individual Problems**: 2 complete problems
-- **Darty Collection**: 21 complete problems, 193 placeholders
+- **Dirty Collection**: 21 complete problems, 193 placeholders
 
 ## 🎯 Topics Covered
 
