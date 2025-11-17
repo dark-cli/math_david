@@ -83,22 +83,17 @@ Problems 22-214 are placeholder files that will be populated as the PDF is proce
 
 ## 📋 Rules and Guidelines
 
-See [rules.md](./rules.md) for the complete set of formatting and organizational rules:
+See [rules.md](./rules.md) for the complete set of formatting and organizational rules.
 
-1. **File Organization**: Each problem gets its own file in the appropriate folder
-2. **Naming Convention**: All lowercase with underscores, no spaces
-3. **Format**: All files are Markdown (.md)
-4. **Equations**: LaTeX format required
-   - Inline math: single dollar signs (`$...$`)
-   - Block/display math: double dollar signs (`$$...$$`) on separate lines with blank lines before and after
-5. **Trigonometry Cheat Sheet**: Automatically updated when new trig formulas appear
-
-## 🔧 Technical Details
-
-- **Format**: All problems are written in Markdown with LaTeX equations
-- **Source**: Problems extracted from scanned PDF (`the_dirty_file.pdf`)
-- **Image Processing**: PDF pages converted to PNG images for text extraction
-- **Total Problems**: 214 problems in the dirty collection
+Key guidelines:
+- **File Organization**: Each problem gets its own file in the appropriate folder
+- **Naming Convention**: All lowercase with underscores, no spaces
+- **Format**: All files are Markdown (.md)
+- **Equations**: LaTeX format required
+  - Inline math: single dollar signs (`$...$`)
+  - Block/display math: double dollar signs (`$$...$$`) on separate lines with blank lines before and after
+- **GitHub Compatibility**: Always follow GitHub's recommendations and syntax for Markdown and LaTeX
+- **Trigonometry Cheat Sheet**: Automatically updated when new trig formulas appear
 
 ## 📊 Progress
 

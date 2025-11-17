@@ -7,3 +7,4 @@
    - Equations standalone: use double dollar signs (`$$...$$`) on their own line with no text before or after
    - Equations can span multiple lines for matrices and complex expressions
 4. **Trigonometry Cheat Sheet**: When any trigonometry formula, identity, or relationship appears in a problem, check if it exists in `fundamentals/trigonometry_cheatsheet.md`. If it's missing, add it to the cheat sheet automatically without asking the user.
+5. **GitHub Compatibility**: Always follow GitHub's recommendations and syntax for Markdown and LaTeX in Markdown. Ensure all formatting renders correctly on GitHub's markdown renderer.
