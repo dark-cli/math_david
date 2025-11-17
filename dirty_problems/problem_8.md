@@ -4,6 +4,10 @@
 
 Evaluate the line integral $\oint \mathbf{F} \cdot d\mathbf{r}$ where $\mathbf{F} = 2xy^2z + x^2y$ along the path consisting of straight line segments from $(0,0,0)$ to $(1,0,0)$, then to $(1,1,0)$, and then to $(1,1,1)$.
 
+## How to Solve
+
+**Key Approach:** Break the path into individual straight-line segments. For each segment, identify which variables are constant (and their values) and which variable varies. Substitute these constraints into the integrand and evaluate the one-dimensional integral. Sum the contributions from all segments.
+
 ## Solution
 
 ### Step 1: Break the Path into Segments
