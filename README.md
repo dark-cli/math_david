@@ -88,9 +88,7 @@ See [rules.md](./rules.md) for the complete set of formatting and organizational
 1. **File Organization**: Each problem gets its own file in the appropriate folder
 2. **Naming Convention**: All lowercase with underscores, no spaces
 3. **Format**: All files are Markdown (.md)
-4. **Equations**: LaTeX format required
-   - Inline math: single dollar signs (`$...$`)
-   - Standalone equations: double dollar signs (`$$...$$`)
+4. **Equations**: LaTeX format required using single dollar signs (`$...$`)
 5. **Trigonometry Cheat Sheet**: Automatically updated when new trig formulas appear
 
 ## 🔧 Technical Details
