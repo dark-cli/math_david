@@ -7,6 +7,7 @@ A comprehensive collection of mathematical problems, solutions, and fundamental 
 - [Fundamentals](#fundamentals)
 - [Problems](#problems)
 - [Notes](#notes)
+- [Vector Analysis Collection](#vector-analysis-collection)
 - [Dirty Problems Collection](#dirty-problems-collection)
 - [Rules and Guidelines](#rules-and-guidelines)
 
@@ -57,6 +58,24 @@ Additional notes and insights on specific problems:
 - **[Notes](./notes.md)**
   - Explanation of why the k component is zero in Problem 7
   - General principles for line integrals in planes
+
+## 📚 Vector Analysis Collection
+
+Content extracted from `101.pdf`, covering vector analysis fundamentals through Green's theorem:
+
+- **[Vector Analysis and Green's Theorem](./vector_analysis/vector_analysis_and_greens_theorem.md)**
+  - Chapter 1: Vector Analysis
+    - Vector algebra (addition, subtraction, scalar multiplication)
+    - Dot product and cross product
+    - Vector functions and derivatives
+    - Gradient, divergence, and curl
+    - Physical interpretations
+  - Chapter 2: Line Integrals and Green's Theorem
+    - Definition and properties of line integrals
+    - Green's theorem statement and proof
+    - Applications and examples
+    - Path independence conditions
+  - Covers pages 1-39 (up to and including Green's theorem)
 
 ## 📚 Dirty Problems Collection
 
