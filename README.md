@@ -6,6 +6,7 @@ A comprehensive collection of mathematical problems, solutions, and fundamental 
 
 - [Fundamentals](#fundamentals)
 - [Problems](#problems)
+- [Notes](#notes)
 - [Dirty Problems Collection](#dirty-problems-collection)
 - [Rules and Guidelines](#rules-and-guidelines)
 
@@ -49,6 +50,14 @@ Individual math problems with detailed solutions:
   - Vector calculus with parameterized curves
   - Component-wise integration
 
+## 📝 Notes
+
+Additional notes and insights on specific problems:
+
+- **[Notes](./notes.md)**
+  - Explanation of why the k component is zero in Problem 7
+  - General principles for line integrals in planes
+
 ## 📚 Dirty Problems Collection
 
 A collection of 214 problems extracted from `the_dirty_file.pdf`. Problems are numbered sequentially from `problem_1.md` to `problem_214.md`.
@@ -59,9 +68,9 @@ A collection of 214 problems extracted from `the_dirty_file.pdf`. Problems are n
 - [Problem 2: Evaluate Line Integral Over Closed Curve](./dirty_problems/problem_2.md)
 - [Problem 3: Evaluate Line Integral Along Cycloid](./dirty_problems/problem_3.md)
 - [Problem 4: Find Area Bounded by One Arch of Cycloid](./dirty_problems/problem_4.md)
-- [Problem 5: Evaluate Vector Integrals](./dirty_problems/problem_5.md) *(placeholder)*
-- [Problem 6: Vector Cross Product Integrals](./dirty_problems/problem_6.md) *(placeholder)*
-- [Problem 7: Vector Calculus Problem](./dirty_problems/problem_7.md) *(placeholder)*
+- [Problem 5: Evaluate Vector Integrals](./dirty_problems/problem_5.md)
+- [Problem 6: Vector Cross Product Integrals](./dirty_problems/problem_6.md) 
+- [Problem 7: Vector Calculus Problem](./dirty_problems/problem_7.md)
 - [Problem 8: Evaluate Line Integral Along Path Segments](./dirty_problems/problem_8.md)
 - [Problem 9: Evaluate Line Integral Using Green's Theorem](./dirty_problems/problem_9.md)
 - [Problem 10: Find Area of Loop of Four-Leafed Rose](./dirty_problems/problem_10.md)
