@@ -55,53 +55,55 @@ The integration limits are from $\theta = 0$ to $\theta = 2\pi$.
 
 ### Step 4: Substitute into the Integral
 
-$$\oint_C (\mathbf{A} \times \mathbf{B}) \cdot d\mathbf{r} = \int_0^{2\pi} [(-x + 3y - 6)dy + (y - 3x - 4)dx]$$
+$$\oint_C (\mathbf{A} \times \mathbf{B}) \cdot d\mathbf{r} = \int_0^{2\pi} [(-x + 3y - 6)dx + (y - 3x - 4)dy]$$
 
 Substituting the parameterization:
 
-$$= \int_0^{2\pi} [(-2\cos\theta + 3(2\sin\theta) - 6)(2\cos\theta \, d\theta) + (2\sin\theta - 3(2\cos\theta) - 4)(-2\sin\theta \, d\theta)]$$
+$$= \int_0^{2\pi} [(-2\cos\theta + 3(2\sin\theta) - 6)(-2\sin\theta \, d\theta) + (2\sin\theta - 3(2\cos\theta) - 4)(2\cos\theta \, d\theta)]$$
 
-$$= \int_0^{2\pi} [(-2\cos\theta + 6\sin\theta - 6)(2\cos\theta) + (2\sin\theta - 6\cos\theta - 4)(-2\sin\theta)] \, d\theta$$
+$$= \int_0^{2\pi} [(-2\cos\theta + 6\sin\theta - 6)(-2\sin\theta) + (2\sin\theta - 6\cos\theta - 4)(2\cos\theta)] \, d\theta$$
 
 ### Step 5: Expand and Simplify
 
 Expanding the terms:
 
-$$= \int_0^{2\pi} [(-4\cos^2\theta + 12\sin\theta\cos\theta - 12\cos\theta) + (-4\sin^2\theta + 12\sin\theta\cos\theta + 8\sin\theta)] \, d\theta$$
+$$= \int_0^{2\pi} [(4\cos\theta\sin\theta - 12\sin^2\theta + 12\sin\theta) + (4\sin\theta\cos\theta - 12\cos^2\theta - 8\cos\theta)] \, d\theta$$
 
 Combining like terms:
 
-$$= \int_0^{2\pi} [-4\cos^2\theta - 4\sin^2\theta + 24\sin\theta\cos\theta - 12\cos\theta + 8\sin\theta] \, d\theta$$
+$$= \int_0^{2\pi} [8\sin\theta\cos\theta - 12\sin^2\theta - 12\cos^2\theta + 12\sin\theta - 8\cos\theta] \, d\theta$$
 
 Using $\cos^2\theta + \sin^2\theta = 1$:
 
-$$= \int_0^{2\pi} [-4 + 24\sin\theta\cos\theta - 12\cos\theta + 8\sin\theta] \, d\theta$$
+$$= \int_0^{2\pi} [8\sin\theta\cos\theta - 12(\sin^2\theta + \cos^2\theta) + 12\sin\theta - 8\cos\theta] \, d\theta$$
+
+$$= \int_0^{2\pi} [8\sin\theta\cos\theta - 12 + 12\sin\theta - 8\cos\theta] \, d\theta$$
 
 ### Step 6: Evaluate the Integral
 
 Breaking into separate integrals:
 
-$$\int_0^{2\pi} [-4 + 24\sin\theta\cos\theta - 12\cos\theta + 8\sin\theta] \, d\theta$$
+$$\int_0^{2\pi} [8\sin\theta\cos\theta - 12 + 12\sin\theta - 8\cos\theta] \, d\theta$$
 
-$$= -4 \int_0^{2\pi} d\theta + 24 \int_0^{2\pi} \sin\theta\cos\theta \, d\theta - 12 \int_0^{2\pi} \cos\theta \, d\theta + 8 \int_0^{2\pi} \sin\theta \, d\theta$$
+$$= 8 \int_0^{2\pi} \sin\theta\cos\theta \, d\theta - 12 \int_0^{2\pi} d\theta + 12 \int_0^{2\pi} \sin\theta \, d\theta - 8 \int_0^{2\pi} \cos\theta \, d\theta$$
 
 Evaluating each term:
 
-- $-4 \int_0^{2\pi} d\theta = -4(2\pi) = -8\pi$
-- $24 \int_0^{2\pi} \sin\theta\cos\theta \, d\theta = 24 \cdot 0 = 0$ (using substitution or identity)
-- $-12 \int_0^{2\pi} \cos\theta \, d\theta = -12[\sin\theta]_0^{2\pi} = 0$
-- $8 \int_0^{2\pi} \sin\theta \, d\theta = 8[-\cos\theta]_0^{2\pi} = 0$
+- $8 \int_0^{2\pi} \sin\theta\cos\theta \, d\theta = 8 \cdot 0 = 0$ (using substitution or identity)
+- $-12 \int_0^{2\pi} d\theta = -12(2\pi) = -24\pi$
+- $12 \int_0^{2\pi} \sin\theta \, d\theta = 12[-\cos\theta]_0^{2\pi} = 0$
+- $-8 \int_0^{2\pi} \cos\theta \, d\theta = -8[\sin\theta]_0^{2\pi} = 0$
 
 ### Step 7: Final Answer
 
 Summing all terms:
 
-$$-8\pi + 0 + 0 + 0 = -8\pi$$
+$$0 - 24\pi + 0 + 0 = -24\pi$$
 
 ## Answer
 
-$$\boxed{-8\pi}$$
+$$\boxed{-24\pi}$$
 
 ## Note
 
-The result is negative, which is consistent with the orientation of the curve. If the curve were traversed in the opposite direction, the result would be $8\pi$.
+The result is negative, which is consistent with the orientation of the curve. If the curve were traversed in the opposite direction, the result would be $24\pi$.

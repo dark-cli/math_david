@@ -26,6 +26,15 @@ Essential mathematical reference materials and cheat sheets:
   - Derivatives and integrals of trigonometric functions
   - Common simplification strategies
 
+- **[Vector Operations](./fundamentals/vector_operations.md)**
+  - Dot product and cross product
+  - Vector addition and subtraction
+  - Vector differentiation
+  - Gradient, divergence, and curl
+  - Laplacian operator
+  - Coordinate systems (Cartesian, cylindrical, spherical)
+  - Important vector calculus identities
+
 ## 📝 Problems
 
 Individual math problems with detailed solutions:
@@ -93,7 +102,7 @@ See [rules.md](./rules.md) for the complete set of formatting and organizational
 
 ## 📊 Progress
 
-- **Fundamentals**: 2 complete reference guides
+- **Fundamentals**: 3 complete reference guides
 - **Individual Problems**: 2 complete problems
 - **Dirty Collection**: 21 complete problems, 193 placeholders
 

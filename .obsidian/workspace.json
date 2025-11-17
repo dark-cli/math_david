@@ -8,20 +8,63 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4b6b746b2e9d993e",
+            "id": "fa95570061207017",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fundamentals/trigonometry_cheatsheet.md",
+                "file": "dirty_problems/problem_1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "trigonometry_cheatsheet"
+              "title": "problem_1"
+            }
+          },
+          {
+            "id": "012f47a570e7b194",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_2"
+            }
+          },
+          {
+            "id": "491541680c26c673",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_3"
+            }
+          },
+          {
+            "id": "e19a199c63ded994",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_5.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_5"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -185,8 +228,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "4b6b746b2e9d993e",
+  "active": "e19a199c63ded994",
   "lastOpenFiles": [
+    "fundamentals/vector_operations.md",
+    "dirty_problems/problem_3.md",
+    "dirty_problems/problem_2.md",
+    "dirty_problems/problem_5.md",
+    "dirty_problems/problem_4.md",
+    "dirty_problems/problem_1.md",
+    "fundamentals/trigonometry_cheatsheet.md",
     "the_dirty_file.pdf",
     "dirty_problems/temp_images/page-214.png",
     "dirty_problems/temp_images/page-213.png",
@@ -218,12 +268,6 @@
     "dirty_problems/problem_84.md",
     "dirty_problems/problem_83.md",
     "dirty_problems/problem_82.md",
-    "dirty_problems/problem_81.md",
-    "dirty_problems/problem_80.md",
-    "dirty_problems/problem_8.md",
-    "dirty_problems/problem_79.md",
-    "dirty_problems/problem_78.md",
-    "dirty_problems/problem_77.md",
     "dirty_problems",
     "Excalidraw"
   ]
