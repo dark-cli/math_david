@@ -180,6 +180,78 @@ $$W = W_1 + W_2 = \frac{1}{4}K + \frac{3}{4}K = K$$
 - This is the energy needed to move the particle from origin to $(1,1)$ along this specific path
 - Note: Work would be different if we took a different path (this field is not conservative)
 
+## Alternative Solution: Direct Method Using $\mathbf{F} \cdot d\mathbf{r}$
+
+**This method avoids polar coordinates and angles entirely!**
+
+### Step 1: Write Force in Cartesian Components
+
+Given: $\mathbf{F} = -Kr^2\mathbf{r}$ where $r = \sqrt{x^2 + y^2}$ and $\mathbf{r} = x\mathbf{i} + y\mathbf{j}$
+
+Substituting $r^2 = x^2 + y^2$:
+
+$$\mathbf{F} = -K(x^2 + y^2)(x\mathbf{i} + y\mathbf{j}) = -K(x^3 + xy^2)\mathbf{i} - K(x^2y + y^3)\mathbf{j}$$
+
+So the components are:
+- $F_x = -K(x^3 + xy^2)$
+- $F_y = -K(x^2y + y^3)$
+
+**Conceptual Note:** The negative signs indicate the force points toward the origin (attractive).
+
+### Step 2: Set Up Work Integral
+
+$$W = \int_C \mathbf{F} \cdot d\mathbf{r} = \int_C [F_x \, dx + F_y \, dy]$$
+
+$$= \int_C [-K(x^3 + xy^2) \, dx - K(x^2y + y^3) \, dy]$$
+
+### Step 3: Break into Two Segments
+
+**Segment 1: From $(0,0)$ to $(1,0)$**
+
+On this segment: $y = 0$, so $dy = 0$, and $x$ goes from $0$ to $1$.
+
+Substituting $y = 0$:
+- $F_x = -K(x^3 + x \cdot 0^2) = -Kx^3$
+- $F_y = -K(x^2 \cdot 0 + 0^3) = 0$
+
+$$W_1 = \int_0^1 [-Kx^3 \, dx + 0] = -K\int_0^1 x^3 \, dx = -K\left[\frac{x^4}{4}\right]_0^1 = -\frac{K}{4}$$
+
+**Conceptual Check:** Force points left (toward origin), particle moves right. Force opposes motion, so work is negative. This is work done BY the field.
+
+**Segment 2: From $(1,0)$ to $(1,1)$**
+
+On this segment: $x = 1$, so $dx = 0$, and $y$ goes from $0$ to $1$.
+
+Substituting $x = 1$:
+- $F_x = -K(1^3 + 1 \cdot y^2) = -K(1 + y^2)$
+- $F_y = -K(1^2 \cdot y + y^3) = -K(y + y^3)$
+
+$$W_2 = \int_0^1 [0 + (-K(y + y^3)) \, dy] = -K\int_0^1 (y + y^3) \, dy$$
+
+$$= -K\left[\frac{y^2}{2} + \frac{y^4}{4}\right]_0^1 = -K\left(\frac{1}{2} + \frac{1}{4}\right) = -\frac{3K}{4}$$
+
+**Conceptual Check:** Force has both x and y components pointing toward origin. Particle moves up, so y-component of force opposes motion, giving negative work.
+
+### Step 4: Total Work Done BY the Field
+
+$$W_{\text{field}} = W_1 + W_2 = -\frac{K}{4} - \frac{3K}{4} = -K$$
+
+### Step 5: Work Done TO Move the Particle
+
+**Important:** The question asks for "work done in moving the particle", which typically means the work we must supply (energy input), not the work done by the field.
+
+Since the field does $-K$ work, we must supply $+K$ work to move the particle:
+
+$$W = -W_{\text{field}} = -(-K) = K$$
+
+**Why the sign flip?**
+- Work done BY field: $-K$ (field opposes motion, does negative work)
+- Work done TO move particle: $+K$ (we must supply energy to overcome the field)
+
+**Note:** The original solution method (using angles) directly calculated $W = K$ because it was set up to find the work needed to move the particle. This direct method first finds the field's work ($-K$), then we take the negative to get the work we must do ($+K$). Both approaches are correct!
+
 ## Answer
 
 $$\boxed{W = K}$$
+
+*(Work done to move the particle from origin to $(1,1)$)*
