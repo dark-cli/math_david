@@ -6,81 +6,74 @@ If a particle is attracted toward the origin by a force whose magnitude is propo
 
 ## Solution
 
-### Step 1: Define the Force and Angles
+### Step 1: Write Force in Cartesian Components
 
-The attractive force is $\mathbf{F} = -K\mathbf{r}$ where $K$ is a constant and $r = |\mathbf{r}| = \sqrt{x^2 + y^2}$.
+The attractive force is $\mathbf{F} = -K\mathbf{r}$ where $K$ is a constant and $\mathbf{r} = x\mathbf{i} + y\mathbf{j}$ is the position vector.
 
-Define angles:
-- $\phi$: angle between the force $\mathbf{F}$ and the $x$-axis
-- $\theta$: angle between the tangent to the path and the $x$-axis
-- $\alpha$: angle between the force $\mathbf{F}$ and the tangent
+So the force components are:
+- $F_x = -Kx$
+- $F_y = -Ky$
 
-From geometry: $\alpha = \phi - \theta$.
+**Note:** The negative signs indicate the force points toward the origin (attractive force).
 
-### Step 2: Force Components
+### Step 2: Work Done by the Force Field
 
-- **Tangential component:** $F_t = F\cos\alpha = Kr\cos\alpha$
-- **Normal component:** $F_n = F\sin\alpha = Kr\sin\alpha$
-- **Friction force:** $F_f = \mu F_n = \mu Kr\sin\alpha$
+Work done by the force field (without friction):
 
-### Step 3: Net Force and Work
+$$W_{\text{field}} = \int_C \mathbf{F} \cdot d\mathbf{r} = \int_C [F_x \, dx + F_y \, dy]$$
 
-The net force along the path:
+$$= \int_C [-Kx \, dx - Ky \, dy]$$
 
-$$F_{\text{net}} = F_t - F_f = Kr(\cos\alpha - \mu\sin\alpha)$$
+### Step 3: Apply Path Parameterization
 
-Work done:
+The path is given by $y = 1 + x^2$ from $(0,1)$ to $(1,2)$.
 
-$$W = \int F_{\text{net}} \, ds = \int Kr(\cos\alpha + \mu\sin\alpha) \, ds$$
-
-### Step 4: Use Trigonometric Identities
-
-Using $\alpha = \phi - \theta$:
-
-$$W = \int Kr[\cos(\phi - \theta) + \mu\sin(\phi - \theta)] \, ds$$
-
-Expanding:
-
-$$W = \int Kr[\cos\phi\cos\theta + \sin\phi\sin\theta + \mu(\sin\phi\cos\theta - \cos\phi\sin\theta)] \, ds$$
-
-### Step 5: Coordinate Transformations
-
-Using:
-- $r\cos\phi = x$ and $r\sin\phi = y$
-- $\cos\theta \, ds = dx$ and $\sin\theta \, ds = dy$
-
-Substituting:
-
-$$W = \int K(xdx + ydy) + \int K\mu(ydx - xdy)$$
-
-### Step 6: Apply Path Parameterization
-
-For the path $y = 1 + x^2$ from $(0,1)$ to $(1,2)$:
-
-$$dy = 2x dx$$
+Differentiating: $dy = 2x \, dx$
 
 With $x$ varying from $0$ to $1$.
 
-### Step 7: Evaluate First Integral
+### Step 4: Evaluate Work Done by Field
 
-$$\int_0^1 K(xdx + ydy) = K\int_0^1 [xdx + (1+x^2)(2xdx)]$$
+Substituting $y = 1 + x^2$ and $dy = 2x \, dx$:
 
-$$= K\int_0^1 [x + 2x + 2x^3]dx = K\int_0^1 [3x + 2x^3]dx$$
+$$W_{\text{field}} = \int_0^1 [-Kx \, dx - K(1 + x^2)(2x \, dx)]$$
 
-$$= K\left[\frac{3}{2}x^2 + \frac{1}{2}x^4\right]_0^1 = K\left(\frac{3}{2} + \frac{1}{2}\right) = 2K$$
+$$= \int_0^1 [-Kx - 2Kx(1 + x^2)] \, dx$$
 
-### Step 8: Evaluate Second Integral
+$$= \int_0^1 [-Kx - 2Kx - 2Kx^3] \, dx$$
 
-$$\int_0^1 K\mu(ydx - xdy) = K\mu\int_0^1 [(1+x^2)dx - x(2xdx)]$$
+$$= -K\int_0^1 [3x + 2x^3] \, dx$$
 
-$$= K\mu\int_0^1 [1 + x^2 - 2x^2]dx = K\mu\int_0^1 [1 - x^2]dx$$
+$$= -K\left[\frac{3x^2}{2} + \frac{x^4}{2}\right]_0^1 = -K\left(\frac{3}{2} + \frac{1}{2}\right) = -2K$$
 
-$$= K\mu\left[x - \frac{1}{3}x^3\right]_0^1 = K\mu\left(1 - \frac{1}{3}\right) = \frac{2}{3}K\mu$$
+### Step 5: Work Done Against Friction
 
-### Step 9: Total Work
+The friction force opposes motion and is proportional to the normal component of force. The work against friction is:
 
-$$W = 2K + \frac{2}{3}K\mu = 2K\left(1 + \frac{\mu}{3}\right)$$
+$$W_{\text{friction}} = \mu \int K(ydx - xdy)$$
+
+**Note:** The term $(ydx - xdy)$ represents the contribution from the normal component of force. This form comes from the geometry of the force and path relationship.
+
+Substituting $y = 1 + x^2$ and $dy = 2x \, dx$:
+
+$$W_{\text{friction}} = \mu K \int_0^1 [(1 + x^2)dx - x(2x \, dx)]$$
+
+$$= \mu K \int_0^1 [1 + x^2 - 2x^2] \, dx$$
+
+$$= \mu K \int_0^1 [1 - x^2] \, dx$$
+
+$$= \mu K\left[x - \frac{x^3}{3}\right]_0^1 = \mu K\left(1 - \frac{1}{3}\right) = \frac{2}{3}\mu K$$
+
+### Step 6: Total Work Done
+
+Total work done TO move the particle (overcoming both field and friction):
+
+$$W = -W_{\text{field}} + W_{\text{friction}} = -(-2K) + \frac{2}{3}\mu K = 2K + \frac{2}{3}\mu K$$
+
+$$= 2K\left(1 + \frac{\mu}{3}\right)$$
 
 ## Answer
 
 $$\boxed{W = 2K\left(1 + \frac{\mu}{3}\right)}$$
+
+*(Work done to move the particle from $(0,1)$ to $(1,2)$ along the path $y = 1 + x^2$ with friction coefficient $\mu$)*

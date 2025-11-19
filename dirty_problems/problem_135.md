@@ -6,60 +6,74 @@ If a particle is attracted toward the origin by a force whose magnitude is propo
 
 ## Solution
 
-### Step 1: Define the Force
+### Step 1: Write Force in Cartesian Components
 
-The attractive force is:
+The attractive force is $\mathbf{F} = -K\mathbf{r}$ where $K$ is a constant and $\mathbf{r} = x\mathbf{i} + y\mathbf{j}$ is the position vector.
 
-$$\mathbf{F} = -Kr\frac{\mathbf{r}}{r} = -K\mathbf{r}$$
+So the force components are:
+- $F_x = -Kx$
+- $F_y = -Ky$
 
-where $K$ is a constant and $r = |\mathbf{r}| = \sqrt{x^2 + y^2}$.
+**Note:** The negative signs indicate the force points toward the origin (attractive force).
 
-### Step 2: Define Angles
+### Step 2: Work Done by the Force Field
 
-- $\phi$: angle between the force $\mathbf{F}$ and the $x$-axis
-- $\theta$: angle between the tangent to the path and the $x$-axis
-- $\alpha$: angle between the force $\mathbf{F}$ and the tangent
+Work done by the force field (without friction):
 
-From geometry: $\alpha = \phi - \theta$.
+$$W_{\text{field}} = \int_C \mathbf{F} \cdot d\mathbf{r} = \int_C [F_x \, dx + F_y \, dy]$$
 
-### Step 3: Force Components
+$$= \int_C [-Kx \, dx - Ky \, dy]$$
 
-The force can be decomposed into:
-- **Tangential component:** $F_t = F\cos\alpha = Kr\cos\alpha$
-- **Normal component:** $F_n = F\sin\alpha = Kr\sin\alpha$
+### Step 3: Apply Path Parameterization
 
-### Step 4: Friction Force
+The path is given by $y = 1 + x^2$ from $(0,1)$ to $(1,2)$.
 
-The friction force opposes motion:
+Differentiating: $dy = 2x \, dx$
 
-$$F_f = \mu F_n = \mu Kr\sin\alpha$$
+With $x$ varying from $0$ to $1$.
 
-### Step 5: Net Force Along Path
+### Step 4: Evaluate Work Done by Field
 
-The net force along the path (in the direction of motion) is:
+Substituting $y = 1 + x^2$ and $dy = 2x \, dx$:
 
-$$F_{\text{net}} = F_t - F_f = Kr(\cos\alpha - \mu\sin\alpha)$$
+$$W_{\text{field}} = \int_0^1 [-Kx \, dx - K(1 + x^2)(2x \, dx)]$$
 
-### Step 6: Work Done
+$$= \int_0^1 [-Kx - 2Kx(1 + x^2)] \, dx$$
 
-The work done is:
+$$= \int_0^1 [-Kx - 2Kx - 2Kx^3] \, dx$$
 
-$$W = \int F_{\text{net}} \, ds = \int Kr(\cos\alpha + \mu\sin\alpha) \, ds$$
+$$= -K\int_0^1 [3x + 2x^3] \, dx$$
 
-where $ds$ is the arc length element along the path from $(0,1)$ to $(1,2)$.
+$$= -K\left[\frac{3x^2}{2} + \frac{x^4}{2}\right]_0^1 = -K\left(\frac{3}{2} + \frac{1}{2}\right) = -2K$$
 
-### Step 7: Express in Terms of Path Parameter
+### Step 5: Work Done Against Friction
 
-For the path $y = 1 + x^2$ from $(0,1)$ to $(1,2)$:
+The friction force opposes motion and is proportional to the normal component of force. The work against friction is:
 
-$$ds = \sqrt{1 + \left(\frac{dy}{dx}\right)^2}dx = \sqrt{1 + (2x)^2}dx = \sqrt{1 + 4x^2}dx$$
+$$W_{\text{friction}} = \mu \int K(ydx - xdy)$$
 
-The angles $\alpha$, $\phi$, and $\theta$ depend on the position along the path and need to be calculated based on the geometry of the force and the curve.
+**Note:** The term $(ydx - xdy)$ represents the contribution from the normal component of force.
+
+Substituting $y = 1 + x^2$ and $dy = 2x \, dx$:
+
+$$W_{\text{friction}} = \mu K \int_0^1 [(1 + x^2)dx - x(2x \, dx)]$$
+
+$$= \mu K \int_0^1 [1 + x^2 - 2x^2] \, dx$$
+
+$$= \mu K \int_0^1 [1 - x^2] \, dx$$
+
+$$= \mu K\left[x - \frac{x^3}{3}\right]_0^1 = \mu K\left(1 - \frac{1}{3}\right) = \frac{2}{3}\mu K$$
+
+### Step 6: Total Work Done
+
+Total work done TO move the particle (overcoming both field and friction):
+
+$$W = -W_{\text{field}} + W_{\text{friction}} = -(-2K) + \frac{2}{3}\mu K = 2K + \frac{2}{3}\mu K$$
+
+$$= 2K\left(1 + \frac{\mu}{3}\right)$$
 
 ## Answer
 
-The work done is:
+$$\boxed{W = 2K\left(1 + \frac{\mu}{3}\right)}$$
 
-$$\boxed{W = \int_0^1 Kr(\cos\alpha + \mu\sin\alpha)\sqrt{1 + 4x^2} \, dx}$$
-
-where $\alpha = \phi - \theta$ depends on the position along the path, and $r = \sqrt{x^2 + (1+x^2)^2}$.
+*(Work done to move the particle from $(0,1)$ to $(1,2)$ along the path $y = 1 + x^2$ with friction coefficient $\mu$)*
