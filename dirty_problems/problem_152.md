@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-(a) If $\mathbf{F} = (x^2 - y^2)\mathbf{i} + 2xy\mathbf{j}$, evaluate $\int \mathbf{F} \cdot d\mathbf{r}$ along the curve $C$ in the $xy$-plane given by $y = x^2 - x$ from the point $(1, 0)$ to $(2, 2)$.
+(a) If $\vec{F} = (x^2 - y^2)\vec{i} + 2xy\vec{j}$, evaluate $\int \vec{F} \cdot d\vec{r}$ along the curve $C$ in the $xy$-plane given by $y = x^2 - x$ from the point $(1, 0)$ to $(2, 2)$.
 
 (b) Interpret physically the result obtained.
 
@@ -12,9 +12,9 @@
 
 ### Step 1: Set Up the Integral
 
-Given $\mathbf{F} = (x^2 - y^2)\mathbf{i} + 2xy\mathbf{j}$ and $d\mathbf{r} = dx\mathbf{i} + dy\mathbf{j}$:
+Given $\vec{F} = (x^2 - y^2)\vec{i} + 2xy\vec{j}$ and $d\vec{r} = dx\vec{i} + dy\vec{j}$:
 
-$$\int \mathbf{F} \cdot d\mathbf{r} = \int[(x^2 - y^2)dx + 2xy \, dy]$$
+$$\int \vec{F} \cdot d\vec{r} = \int[(x^2 - y^2)dx + 2xy \, dy]$$
 
 ### Step 2: Parameterize the Curve
 
@@ -56,7 +56,7 @@ $$= \frac{93}{5} - 15 + \frac{14}{3} = \frac{279 - 225 + 70}{15} = \frac{124}{15
 
 ### Part (b): Physical Interpretation
 
-The result indicates that the work done by the force field $\mathbf{F}$ along the path depends on the path taken. If the field were conservative, the work would be path-independent.
+The result indicates that the work done by the force field $\vec{F}$ along the path depends on the path taken. If the field were conservative, the work would be path-independent.
 
 ## Answer
 
@@ -64,4 +64,4 @@ The result indicates that the work done by the force field $\mathbf{F}$ along th
 
 $$\boxed{\frac{124}{15}}$$
 
-**(b)** The line integral represents the work done by the force field $\mathbf{F}$ along the curve. The result shows that the work depends on the specific path taken.
+**(b)** The line integral represents the work done by the force field $\vec{F}$ along the curve. The result shows that the work depends on the specific path taken.

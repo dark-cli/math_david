@@ -58,13 +58,13 @@ When an object moves along a **curve** (path) $C$ through a force field, we need
 $$W = \int_C \mathbf{F} \cdot d\mathbf{r}$$
 
 Where:
-- $\mathbf{F}$ = force field vector
-- $d\mathbf{r}$ = tiny displacement vector along the path
+- $\vec{F}$ = force field vector
+- $d\vec{r}$ = tiny displacement vector along the path
 - The dot product $\mathbf{F} \cdot d\mathbf{r}$ gives the component of force along the path
 
-### Understanding $d\mathbf{r}$
+### Understanding $d\vec{r}$
 
-The vector $d\mathbf{r}$ represents a tiny step along the path:
+The vector $d\vec{r}$ represents a tiny step along the path:
 $$d\mathbf{r} = dx\mathbf{i} + dy\mathbf{j} + dz\mathbf{k}$$
 
 **Example 4: Work in Component Form**
@@ -173,7 +173,7 @@ $$|\mathbf{F}| = Kr^3$$
 where $r = |\mathbf{r}| = \sqrt{x^2 + y^2}$ is the distance from the origin.
 
 **Step 2: Direction**
-Since the force is attractive (toward the origin), the direction is opposite to the position vector $\mathbf{r}$:
+Since the force is attractive (toward the origin), the direction is opposite to the position vector $\vec{r}$:
 $$\text{direction} = -\frac{\mathbf{r}}{|\mathbf{r}|} = -\frac{\mathbf{r}}{r}$$
 
 **Step 3: Combine Magnitude and Direction**
@@ -182,12 +182,12 @@ $$\mathbf{F} = |\mathbf{F}| \times (\text{direction}) = Kr^3 \times \left(-\frac
 **Step 4: Simplify**
 $$\mathbf{F} = -Kr^3 \cdot \frac{\mathbf{r}}{r} = -K \cdot \frac{r^3}{r} \cdot \mathbf{r} = -Kr^2 \mathbf{r}$$
 
-**Key Insight:** The $r^3$ comes from the magnitude requirement, but when we divide by $r$ to get the unit vector direction, we get $r^2$ multiplied by the position vector $\mathbf{r}$.
+**Key Insight:** The $r^3$ comes from the magnitude requirement, but when we divide by $r$ to get the unit vector direction, we get $r^2$ multiplied by the position vector $\vec{r}$.
 
 **Breaking it down:**
 - $K$ = constant of proportionality
 - $r^2$ = comes from $r^3/r$ (one $r$ from magnitude, one $r$ canceled by unit vector)
-- $\mathbf{r}$ = position vector (gives direction)
+- $\vec{r}$ = position vector (gives direction)
 
 **Example 8: Cube Law Force**
 
@@ -275,7 +275,7 @@ If $\alpha$ is the angle between force and path tangent:
 $$F_t = F \cos \alpha$$
 
 **Using Dot Product:**
-If $\mathbf{F}$ is the force vector and $\mathbf{T}$ is the unit tangent vector:
+If $\vec{F}$ is the force vector and $\vec{T}$ is the unit tangent vector:
 $$F_t = \mathbf{F} \cdot \mathbf{T}$$
 
 ---
@@ -326,7 +326,7 @@ Path: $x = t^2$, $y = t$ from $t = 0$ to $t = 2$
 
 ### General Procedure
 
-1. **Identify the force field** $\mathbf{F}$
+1. **Identify the force field** $\vec{F}$
 2. **Identify the path** $C$ (start point, end point, path equation)
 3. **Set up the work integral:** $W = \int_C \mathbf{F} \cdot d\mathbf{r}$
 4. **Parameterize the path** or use path equation

@@ -8,11 +8,11 @@ A particle is attracted toward the origin by a force proportional to the cube of
 
 ### Step 1: Write Force in Cartesian Components
 
-The attractive force is $\mathbf{F} = -Kr^2\mathbf{r}$ where $K$ is a constant, $r = \sqrt{x^2 + y^2}$ is the distance from origin, and $\mathbf{r} = x\mathbf{i} + y\mathbf{j}$ is the position vector.
+The attractive force is $\vec{F} = -Kr^2\vec{r}$ where $K$ is a constant, $r = \sqrt{x^2 + y^2}$ is the distance from origin, and $\vec{r} = x\vec{i} + y\vec{j}$ is the position vector.
 
 Substituting $r^2 = x^2 + y^2$:
 
-$$\mathbf{F} = -K(x^2 + y^2)(x\mathbf{i} + y\mathbf{j}) = -K(x^3 + xy^2)\mathbf{i} - K(x^2y + y^3)\mathbf{j}$$
+$$\vec{F} = -K(x^2 + y^2)(x\vec{i} + y\vec{j}) = -K(x^3 + xy^2)\vec{i} - K(x^2y + y^3)\vec{j}$$
 
 So the force components are:
 - $F_x = -K(x^3 + xy^2)$
@@ -24,7 +24,7 @@ So the force components are:
 
 Work is calculated as:
 
-$$W = \int_C \mathbf{F} \cdot d\mathbf{r} = \int_C [F_x \, dx + F_y \, dy]$$
+$$W = \int_C \vec{F} \cdot d\vec{r} = \int_C [F_x \, dx + F_y \, dy]$$
 
 $$= \int_C [-K(x^3 + xy^2) \, dx - K(x^2y + y^3) \, dy]$$
 

@@ -8,10 +8,10 @@ A particle is attracted toward the origin by a force proportional to the distanc
 
 ### Step 1: Write Force in Cartesian Components
 
-The attractive force is $\mathbf{F} = -K\mathbf{r}$ where $K$ is a constant and $\mathbf{r} = x\mathbf{i} + y\mathbf{j}$ is the position vector.
+The attractive force is $\vec{F} = -K\vec{r}$ where $K$ is a constant and $\vec{r} = x\vec{i} + y\vec{j}$ is the position vector.
 
 **Note:** Since the force is proportional to distance $r$ (not $r^2$ or $r^3$), the force vector is simply:
-$$\mathbf{F} = -K(x\mathbf{i} + y\mathbf{j})$$
+$$\vec{F} = -K(x\vec{i} + y\vec{j})$$
 
 So the force components are:
 - $F_x = -Kx$
@@ -23,7 +23,7 @@ So the force components are:
 
 Work is calculated as:
 
-$$W = \int_C \mathbf{F} \cdot d\mathbf{r} = \int_C [F_x \, dx + F_y \, dy]$$
+$$W = \int_C \vec{F} \cdot d\vec{r} = \int_C [F_x \, dx + F_y \, dy]$$
 
 $$= \int_C [-Kx \, dx - Ky \, dy]$$
 

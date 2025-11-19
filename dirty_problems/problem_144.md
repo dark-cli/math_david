@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Find the work done in moving a particle in the force field $\mathbf{F} = 3x^2\mathbf{i} + (2xz - y)\mathbf{j} + z\mathbf{k}$ along:
+Find the work done in moving a particle in the force field $\vec{F} = 3x^2\vec{i} + (2xz - y)\vec{j} + z\vec{k}$ along:
 
 (a) the straight line from $(0,0,0)$ to $(2,1,3)$
 
@@ -14,11 +14,11 @@ Find the work done in moving a particle in the force field $\mathbf{F} = 3x^2\ma
 
 ### Step 1: General Setup
 
-Work done = $\int \mathbf{F} \cdot d\mathbf{r}$
+Work done = $\int \vec{F} \cdot d\vec{r}$
 
-Given $\mathbf{F} = 3x^2\mathbf{i} + (2xz - y)\mathbf{j} + z\mathbf{k}$ and $d\mathbf{r} = dx\mathbf{i} + dy\mathbf{j} + dz\mathbf{k}$:
+Given $\vec{F} = 3x^2\vec{i} + (2xz - y)\vec{j} + z\vec{k}$ and $d\vec{r} = dx\vec{i} + dy\vec{j} + dz\vec{k}$:
 
-$$\int \mathbf{F} \cdot d\mathbf{r} = \int[3x^2dx + (2xz - y)dy + z dz]$$
+$$\int \vec{F} \cdot d\vec{r} = \int[3x^2dx + (2xz - y)dy + z dz]$$
 
 ### Part (a): Along Straight Line
 
