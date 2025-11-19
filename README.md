@@ -38,6 +38,16 @@ Essential mathematical reference materials and cheat sheets:
   - Coordinate systems (Cartesian, cylindrical, spherical)
   - Important vector calculus identities
 
+- **[Work and Line Integrals](./fundamentals/work_and_line_integrals.md)**
+  - Basic physics concept of work
+  - Work as a line integral
+  - Force fields and path parameterization
+  - Path-dependent vs path-independent work
+  - Conservative fields
+  - Work with friction
+  - Step-by-step problem solving guide
+  - Multiple worked examples from beginner to advanced
+
 ## 📝 Problems
 
 Individual math problems with detailed solutions:
@@ -146,7 +156,7 @@ Key guidelines:
 
 ## 📊 Progress
 
-- **Fundamentals**: 3 complete reference guides
+- **Fundamentals**: 4 complete reference guides
 - **Individual Problems**: 2 complete problems
 - **Dirty Collection**: 
   - 52 complete problems (1-52)

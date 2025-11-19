@@ -122,8 +122,39 @@ Differentials:
 
 ### Step 13: Determine Parameter Limits
 
-At $(1,1)$: $t = 0$ (since $x = 1$ and $y = 1$)
-At $(4,2)$: $t = 1$ (since $x = 4$ and $y = 2$)
+**Important Note:** We don't arbitrarily choose $t = 0$ to $t = 1$ as integration bounds. Instead, we solve for the parameter values that correspond to the start and end points of our path.
+
+**Finding $t$ for the start point $(1,1)$:**
+
+From $x(t) = 2t^2 + t + 1$:
+$$2t^2 + t + 1 = 1$$
+$$2t^2 + t = 0$$
+$$t(2t + 1) = 0$$
+This gives $t = 0$ or $t = -1/2$.
+
+From $y(t) = t^2 + 1$:
+$$t^2 + 1 = 1$$
+$$t^2 = 0$$
+$$t = 0$$
+
+Since both equations are satisfied by $t = 0$, the start point $(1,1)$ corresponds to **$t = 0$**.
+
+**Finding $t$ for the end point $(4,2)$:**
+
+From $x(t) = 2t^2 + t + 1$:
+$$2t^2 + t + 1 = 4$$
+$$2t^2 + t - 3 = 0$$
+$$(2t + 3)(t - 1) = 0$$
+This gives $t = 1$ or $t = -3/2$.
+
+From $y(t) = t^2 + 1$:
+$$t^2 + 1 = 2$$
+$$t^2 = 1$$
+$$t = \pm 1$$
+
+The value $t = 1$ satisfies both equations, so the end point $(4,2)$ corresponds to **$t = 1$**.
+
+**Conclusion:** The integration bounds are determined by solving the parametric equations at the endpoints. We integrate from $t = 0$ to $t = 1$ because these are the parameter values that correspond to our start and end points, not because we arbitrarily chose them.
 
 ### Step 14: Set Up the Integral
 
