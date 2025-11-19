@@ -6,64 +6,67 @@ A particle is attracted toward the origin by a force proportional to the distanc
 
 ## Solution
 
-### Step 1: Define the Force
+### Step 1: Write Force in Cartesian Components
 
-The attractive force is $\mathbf{F} = -K\mathbf{r}$ where $K$ is a constant and $r = |\mathbf{r}| = \sqrt{x^2 + y^2}$.
+The attractive force is $\mathbf{F} = -K\mathbf{r}$ where $K$ is a constant and $\mathbf{r} = x\mathbf{i} + y\mathbf{j}$ is the position vector.
 
-### Step 2: Define Angles
+**Note:** Since the force is proportional to distance $r$ (not $r^2$ or $r^3$), the force vector is simply:
+$$\mathbf{F} = -K(x\mathbf{i} + y\mathbf{j})$$
 
-- $\phi$: angle between the force $\mathbf{F}$ and the $x$-axis
-- $\theta$: angle between the tangent to the path and the $x$-axis
-- $\alpha$: angle between the force $\mathbf{F}$ and the tangent
+So the force components are:
+- $F_x = -Kx$
+- $F_y = -Ky$
 
-From geometry: $\alpha = \phi - \theta$.
+**Note:** The negative signs indicate the force points toward the origin (attractive force).
 
-### Step 3: Tangential Force Component
+### Step 2: Set Up Work Integral
 
-Since friction is neglected, only the tangential component does work:
+Work is calculated as:
 
-$$F_t = F\cos\alpha = Kr\cos\alpha$$
+$$W = \int_C \mathbf{F} \cdot d\mathbf{r} = \int_C [F_x \, dx + F_y \, dy]$$
 
-### Step 4: Work Done
+$$= \int_C [-Kx \, dx - Ky \, dy]$$
 
-$$W = \int F_t \, ds = \int Kr\cos\alpha \, ds$$
+### Step 3: Apply Path Parameterization
 
-Using $\alpha = \phi - \theta$:
+The path is given by $y = 1 + x^2$ from $(0,1)$ to $(1,2)$.
 
-$$W = \int Kr\cos(\phi - \theta) \, ds$$
+Differentiating: $dy = 2x \, dx$
 
-### Step 5: Use Trigonometric Identity
+With $x$ varying from $0$ to $1$ (since at $x = 0$, $y = 1$ and at $x = 1$, $y = 2$).
 
-$$W = \int Kr[\cos\phi\cos\theta + \sin\phi\sin\theta] \, ds$$
+### Step 4: Evaluate the Integral
 
-### Step 6: Coordinate Transformations
+Substituting $y = 1 + x^2$ and $dy = 2x \, dx$:
 
-Using:
-- $r\cos\phi = x$ and $r\sin\phi = y$
-- $\cos\theta \, ds = dx$ and $\sin\theta \, ds = dy$
+$$W = \int_0^1 [-Kx \, dx - K(1 + x^2)(2x \, dx)]$$
 
-Substituting:
+$$= \int_0^1 [-Kx - 2Kx(1 + x^2)] \, dx$$
 
-$$W = \int K(xdx + ydy)$$
+$$= \int_0^1 [-Kx - 2Kx - 2Kx^3] \, dx$$
 
-### Step 7: Apply Path Parameterization
+$$= \int_0^1 [-3Kx - 2Kx^3] \, dx$$
 
-For the path $y = 1 + x^2$ from $(0,1)$ to $(1,2)$:
+$$= -K\int_0^1 [3x + 2x^3] \, dx$$
 
-$$dy = 2x dx$$
+$$= -K\left[\frac{3x^2}{2} + \frac{2x^4}{4}\right]_0^1$$
 
-With $x$ varying from $0$ to $1$.
+$$= -K\left[\frac{3}{2} + \frac{1}{2}\right] = -K \cdot 2 = -2K$$
 
-### Step 8: Evaluate the Integral
+### Step 5: Work Done TO Move the Particle
 
-$$W = \int_0^1 K[xdx + (1+x^2)(2xdx)]$$
+The question asks for "work done when the particle is moved", which means the work we must supply (energy input) to move the particle, not the work done by the field.
 
-$$= K\int_0^1 [x + 2x + 2x^3]dx = K\int_0^1 [3x + 2x^3]dx$$
+Since the field does $-2K$ work (opposes motion away from origin), we must supply $+2K$ work to move the particle:
 
-$$= K\left[\frac{3}{2}x^2 + \frac{1}{2}x^4\right]_0^1$$
+$$W = -W_{\text{field}} = -(-2K) = 2K$$
 
-$$= K\left(\frac{3}{2} + \frac{1}{2}\right) = 2K$$
+**Interpretation:**
+- Work done BY field: $-2K$ (field opposes motion away from origin)
+- Work done TO move particle: $+2K$ (energy we must supply to overcome the field)
 
 ## Answer
 
 $$\boxed{W = 2K}$$
+
+*(Work done to move the particle from $(0,1)$ to $(1,2)$ along the path $y = 1 + x^2$)*
