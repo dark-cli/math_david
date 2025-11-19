@@ -1,14 +1,14 @@
-# Problem 195: Gradient of \(r^3\)
+# Problem 195: Gradient of $r^3$
 
 ## Problem Statement
 
-Let $(r = \sqrt{x^2 + y^2 + z^2}$). Find \($\nabla (r^3)$\).
+Let $r = \sqrt{x^2 + y^2 + z^2}$. Find $\nabla (r^3)$.
 
 ## Solution
 
-### Step 1: Rewrite \(r^3\)
+### Step 1: Rewrite $r^3$
 
-Since \($r = (x^2 + y^2 + z^2)^{1/2}$\), we have
+Since $r = (x^2 + y^2 + z^2)^{1/2}$, we have
 
 $$
 r^3 = (x^2 + y^2 + z^2)^{3/2}.
@@ -24,7 +24,7 @@ $$
             + \frac{\partial}{\partial z}(r^3) \mathbf{k}.
 $$
 
-For the \(x\)-component:
+For the $x$-component:
 
 $$
 \frac{\partial}{\partial x}(r^3)
@@ -50,7 +50,7 @@ $$
 = 3r\,\mathbf{r},
 $$
 
-where \($\mathbf{r} = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}$\).
+where $\mathbf{r} = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}$.
 
 ## Answer
 

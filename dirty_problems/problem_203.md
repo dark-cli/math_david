@@ -1,19 +1,19 @@
-# Problem 203: Directional Derivative of \(\Phi = 4xz^3 - 3x^2y^2\)
+# Problem 203: Directional Derivative of $\Phi = 4xz^3 - 3x^2y^2$
 
 ## Problem Statement
 
-Given the scalar field \(\Phi(x,y,z) = 4xz^3 - 3x^2y^2\), compute the directional derivative at the point \(P(2,-3,2)\) in the direction of the vector \( \mathbf{v} = 2\mathbf{i} - 3\mathbf{j} + 6\mathbf{k} \).
+Given the scalar field $\Phi(x,y,z) = 4xz^3 - 3x^2y^2$, compute the directional derivative at the point $P(2,-3,2)$ in the direction of the vector $ \mathbf{v} = 2\mathbf{i} - 3\mathbf{j} + 6\mathbf{k} $.
 
 ## Solution
 
-### Step 1: Compute the Gradient of \(\Phi\)
+### Step 1: Compute the Gradient of $\Phi$
 
 $$
 \nabla \Phi = \left(\frac{\partial \Phi}{\partial x}, \frac{\partial \Phi}{\partial y}, \frac{\partial \Phi}{\partial z}\right)
 = \left(4z^3 - 6xy^2,\,-6x^2y,\,12xz^2\right).
 $$
 
-At \(P(2,-3,2)\):
+At $P(2,-3,2)$:
 
 $$
 \nabla \Phi(P) = \left(32 - 108,\,-6(4)(-3),\,12(2)(4)\right) = (-76, 72, 96).
@@ -21,7 +21,7 @@ $$
 
 ### Step 2: Normalize the Direction Vector
 
-The magnitude of \(\mathbf{v}\) is
+The magnitude of $\mathbf{v}$ is
 
 $$
 \|\mathbf{v}\| = \sqrt{2^2 + (-3)^2 + 6^2} = \sqrt{49} = 7.

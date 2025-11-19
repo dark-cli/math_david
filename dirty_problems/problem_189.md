@@ -1,8 +1,8 @@
-# Problem 189: Divergence of \(\dfrac{\mathbf{r}}{r^3}\)
+# Problem 189: Divergence of $\dfrac{\mathbf{r}}{r^3}$
 
 ## Problem Statement
 
-Prove that the divergence of the vector field \(\mathbf{F} = \dfrac{\mathbf{r}}{r^3}\) is zero for \(r \neq 0\), where \(\mathbf{r} = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}\) and \(r = \sqrt{x^2 + y^2 + z^2}\).
+Prove that the divergence of the vector field $\mathbf{F} = \dfrac{\mathbf{r}}{r^3}$ is zero for $r \neq 0$, where $\mathbf{r} = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}$ and $r = \sqrt{x^2 + y^2 + z^2}$.
 
 ## Solution
 
@@ -15,7 +15,7 @@ $$
  + \frac{\partial}{\partial z}\left(\frac{z}{r^3}\right).
 $$
 
-Consider the \(x\)-term. Using the product rule and \(\partial r / \partial x = x / r\):
+Consider the $x$-term. Using the product rule and $\partial r / \partial x = x / r$:
 
 $$
 \frac{\partial}{\partial x}\left(\frac{x}{r^3}\right)

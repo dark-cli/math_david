@@ -169,3 +169,24 @@ These are what you plug into your line integral.
 4. **Use** for line integrals:
    $$dx = \frac{d}{d\theta}(r\cos\theta) \, d\theta, \qquad dy = \frac{d}{d\theta}(r\sin\theta) \, d\theta$$
 
+---
+
+## Solenoidal Vector Fields
+
+A vector field **A** is *solenoidal* if its divergence is zero:
+
+$$\nabla \cdot \mathbf{A} = 0$$
+
+**Physical meaning:**
+
+1. **In fluid mechanics:** Solenoidal velocity field = **incompressible flow** (no net source or sink)
+
+2. **In electromagnetism:** Magnetic field **B** is solenoidal ($\nabla \cdot \mathbf{B} = 0$), meaning **no magnetic monopoles** — field lines form closed loops
+
+**Geometric picture:**
+- Divergence > 0 → vectors flow OUT (source)
+- Divergence < 0 → vectors flow IN (sink)  
+- Divergence = 0 → no net in/out → **solenoidal**
+
+**Bottom line:** Solenoidal = no net expansion or contraction of the vector field.
+

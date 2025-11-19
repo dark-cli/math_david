@@ -1,17 +1,17 @@
-# Problem 201: Tangent Plane and Normal Line to \(z = x^2 + y^2\)
+# Problem 201: Tangent Plane and Normal Line to $z = x^2 + y^2$
 
 ## Problem Statement
 
 Find the equations of:
 
-1. The tangent plane to the surface \(z = x^2 + y^2\) at the point \(P(2,-1,5)\).
-2. The normal line to the same surface at \(P\).
+1. The tangent plane to the surface $z = x^2 + y^2$ at the point $P(2,-1,5)$.
+2. The normal line to the same surface at $P$.
 
 ## Solution
 
 ### Step 1: Rewrite as a Level Surface
 
-Define \(\Phi(x,y,z) = x^2 + y^2 - z\). Then the surface is \(\Phi(x,y,z) = 0\).
+Define $\Phi(x,y,z) = x^2 + y^2 - z$. Then the surface is $\Phi(x,y,z) = 0$.
 
 ### Step 2: Compute the Gradient
 
@@ -19,7 +19,7 @@ $$
 \nabla \Phi = (2x, 2y, -1).
 $$
 
-At \(P(2,-1,5)\):
+At $P(2,-1,5)$:
 
 $$
 \nabla \Phi(P) = (4, -2, -1).
@@ -43,7 +43,7 @@ $$
 
 ### Step 4: Parametric Equations of the Normal Line
 
-The normal line passes through \(P\) with direction \(\nabla \Phi(P) = (4,-2,-1)\):
+The normal line passes through $P$ with direction $\nabla \Phi(P) = (4,-2,-1)$:
 
 $$
 \begin{aligned}

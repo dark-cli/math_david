@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Let \(\phi(x,y,z)\) and \(\psi(x,y,z)\) be scalar fields. Prove the identity
+Let $\phi(x,y,z)$ and $\psi(x,y,z)$ be scalar fields. Prove the identity
 
 $$
 \nabla^2(\phi\psi) = \phi\,\nabla^2 \psi + 2\,\nabla \phi \cdot \nabla \psi + \psi\,\nabla^2 \phi.
@@ -10,7 +10,7 @@ $$
 
 ## Solution
 
-### Step 1: Expand \(\nabla^2(\phi\psi)\)
+### Step 1: Expand $\nabla^2(\phi\psi)$
 
 By definition,
 
@@ -22,7 +22,7 @@ $$
 
 We will compute each second derivative separately.
 
-### Step 2: Differentiate with Respect to \(x\)
+### Step 2: Differentiate with Respect to $x$
 
 First derivative:
 
@@ -40,7 +40,7 @@ $$
  + \psi\frac{\partial^2 \phi}{\partial x^2}.
 $$
 
-### Step 3: Repeat for \(y\) and \(z\)
+### Step 3: Repeat for $y$ and $z$
 
 Similarly,
 

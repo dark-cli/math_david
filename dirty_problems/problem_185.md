@@ -1,8 +1,8 @@
-# Problem 185: Relationship Between \(\nabla u \cdot d\mathbf{r}\) and \(du\)
+# Problem 185: Relationship Between $\nabla u \cdot d\mathbf{r}$ and $du$
 
 ## Problem Statement
 
-Let \(u(x,y,z)\) be a differentiable scalar function and let \(d\mathbf{r} = dx\,\mathbf{i} + dy\,\mathbf{j} + dz\,\mathbf{k}\). Show that
+Let $u(x,y,z)$ be a differentiable scalar function and let $d\mathbf{r} = dx\,\mathbf{i} + dy\,\mathbf{j} + dz\,\mathbf{k}$. Show that
 
 $$
 \nabla u \cdot d\mathbf{r} = du.
@@ -10,7 +10,7 @@ $$
 
 ## Solution
 
-The differential of \(u\) is
+The differential of $u$ is
 
 $$
 du = \frac{\partial u}{\partial x} dx
@@ -18,7 +18,7 @@ du = \frac{\partial u}{\partial x} dx
    + \frac{\partial u}{\partial z} dz.
 $$
 
-The gradient of \(u\) is
+The gradient of $u$ is
 
 $$
 \nabla u = \frac{\partial u}{\partial x} \mathbf{i}
@@ -26,7 +26,7 @@ $$
          + \frac{\partial u}{\partial z} \mathbf{k}.
 $$
 
-Taking the dot product with \(d\mathbf{r}\):
+Taking the dot product with $d\mathbf{r}$:
 
 $$
 \nabla u \cdot d\mathbf{r}
@@ -43,7 +43,7 @@ $$
 = du.
 $$
 
-Thus \(\nabla u \cdot d\mathbf{r}\) equals the total differential of \(u\).
+Thus $\nabla u \cdot d\mathbf{r}$ equals the total differential of $u$.
 
 ## Answer
 

@@ -63,6 +63,7 @@ $$= \int_0^{2\pi} [(-2\cos\theta + 3(2\sin\theta) - 6)(-2\sin\theta \, d\theta) 
 
 $$= \int_0^{2\pi} [(-2\cos\theta + 6\sin\theta - 6)(-2\sin\theta) + (2\sin\theta - 6\cos\theta - 4)(2\cos\theta)] \, d\theta$$
 
+ 
 ### Step 5: Expand and Simplify
 
 Expanding the terms:

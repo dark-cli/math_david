@@ -2,13 +2,13 @@
 
 ## Problem Statement
 
-Let \(r = \sqrt{x^2 + y^2 + z^2}\) and let \(f(r)\) be a scalar field that depends only on \(r\). Prove that
+Let $r = \sqrt{x^2 + y^2 + z^2}$ and let $f(r)$ be a scalar field that depends only on $r$. Prove that
 
 $$
 \nabla f(r) = f'(r)\,\frac{\mathbf{r}}{r},
 $$
 
-where \(\mathbf{r} = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}\).
+where $\mathbf{r} = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}$.
 
 ## Solution
 
@@ -22,7 +22,7 @@ $$
             + \frac{\partial f}{\partial z}\mathbf{k}.
 $$
 
-Since \(f\) depends on \(r\) alone, use the chain rule:
+Since $f$ depends on $r$ alone, use the chain rule:
 
 $$
 \frac{\partial f}{\partial x} = f'(r)\frac{\partial r}{\partial x}, \qquad
@@ -30,9 +30,9 @@ $$
 \frac{\partial f}{\partial z} = f'(r)\frac{\partial r}{\partial z}.
 $$
 
-### Step 2: Compute the Derivatives of \(r\)
+### Step 2: Compute the Derivatives of $r$
 
-Because \(r = (x^2 + y^2 + z^2)^{1/2}\),
+Because $r = (x^2 + y^2 + z^2)^{1/2}$,
 
 $$
 \frac{\partial r}{\partial x} = \frac{x}{r}, \qquad

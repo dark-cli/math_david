@@ -1,14 +1,14 @@
-# Problem 200: Determine \(a\) for a Curl-Free Vector Field
+# Problem 200: Determine $a$ for a Curl-Free Vector Field
 
 ## Problem Statement
 
-For what value of the constant \(a\) does the vector field
+For what value of the constant $a$ does the vector field
 
 $$
 \mathbf{A} = (a x y - z^3)\mathbf{i} + (a-2)x^2 \mathbf{j} + (1-a)x z^2 \mathbf{k}
 $$
 
-have an identically zero curl (\(\nabla \times \mathbf{A} = \mathbf{0}\))?
+have an identically zero curl ($\nabla \times \mathbf{A} = \mathbf{0}$)?
 
 ## Solution
 
@@ -29,18 +29,18 @@ Compute each component.
 
 ### Step 2: Components of the Curl
 
-- \( \mathbf{i} \)-component:
+- $ \mathbf{i} $-component:
   $$
   \frac{\partial}{\partial y}[(1-a)x z^2] - \frac{\partial}{\partial z}[(a-2)x^2] = 0 - 0 = 0.
   $$
 
-- \( \mathbf{j} \)-component:
+- $ \mathbf{j} $-component:
   $$
   -\left( \frac{\partial}{\partial x}[(1-a)x z^2] - \frac{\partial}{\partial z}[a x y - z^3] \right)
   = -\left( (1-a) z^2 - (-3z^2) \right) = -(4 - a) z^2.
   $$
 
-- \( \mathbf{k} \)-component:
+- $ \mathbf{k} $-component:
   $$
   \frac{\partial}{\partial x}[(a-2)x^2] - \frac{\partial}{\partial y}[a x y - z^3]
   = (2a - 4)x - a x = (a - 4)x.
@@ -48,13 +48,13 @@ Compute each component.
 
 ### Step 3: Set the Curl to Zero
 
-For the curl to vanish identically for all \(x, z\), both coefficients must be zero:
+For the curl to vanish identically for all $x, z$, both coefficients must be zero:
 
 $$
 4 - a = 0, \qquad a - 4 = 0.
 $$
 
-Thus, \(a = 4\).
+Thus, $a = 4$.
 
 ## Answer
 

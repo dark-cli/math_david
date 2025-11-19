@@ -14,7 +14,7 @@ $$
 \Phi_2(x,y,z) = 3x^2 - y^2 z + 6z - 1 = 0
 $$
 
-at the point \(P(1,-2,1)\).
+at the point $P(1,-2,1)$.
 
 ## Solution
 
@@ -22,19 +22,19 @@ at the point \(P(1,-2,1)\).
 
 The gradient of each surface provides the normal vector.
 
-For \(\Phi_1\):
+For $\Phi_1$:
 
 $$
 \nabla\Phi_1 = \left( y^2 z - 5,\; 2xyz,\; xy^2 - 2 \right).
 $$
 
-Evaluating at \(P\):
+Evaluating at $P$:
 
 $$
 \nabla\Phi_1(P) = (-1,\,-4,\,2).
 $$
 
-For \(\Phi_2\):
+For $\Phi_2$:
 
 $$
 \nabla\Phi_2 = \left( 6x,\; -2yz,\; -y^2 + 6 \right),
@@ -48,7 +48,7 @@ $$
 
 ### Step 2: Compute the Angle Between Normals
 
-The cosine of the angle \(\theta\) between the surfaces equals the cosine between the normals:
+The cosine of the angle $\theta$ between the surfaces equals the cosine between the normals:
 
 $$
 \cos\theta = \frac{|\nabla\Phi_1 \cdot \nabla\Phi_2|}{\|\nabla\Phi_1\| \, \|\nabla\Phi_2\| }.

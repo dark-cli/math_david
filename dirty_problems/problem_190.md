@@ -1,12 +1,12 @@
-# Problem 190: Evaluate \(\nabla \times \left(\dfrac{\mathbf{r}}{r^2}\right)\)
+# Problem 190: Evaluate $\nabla \times \left(\dfrac{\mathbf{r}}{r^2}\right)$
 
 ## Problem Statement
 
-Let \(\mathbf{r} = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}\) and \(r = \sqrt{x^2 + y^2 + z^2}\). Evaluate the curl of the vector field \(\mathbf{F} = \dfrac{\mathbf{r}}{r^2}\) for \(r \neq 0\).
+Let $\mathbf{r} = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}$ and $r = \sqrt{x^2 + y^2 + z^2}$. Evaluate the curl of the vector field $\mathbf{F} = \dfrac{\mathbf{r}}{r^2}$ for $r \neq 0$.
 
 ## Solution
 
-### Step 1: Write the Components of \(\mathbf{F}\)
+### Step 1: Write the Components of $\mathbf{F}$
 
 $$
 \mathbf{F} = \left( \frac{x}{r^2}, \frac{y}{r^2}, \frac{z}{r^2} \right).
@@ -25,7 +25,7 @@ $$
 
 Compute each component.
 
-### Step 3: \( \mathbf{i} \)-Component
+### Step 3: $ \mathbf{i} $-Component
 
 $$
 \frac{\partial}{\partial y}\left(\frac{z}{r^2}\right)
@@ -33,7 +33,7 @@ $$
 = \left(-\frac{2yz}{r^4}\right) - \left(-\frac{2yz}{r^4}\right) = 0.
 $$
 
-### Step 4: \( \mathbf{j} \)-Component
+### Step 4: $ \mathbf{j} $-Component
 
 $$
 \frac{\partial}{\partial z}\left(\frac{x}{r^2}\right)
@@ -41,7 +41,7 @@ $$
 = \left(-\frac{2xz}{r^4}\right) - \left(-\frac{2xz}{r^4}\right) = 0.
 $$
 
-### Step 5: \( \mathbf{k} \)-Component
+### Step 5: $ \mathbf{k} $-Component
 
 $$
 \frac{\partial}{\partial x}\left(\frac{y}{r^2}\right)

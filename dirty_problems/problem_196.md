@@ -1,8 +1,8 @@
-# Problem 196: Evaluate \(\nabla^2 (\ln r)\)
+# Problem 196: Evaluate $\nabla^2 (\ln r)$
 
 ## Problem Statement
 
-Let \(r = \sqrt{x^2 + y^2 + z^2}\). Evaluate the Laplacian of \(\ln r\):
+Let $r = \sqrt{x^2 + y^2 + z^2}$. Evaluate the Laplacian of $\ln r$:
 
 $$
 \nabla^2 (\ln r) = \frac{\partial^2}{\partial x^2}(\ln r)
@@ -12,9 +12,9 @@ $$
 
 ## Solution
 
-### Step 1: Compute the Gradient of \(\ln r\)
+### Step 1: Compute the Gradient of $\ln r$
 
-Since \(\ln r = \ln(x^2 + y^2 + z^2)^{1/2}\), we have
+Since $\ln r = \ln(x^2 + y^2 + z^2)^{1/2}$, we have
 
 $$
 \nabla (\ln r) = \frac{1}{r} \nabla r
@@ -32,7 +32,7 @@ $$
                 + \frac{\partial}{\partial z}\left( \frac{z}{r^2} \right).
 $$
 
-Use \(r^2 = x^2 + y^2 + z^2\). For the \(x\)-term:
+Use $r^2 = x^2 + y^2 + z^2$. For the $x$-term:
 
 $$
 \frac{\partial}{\partial x}\left( \frac{x}{r^2} \right)
@@ -58,7 +58,7 @@ $$
 = \frac{1}{r^2}.
 $$
 
-Thus, away from the origin, \(\ln r\) satisfies
+Thus, away from the origin, $\ln r$ satisfies
 
 $$
 \nabla^2 (\ln r) = \frac{1}{r^2}.

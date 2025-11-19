@@ -209,6 +209,41 @@ This document organizes all exam-relevant problems from the `dirty_problems` fol
 - **[Problem 19](./dirty_problems/problem_19.md)** (Area problem - needs verification)
 - **Difficulty:** Easy-Medium
 
+### Group 4.7: Line Integrals with Arc Length (ds) (Medium)
+**Shared Concept:** Line integrals evaluated using arc length parameter `ds` instead of `dx` and `dy`
+
+- **[Problem 151: Evaluate Line Integral Along Circle](./dirty_problems/problem_151.md)**
+  - Evaluates `∫(2x+y)ds` along circle `x² + y² = 25`
+  - Explicitly uses `ds` as arc length parameter
+  - **Difficulty:** Easy-Medium
+
+- **[Problem 129: Work Done with Force Proportional to Cube of Distance](./dirty_problems/problem_129.md)**
+  - Uses `ds` in work integrals: `∫ kr³ cos(φ - θ) ds` and `∫ μ kr³ sin(φ - θ) ds`
+  - Multiple paths considered with friction
+  - **Difficulty:** Medium
+
+- **[Problem 131: Work Done by Force Proportional to Cube of Distance](./dirty_problems/problem_131.md)**
+  - Uses `W = ∫ F_t ds = ∫ Kr³cosα ds`
+  - Path: along x-axis to (1,0), then vertically to (1,1)
+  - **Difficulty:** Medium
+
+- **[Problem 133: Work Done Without Friction](./dirty_problems/problem_133.md)**
+  - Uses `W = ∫ F_t ds = ∫ Kr cosα ds`
+  - Path: from `(0,1)` to `(1,2)` along `y = 1 + x²`
+  - **Difficulty:** Medium
+
+- **[Problem 134: Work Done with Friction (Complete Solution)](./dirty_problems/problem_134.md)**
+  - Uses `W = ∫ F_net ds = ∫ Kr(cosα + μsinα) ds`
+  - Same path as Problem 133, but includes friction
+  - **Difficulty:** Medium
+
+- **[Problem 135: Work Done with Friction](./dirty_problems/problem_135.md)**
+  - Explicitly defines `ds = √(1 + (dy/dx)²) dx = √(1 + 4x²) dx`
+  - Uses `W = ∫ Kr(cosα + μsinα) ds`
+  - **Difficulty:** Medium
+
+**Note:** These problems demonstrate the technique of integrating along curve length using the arc length element `ds`, which is particularly important for work calculations and physical applications.
+
 ---
 
 ## Part V: Surface Problems
@@ -251,7 +286,6 @@ Problems that are marked as "To be completed" or have incomplete solutions:
 - **[Problem 126](./dirty_problems/problem_126.md)** (Title only, needs content verification)
 - **[Problem 127](./dirty_problems/problem_127.md)** (Title only, needs content verification)
 - **[Problem 128](./dirty_problems/problem_128.md)** (Title only, needs content verification)
-- **[Problem 129](./dirty_problems/problem_129.md)** (Title only, needs content verification)
 - **[Problem 138](./dirty_problems/problem_138.md)** *To be completed*
 - **[Problem 139](./dirty_problems/problem_139.md)** (Needs verification)
 - **[Problem 148: Final Result Summary](./dirty_problems/problem_148.md)** (needs verification)
@@ -289,6 +323,7 @@ Most exam problems will be at this level:
 - Divergence and curl calculations (Groups 3.4, 3.5)
 - Line integrals along multiple paths (Group 4.2)
 - Work done problems (Group 4.5)
+- Line integrals with arc length `ds` (Group 4.7)
 - Surface problems (Part V)
 
 ### Hard Problems (Advanced Practice)
