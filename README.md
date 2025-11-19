@@ -9,6 +9,7 @@ A comprehensive collection of mathematical problems, solutions, and fundamental 
 - [Notes](#notes)
 - [Vector Analysis Collection](#vector-analysis-collection)
 - [Dirty Problems Collection](#dirty-problems-collection)
+  - [Categorized Problems](#categorized-problems)
 - [Rules and Guidelines](#rules-and-guidelines)
 
 ## 📖 Fundamentals
@@ -81,7 +82,26 @@ Content extracted from `101.pdf`, covering vector analysis fundamentals through 
 
 A collection of 214 problems extracted from `the_dirty_file.pdf`. Problems are numbered sequentially from `problem_1.md` to `problem_214.md`.
 
-### Completed Problems (1-21)
+### Categorized Problems
+
+- **[Categorized Problems](./dirty_problems_categorized.md)**
+  - Complete categorization of all 214 problems by topic
+  - Organized into 10 main categories:
+    - Line Integrals
+    - Complex Analysis
+    - Vector Calculus Operations
+    - Vector Identities and Proofs
+    - Work Done by Force Fields
+    - Potential Functions
+    - Surface Problems
+    - Polar Coordinates and Area
+    - Vector Operations
+    - Incomplete Problems
+  - Includes statistics and progress tracking
+
+### Completed Problems
+
+**Problems 1-52** are marked as completed according to `dirty_problems/INSTRUCTIONS.md`. Here are the first 21:
 
 - [Problem 1: Compute Circulation About a Circle](./dirty_problems/problem_1.md)
 - [Problem 2: Evaluate Line Integral Over Closed Curve](./dirty_problems/problem_2.md)
@@ -105,9 +125,12 @@ A collection of 214 problems extracted from `the_dirty_file.pdf`. Problems are n
 - [Problem 20: Complex Derivative in Polar Form](./dirty_problems/problem_20.md)
 - [Problem 21: Relationship Between Polar and Cartesian Derivatives](./dirty_problems/problem_21.md)
 
-### Remaining Problems (22-214)
+### Remaining Problems
 
-Problems 22-214 are placeholder files that will be populated as the PDF is processed. Each file follows the naming convention `problem_N.md` where N is the problem number.
+- **Problems 22-52**: Completed (see INSTRUCTIONS.md)
+- **Problems 53-214**: In progress (162 problems remaining)
+
+Each file follows the naming convention `problem_N.md` where N is the problem number. See [INSTRUCTIONS.md](./dirty_problems/INSTRUCTIONS.md) for processing guidelines.
 
 ## 📋 Rules and Guidelines
 
@@ -127,7 +150,10 @@ Key guidelines:
 
 - **Fundamentals**: 3 complete reference guides
 - **Individual Problems**: 2 complete problems
-- **Dirty Collection**: 21 complete problems, 193 placeholders
+- **Dirty Collection**: 
+  - 52 complete problems (1-52)
+  - 162 problems in progress (53-214)
+  - Complete categorization available in [dirty_problems_categorized.md](./dirty_problems_categorized.md)
 
 ## 🎯 Topics Covered
 
@@ -143,5 +169,5 @@ Key guidelines:
 
 ---
 
-*Last updated: Based on problems 1-21 completion*
+*Last updated: Includes categorization of all 214 problems*
 
