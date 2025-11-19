@@ -1,0 +1,10 @@
+{
+  "titleFontSize": 18,
+  "scaleFontSize": 15,
+  "labelFontSize": 9,
+  "lineWidth": 3,
+  "gridWidth": 2,
+  "fontColor": "var(--text-normal)",
+  "lineColor": "gray",
+  "gridColor": "var(--interactive-hover)"
+}

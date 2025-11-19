@@ -1,0 +1,14 @@
+{
+  "xmin": -10,
+  "xmax": 10,
+  "num_points": 100,
+  "x_label": "x",
+  "y_label": "y",
+  "ymin": -10,
+  "ymax": 10,
+  "z_label": "z",
+  "dark_mode": true,
+  "color": "#1E90FF",
+  "line_width": 2,
+  "scatter_color": "#1E90FF"
+}
