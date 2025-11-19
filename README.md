@@ -5,7 +5,6 @@ A comprehensive collection of mathematical problems, solutions, and fundamental 
 ## 📚 Table of Contents
 
 - [Fundamentals](#fundamentals)
-- [Problems](#problems)
 - [Notes](#notes)
 - [Vector Analysis Collection](#vector-analysis-collection)
 - [Dirty Problems Collection](#dirty-problems-collection)
@@ -47,20 +46,6 @@ Essential mathematical reference materials and cheat sheets:
   - Work with friction
   - Step-by-step problem solving guide
   - Multiple worked examples from beginner to advanced
-
-## 📝 Problems
-
-Individual math problems with detailed solutions:
-
-- **[Evaluate Line Integral Over Closed Curve](./problems/evaluate_line_integral_closed_curve.md)**
-  - Line integral of vector field $\mathbf{F} = (x - 3y) \mathbf{i} + (y - 2x) \mathbf{j}$
-  - Parameterization of ellipse
-  - Trigonometric identities and integration
-
-- **[Evaluate Vector Integrals](./problems/evaluate_vector_integrals.md)**
-  - Dot product and cross product integrals
-  - Vector calculus with parameterized curves
-  - Component-wise integration
 
 ## 📝 Notes
 
@@ -107,37 +92,6 @@ A collection of 214 problems extracted from `the_dirty_file.pdf`. Problems are n
   - Includes study guide by difficulty level and statistics
   - Exam coverage: Vector Analysis (Chapter 1) through Line Integrals (Chapter 2), excluding Green's Theorem
 
-### Completed Problems
-
-**Problems 1-52** are marked as completed according to `dirty_problems/INSTRUCTIONS.md`. Here are the first 21:
-
-- [Problem 1: Compute Circulation About a Circle](./dirty_problems/problem_1.md)
-- [Problem 2: Evaluate Line Integral Over Closed Curve](./dirty_problems/problem_2.md)
-- [Problem 3: Evaluate Line Integral Along Cycloid](./dirty_problems/problem_3.md)
-- [Problem 4: Find Area Bounded by One Arch of Cycloid](./dirty_problems/problem_4.md)
-- [Problem 5: Evaluate Vector Integrals](./dirty_problems/problem_5.md)
-- [Problem 6: Vector Cross Product Integrals](./dirty_problems/problem_6.md) 
-- [Problem 7: Vector Calculus Problem](./dirty_problems/problem_7.md)
-- [Problem 8: Evaluate Line Integral Along Path Segments](./dirty_problems/problem_8.md)
-- [Problem 9: Evaluate Line Integral Using Green's Theorem](./dirty_problems/problem_9.md)
-- [Problem 10: Find Area of Loop of Four-Leafed Rose](./dirty_problems/problem_10.md)
-- [Problem 11: Discuss Transformation W = sin(z)](./dirty_problems/problem_11.md)
-- [Problem 12: Find Area of Both Loops of Lemniscate](./dirty_problems/problem_12.md)
-- [Problem 13: Prove W = Z/(1-Z) Maps Upper Half-Plane](./dirty_problems/problem_13.md)
-- [Problem 14: Find Image of Circle Under Linear Transformation](./dirty_problems/problem_14.md)
-- [Problem 15: Show Function is Analytic Using Harmonic Functions](./dirty_problems/problem_15.md)
-- [Problem 16: Complex Potential of Upward Parallel Flow](./dirty_problems/problem_16.md)
-- [Problem 17: Derivative of Complex Function in Polar Coordinates](./dirty_problems/problem_17.md)
-- [Problem 18: Partial Derivatives in Polar Coordinates](./dirty_problems/problem_18.md)
-- [Problem 19: Evaluate Line Integral Along Parametric Curve](./dirty_problems/problem_19.md)
-- [Problem 20: Complex Derivative in Polar Form](./dirty_problems/problem_20.md)
-- [Problem 21: Relationship Between Polar and Cartesian Derivatives](./dirty_problems/problem_21.md)
-
-### Remaining Problems
-
-- **Problems 22-52**: Completed (see INSTRUCTIONS.md)
-- **Problems 53-214**: In progress (162 problems remaining)
-
 Each file follows the naming convention `problem_N.md` where N is the problem number. See [INSTRUCTIONS.md](./dirty_problems/INSTRUCTIONS.md) for processing guidelines.
 
 ## 📋 Rules and Guidelines
@@ -157,10 +111,7 @@ Key guidelines:
 ## 📊 Progress
 
 - **Fundamentals**: 4 complete reference guides
-- **Individual Problems**: 2 complete problems
 - **Dirty Collection**: 
-  - 52 complete problems (1-52)
-  - 162 problems in progress (53-214)
   - Complete categorization available in [dirty_problems_categorized.md](./dirty_problems_categorized.md)
 
 ## 🎯 Topics Covered
