@@ -16,13 +16,23 @@ So the force components are:
 
 **Note:** The negative signs indicate the force points toward the origin (attractive force).
 
-### Step 2: Work Done by the Force Field
+### Step 2: Set Up Combined Work Integral
 
-Work done by the force field (without friction):
+Total work done TO move the particle (overcoming both field and friction):
 
-$$W_{\text{field}} = \int_C \vec{F} \cdot d\vec{r} = \int_C [F_x \, dx + F_y \, dy]$$
+$$W = -W_{\text{field}} + W_{\text{friction}}$$
 
-$$= \int_C [-Kx \, dx - Ky \, dy]$$
+Where:
+- $W_{\text{field}} = \int_C \vec{F} \cdot d\vec{r} = \int_C [-Kx \, dx - Ky \, dy]$ (work done BY field)
+- $W_{\text{friction}} = \mu K \int_C (ydx - xdy)$ (work done AGAINST friction)
+
+Combining both terms:
+
+$$W = \int_C [Kx \, dx + Ky \, dy] + \mu K \int_C (ydx - xdy)$$
+
+$$= K \int_C [(x + \mu y)dx + (y - \mu x)dy]$$
+
+**Note:** The term $(ydx - xdy)$ represents the contribution from the normal component of force, which determines the friction. This form comes from the geometry of the force and path relationship.
 
 ### Step 3: Apply Path Parameterization
 
@@ -32,43 +42,23 @@ Differentiating: $dy = 2x \, dx$
 
 With $x$ varying from $0$ to $1$.
 
-### Step 4: Evaluate Work Done by Field
+### Step 4: Evaluate Combined Integral
 
 Substituting $y = 1 + x^2$ and $dy = 2x \, dx$:
 
-$$W_{\text{field}} = \int_0^1 [-Kx \, dx - K(1 + x^2)(2x \, dx)]$$
+$$W = K \int_0^1 [(x + \mu(1 + x^2))dx + ((1 + x^2) - \mu x)(2x \, dx)]$$
 
-$$= \int_0^1 [-Kx - 2Kx(1 + x^2)] \, dx$$
+$$= K \int_0^1 [(x + \mu + \mu x^2) + (1 + x^2 - \mu x)(2x)]dx$$
 
-$$= \int_0^1 [-Kx - 2Kx - 2Kx^3] \, dx$$
+$$= K \int_0^1 [(x + \mu + \mu x^2) + (2x + 2x^3 - 2\mu x^2)]dx$$
 
-$$= -K\int_0^1 [3x + 2x^3] \, dx$$
+$$= K \int_0^1 [3x + \mu + 2x^3 - \mu x^2]dx$$
 
-$$= -K\left[\frac{3x^2}{2} + \frac{x^4}{2}\right]_0^1 = -K\left(\frac{3}{2} + \frac{1}{2}\right) = -2K$$
+$$= K\left[\frac{3x^2}{2} + \mu x + \frac{x^4}{2} - \frac{\mu x^3}{3}\right]_0^1$$
 
-### Step 5: Work Done Against Friction
+$$= K\left[\frac{3}{2} + \mu + \frac{1}{2} - \frac{\mu}{3}\right]$$
 
-The friction force opposes motion and is proportional to the normal component of force. The work against friction is:
-
-$$W_{\text{friction}} = \mu \int K(ydx - xdy)$$
-
-**Note:** The term $(ydx - xdy)$ represents the contribution from the normal component of force. This form comes from the geometry of the force and path relationship.
-
-Substituting $y = 1 + x^2$ and $dy = 2x \, dx$:
-
-$$W_{\text{friction}} = \mu K \int_0^1 [(1 + x^2)dx - x(2x \, dx)]$$
-
-$$= \mu K \int_0^1 [1 + x^2 - 2x^2] \, dx$$
-
-$$= \mu K \int_0^1 [1 - x^2] \, dx$$
-
-$$= \mu K\left[x - \frac{x^3}{3}\right]_0^1 = \mu K\left(1 - \frac{1}{3}\right) = \frac{2}{3}\mu K$$
-
-### Step 6: Total Work Done
-
-Total work done TO move the particle (overcoming both field and friction):
-
-$$W = -W_{\text{field}} + W_{\text{friction}} = -(-2K) + \frac{2}{3}\mu K = 2K + \frac{2}{3}\mu K$$
+$$= K\left[2 + \mu - \frac{\mu}{3}\right] = K\left[2 + \frac{2\mu}{3}\right]$$
 
 $$= 2K\left(1 + \frac{\mu}{3}\right)$$
 
