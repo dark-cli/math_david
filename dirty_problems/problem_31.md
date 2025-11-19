@@ -1,5 +1,9 @@
-# Problem 31
+# Problem 31: Complex Analysis Problem
 
 ## Problem Statement
 
-*To be completed*
+*To be completed based on page content*
+
+## Solution
+
+*Content to be added*
