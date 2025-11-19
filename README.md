@@ -85,19 +85,17 @@ A collection of 214 problems extracted from `the_dirty_file.pdf`. Problems are n
 ### Categorized Problems
 
 - **[Categorized Problems](./dirty_problems_categorized.md)**
-  - Complete categorization of all 214 problems by topic
-  - Organized into 10 main categories:
-    - Line Integrals
-    - Complex Analysis
-    - Vector Calculus Operations
-    - Vector Identities and Proofs
-    - Work Done by Force Fields
-    - Potential Functions
-    - Surface Problems
-    - Polar Coordinates and Area
-    - Vector Operations
-    - Incomplete Problems
-  - Includes statistics and progress tracking
+  - Complete categorization of all 214 problems organized by:
+    1. **Lecture Order** - Following the sequence: Vector Algebra → Vector Functions → Gradient/Divergence/Curl → Line Integrals
+    2. **Difficulty Level** - Easy, Medium, Hard classifications
+    3. **Shared Concepts** - Grouped by common mathematical ideas
+  - Organized into 4 main parts:
+    - **Part I:** Vector Algebra and Basic Operations
+    - **Part II:** Vector Functions and Derivatives
+    - **Part III:** Gradient, Divergence, Curl, and Laplacian
+    - **Part IV:** Line Integrals
+  - Includes study guide by difficulty level and statistics
+  - Exam coverage: Vector Analysis (Chapter 1) through Line Integrals (Chapter 2), excluding Green's Theorem
 
 ### Completed Problems
 
@@ -169,5 +167,5 @@ Key guidelines:
 
 ---
 
-*Last updated: Includes categorization of all 214 problems*
+*Last updated: Complete reorganization by lecture order, difficulty, and shared concepts for exam preparation*
 
