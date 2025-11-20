@@ -268,44 +268,38 @@ Where $\mu$ is the coefficient of friction and $F_n$ is the normal component.
 
 ### General Form for Friction Work
 
-**General Formula (works for 2D and 3D):**
+**Derivation from Normal Component:**
 
-For a force field $\vec{F} = -K\vec{r}$, the friction work is:
+Friction work comes from the **normal component** of the force (perpendicular to the path). For a force field $\vec{F} = -K\vec{r}$:
 
-$$W_{\text{friction}} = \mu K \int_C |\vec{r} \times d\vec{r}| \, ds$$
+1. The normal component is: $F_n = F \sin(\phi - \theta)$ where:
+   - $\phi$ = angle between force $\vec{F}$ and $x$-axis
+   - $\theta$ = angle between tangent to path and $x$-axis
+   - $\phi - \theta$ = angle between force and tangent
 
-Where:
-- $\vec{r} = x\vec{i} + y\vec{j} + z\vec{k}$ is the position vector
-- $d\vec{r} = dx\vec{i} + dy\vec{j} + dz\vec{k}$ is the displacement vector
-- $ds$ is the arc length element
+2. Friction force: $F_f = \mu F_n = \mu K r \sin(\phi - \theta)$
 
-**2D Special Case:**
+3. Friction work: $W_{\text{friction}} = \int_C F_f \, ds = \mu K \int_C r \sin(\phi - \theta) \, ds$
 
-In 2D (where $z = 0$ and $dz = 0$), the cross product simplifies:
+**2D Case:**
 
-$$\vec{r} \times d\vec{r} = (xdy - ydx)\vec{k} = -(ydx - xdy)\vec{k}$$
+Using coordinate transformations:
+- $r \cos \phi = x$, $r \sin \phi = y$
+- $\cos \theta \, ds = dx$, $\sin \theta \, ds = dy$
 
-So the magnitude is:
+Expanding $r \sin(\phi - \theta) ds$:
+$$r \sin(\phi - \theta) ds = r(\sin \phi \cos \theta - \cos \phi \sin \theta) ds = y \, dx - x \, dy$$
 
-$$|\vec{r} \times d\vec{r}| = |ydx - xdy|$$
+Therefore, in 2D:
+$$W_{\text{friction}} = \mu K \int_C (y \, dx - x \, dy)$$
 
-Therefore, in 2D, the friction work becomes:
-
-$$W_{\text{friction}} = \mu K \int_C (ydx - xdy)$$
-
-**Note:** The term $(ydx - xdy)$ is simply the 2D version of $|\vec{r} \times d\vec{r}|$.
-
-**3D Case:**
-
-In 3D, we need the full magnitude:
-
-$$|\vec{r} \times d\vec{r}| = \sqrt{(ydz - zdy)^2 + (zdx - xdz)^2 + (xdy - ydx)^2}$$
+**Note:** The term $(y \, dx - x \, dy)$ represents the normal component contribution, derived from $r \sin(\phi - \theta) ds$, not from $|\vec{r} \times d\vec{r}|$.
 
 ### Combined Work Integral
 
 **For attractive forces** $\vec{F} = -K\vec{r}$:
 
-$$W = \int_C [Kx \, dx + Ky \, dy + Kz \, dz] + \mu K \int_C |\vec{r} \times d\vec{r}| \, ds$$
+In 2D: $W = \int_C [Kx \, dx + Ky \, dy] + \mu K \int_C (y \, dx - x \, dy)$
 
 **2D Combined Form:**
 
@@ -321,9 +315,9 @@ This comes from combining the field work and friction terms using the 2D simplif
 
 **Step 1:** Force components: $F_x = -Kx$, $F_y = -Ky$
 
-**Step 2:** Using the general form $W_{\text{friction}} = \mu K \int_C |\vec{r} \times d\vec{r}| \, ds$
+**Step 2:** Using the general form $W_{\text{friction}} = \mu K \int_C r \sin(\phi - \theta) \, ds$
 
-In 2D: $|\vec{r} \times d\vec{r}| = |ydx - xdy|$, so:
+In 2D, this transforms to:
 
 $$W_{\text{friction}} = \mu K \int_C (ydx - xdy)$$
 
@@ -342,9 +336,9 @@ $$= 2K\left(1 + \frac{\mu}{3}\right)$$
 1. **Write the force** in Cartesian components: $\vec{F} = F_x\vec{i} + F_y\vec{j} + F_z\vec{k}$
 
 2. **Set up the work integral using the general form:**
-   $$W = \int_C [F_x \, dx + F_y \, dy + F_z \, dz] + \mu K \int_C |\vec{r} \times d\vec{r}| \, ds$$
+   $$W = \int_C [F_x \, dx + F_y \, dy + F_z \, dz] + \mu K \int_C r \sin(\phi - \theta) \, ds$$
    
-   **For 2D:** Simplify to $|\vec{r} \times d\vec{r}| = |ydx - xdy|$
+   **For 2D:** This transforms to $W = \int_C [F_x \, dx + F_y \, dy] + \mu K \int_C (y \, dx - x \, dy)$
 
 3. **Parameterize the path** (or use path equation directly)
 
@@ -354,8 +348,9 @@ $$= 2K\left(1 + \frac{\mu}{3}\right)$$
 
 ### Key Points
 
-- **General form:** $W_{\text{friction}} = \mu K \int_C |\vec{r} \times d\vec{r}| \, ds$ (works for 2D and 3D)
-- **2D simplification:** $(ydx - xdy)$ is the 2D version of $|\vec{r} \times d\vec{r}|$
+- **General form:** $W_{\text{friction}} = \mu K \int_C r \sin(\phi - \theta) \, ds$ where $\phi - \theta$ is the angle between force and tangent
+- **2D transformation:** $r \sin(\phi - \theta) ds = y \, dx - x \, dy$ (derived from coordinate transformations)
+- **Physical meaning:** Friction depends on the **normal component** of force (perpendicular to path)
 - **Friction always opposes motion**, so it increases the work needed
 - **Friction depends on normal force** (perpendicular to path), not tangential force
 
