@@ -150,3 +150,5 @@ The scalar function and the vector field are **different objects** — the gradi
 
 **Analogy:** Just like differentiation turns a function into its derivative (a different function), the gradient turns a scalar field into a vector field.
 
+
+
