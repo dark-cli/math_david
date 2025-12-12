@@ -47,6 +47,15 @@ Essential mathematical reference materials and cheat sheets:
   - Step-by-step problem solving guide
   - Multiple worked examples from beginner to advanced
 
+- **[Conservative Force Fields](./fundamentals/conservative_force_fields.md)**
+  - Definition and key properties of conservative fields
+  - Relationship between conservative fields and path independence
+  - Testing methods for 2D and 3D fields
+  - Finding scalar potential functions
+  - Physical significance and energy conservation
+  - Examples of conservative and non-conservative fields
+  - Step-by-step methods with worked examples
+
 ## 📝 Notes
 
 Additional notes and insights on specific problems:
@@ -54,6 +63,22 @@ Additional notes and insights on specific problems:
 - **[Notes](./notes.md)**
   - Explanation of why the k component is zero in Problem 7
   - General principles for line integrals in planes
+
+## 📑 Question Indexes
+
+Quick reference guides for finding problems by topic:
+
+- **[Green's Theorem Questions](./greens_theorem_questions.md)**
+  - Complete list of all problems related to Green's theorem
+  - Includes verification problems, multiply-connected regions, and applications
+  - 8 problems with clickable links to solutions
+
+- **[Complex Numbers and Conformal Mapping Questions](./complex_numbers_and_conformal_mapping_questions.md)**
+  - Comprehensive list of complex analysis problems
+  - Covers analytic functions, Cauchy-Riemann equations, complex derivatives
+  - Includes complex potential and fluid flow problems
+  - Conformal mapping and transformation problems
+  - 24+ problems organized by category with clickable links
 
 ## 📚 Vector Analysis Collection
 
@@ -110,7 +135,15 @@ Key guidelines:
 
 ## 📊 Progress
 
-- **Fundamentals**: 4 complete reference guides
+- **Fundamentals**: 5 complete reference guides
+  - Integration by parts
+  - Trigonometry cheat sheet
+  - Vector operations
+  - Work and line integrals
+  - Conservative force fields
+- **Question Indexes**: 2 topic-specific indexes
+  - Green's theorem questions
+  - Complex numbers and conformal mapping questions
 - **Dirty Collection**: 
   - Complete categorization available in [dirty_problems_categorized.md](./dirty_problems_categorized.md)
 
@@ -119,7 +152,12 @@ Key guidelines:
 - Vector calculus
 - Line integrals
 - Green's theorem
+- Conservative force fields and path independence
+- Scalar potential functions
 - Complex analysis
+- Analytic functions and Cauchy-Riemann equations
+- Complex derivatives
+- Complex potential and fluid flow
 - Conformal mappings
 - Polar coordinates
 - Integration techniques
@@ -128,5 +166,5 @@ Key guidelines:
 
 ---
 
-*Last updated: Complete reorganization by lecture order, difficulty, and shared concepts for exam preparation*
+*Last updated: Added conservative force fields notes, question indexes for Green's theorem and complex analysis, and fixed Green's theorem problems*
 
