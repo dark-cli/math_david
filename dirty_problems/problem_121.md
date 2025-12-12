@@ -12,24 +12,28 @@
 
 ### Part (a): Proving $\mathbf{F}$ is Conservative
 
+**Important Note:** For a **3D field**, we must check **all three components** of the curl. The 2D condition $\frac{\partial F_y}{\partial x} = \frac{\partial F_x}{\partial y}$ is only **one** of the three conditions needed (it's the k-component of the curl).
+
 **Step 1:** Calculate the curl of $\mathbf{F}$:
 $$\nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ (y^2\cos x + z^3) & (2y\sin x - 4) & (3xz^2 + 2) \end{vmatrix}$$
 
-**Step 2:** Evaluate each component:
+**Step 2:** Evaluate each component. For a 3D field to be conservative, **all three** must be zero:
 
-**i-component:**
-$$\frac{\partial}{\partial y}(3xz^2 + 2) - \frac{\partial}{\partial z}(2y\sin x - 4) = 0 - 0 = 0$$
+**i-component** (checks $y$-$z$ plane):
+$$\frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z} = \frac{\partial}{\partial y}(3xz^2 + 2) - \frac{\partial}{\partial z}(2y\sin x - 4) = 0 - 0 = 0$$
 
-**j-component:**
-$$\frac{\partial}{\partial z}(y^2\cos x + z^3) - \frac{\partial}{\partial x}(3xz^2 + 2) = 3z^2 - 3z^2 = 0$$
+**j-component** (checks $x$-$z$ plane):
+$$\frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x} = \frac{\partial}{\partial z}(y^2\cos x + z^3) - \frac{\partial}{\partial x}(3xz^2 + 2) = 3z^2 - 3z^2 = 0$$
 
-**k-component:**
-$$\frac{\partial}{\partial x}(2y\sin x - 4) - \frac{\partial}{\partial y}(y^2\cos x + z^3) = 2y\cos x - 2y\cos x = 0$$
+**k-component** (checks $x$-$y$ plane - this is the 2D condition):
+$$\frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} = \frac{\partial}{\partial x}(2y\sin x - 4) - \frac{\partial}{\partial y}(y^2\cos x + z^3) = 2y\cos x - 2y\cos x = 0$$
 
 **Step 3:** Result:
-$$\nabla \times \mathbf{F} = (0-0)\mathbf{i} + (3z^2-3z^2)\mathbf{j} + (2y\cos x - 2y\cos x)\mathbf{k} = \mathbf{0}$$
+$$\nabla \times \mathbf{F} = 0\mathbf{i} + 0\mathbf{j} + 0\mathbf{k} = \mathbf{0}$$
 
-**Conclusion:** Since $\nabla \times \mathbf{F} = \mathbf{0}$, $\mathbf{F}$ is a conservative force field.
+**Conclusion:** Since **all three components** of $\nabla \times \mathbf{F}$ are zero, $\mathbf{F}$ is a conservative force field.
+
+**Why all three?** For a 3D field, checking only the k-component (the 2D condition) is **not sufficient**. A field could satisfy $\frac{\partial F_y}{\partial x} = \frac{\partial F_x}{\partial y}$ but still have non-zero curl in the other components, making it non-conservative.
 
 ### Part (b): Finding the Scalar Potential
 

@@ -4,39 +4,263 @@
     "type": "split",
     "children": [
       {
-        "id": "ccd5981b7084ef0d",
+        "id": "87624860e0f43b58",
         "type": "tabs",
         "children": [
           {
-            "id": "2f6d5d349e576084",
+            "id": "68a78904b6604099",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fundamentals/work_and_line_integrals.md",
+                "file": "dirty_problems_categorized.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "work_and_line_integrals"
+              "title": "dirty_problems_categorized"
             }
           },
           {
-            "id": "94a1000ab028d5f2",
+            "id": "b98fc1e03797855e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vector_analysis/polar_cauchy_riemann_proof.md",
-                "mode": "preview",
+                "file": "complex_numbers_and_conformal_mapping_questions.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "polar_cauchy_riemann_proof"
+              "title": "complex_numbers_and_conformal_mapping_questions"
+            }
+          },
+          {
+            "id": "52cf9a06250e433a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_49.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_49"
+            }
+          },
+          {
+            "id": "e310413aa169b6de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_31.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_31"
+            }
+          },
+          {
+            "id": "d210b91aeea33689",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_15.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_15"
+            }
+          },
+          {
+            "id": "30a3e7bd5e772b32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_13.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_13"
+            }
+          },
+          {
+            "id": "d199af42d2f66a0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_125.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_125"
+            }
+          },
+          {
+            "id": "a897d622c263686e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_124.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_124"
+            }
+          },
+          {
+            "id": "f22a3338cf94b3e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_122.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_122"
+            }
+          },
+          {
+            "id": "3e65fc96cc86a5d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_121.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_121"
+            }
+          },
+          {
+            "id": "df09dbd8403b658b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_122.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_122"
+            }
+          },
+          {
+            "id": "5b9a721ddfcd3cce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_121.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_121"
+            }
+          },
+          {
+            "id": "020c69dc3c32f75b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_75.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_75"
+            }
+          },
+          {
+            "id": "5e4cb46de874c9e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "exam_questions/final_2015.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "final_2015"
+            }
+          },
+          {
+            "id": "31e2f26c345040fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_115.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_115"
+            }
+          },
+          {
+            "id": "9731cbe9718bbf66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_114.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_114"
+            }
+          },
+          {
+            "id": "fd4ff449d7533724",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_112.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_112"
+            }
+          },
+          {
+            "id": "d1a01620d47b5215",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dirty_problems/problem_9.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "problem_9"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -200,36 +424,36 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "94a1000ab028d5f2",
+  "active": "52cf9a06250e433a",
   "lastOpenFiles": [
+    "complex_numbers_and_conformal_mapping_questions.md",
+    "dirty_problems/problem_31.md",
+    "dirty_problems/problem_15.md",
+    "dirty_problems/problem_13.md",
+    "dirty_problems/problem_127.md",
+    "dirty_problems_categorized.md",
+    "dirty_problems/problem_125.md",
+    "dirty_problems/problem_124.md",
+    "dirty_problems/problem_122.md",
+    "dirty_problems/problem_121.md",
+    "fundamentals/conservative_force_fields.md",
+    "dirty_problems/problem_75.md",
+    "greens_theorem_questions.md",
+    "exam_questions/final_2015.md",
+    "dirty_problems/problem_115.md",
+    "dirty_problems/problem_114.md",
+    "dirty_problems/problem_112.md",
+    "dirty_problems/problem_9.md",
+    "fundamentals/work_and_line_integrals.md",
+    "vector_analysis/polar_cauchy_riemann_proof.md",
+    "dirty_problems/problem_161.md",
+    "dirty_problems/problem_145.md",
+    "dirty_problems/problem_4.md",
+    "dirty_problems/problem_11.md",
     "fundamentals/conformal_mapping_summary.md",
     "vector_analysis/101_full.md",
-    "vector_analysis/polar_cauchy_riemann_proof.md",
-    "PDF_TO_MARKDOWN_GUIDE.md",
-    "dirty_problems_categorized.md",
     "101.pdf",
-    "fundamentals/vector_operations.md",
-    "dirty_problems/problem_134.md",
-    "fundamentals/work_and_line_integrals.md",
-    "dirty_problems/problem_10.md",
-    "dirty_problems/problem_4.md",
-    "dirty_problems/problem_152.md",
-    "dirty_problems/problem_144.md",
-    "dirty_problems/problem_143.md",
-    "dirty_problems/problem_133.md",
-    "dirty_problems/problem_132.md",
-    "dirty_problems/problem_131.md",
-    "fundamentals/gradient_and_del_operator.md",
-    "fundamentals/integration_by_parts.md",
-    "exam_review.md",
     "Untitled.base",
-    "dirty_problems/problem_147.md",
-    "dirty_problems/problem_149.md",
-    "dirty_problems/problem_150.md",
-    "dirty_problems/problem_156.md",
-    "dirty_problems/problem_146.md",
-    "dirty_problems/problem_190.md",
-    "dirty_problems/problem_189.md",
     "juliaplots",
     "exam_questions",
     "vector_analysis/temp_images/page-73.png",
