@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "problems/problem_015.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "problem_015"
             }
           }
         ]
@@ -187,6 +187,14 @@
   },
   "active": "8fa4ce1d49e1ce49",
   "lastOpenFiles": [
+    "resources/index.md",
+    "notes/index.md",
+    "collections/index.md",
+    "fundamentals/index.md",
+    "problems/problem_014.md",
+    "collections/problems_by_category.md",
+    "collections/exam_questions_index.md",
+    "README.md",
     "vector_analysis/images/page_009.png",
     "vector_analysis/images/page_008.png",
     "vector_analysis/images/page_007.png",
@@ -207,7 +215,6 @@
     "vector_analysis/pages/page_001.md",
     "resources/the_dirty_file.pdf",
     "resources/101.pdf",
-    "collections/exam_questions_index.md",
     "exam_questions/README.md",
     "vector_analysis/README.md",
     "problems/README.md",
@@ -215,7 +222,6 @@
     "collections/sedIJJavQ",
     "collections/sedr6SoZM",
     "vector_analysis/images/page_073.png",
-    "vector_analysis/images/page_072.png",
     "guides/problem_processing_guide.md",
     "problems/temp_images",
     "problems/problem_214.md",
@@ -223,12 +229,6 @@
     "problems/problem_212.md",
     "problems/problem_211.md",
     "problems/problem_210.md",
-    "problems/problem_209.md",
-    "problems/problem_208.md",
-    "problems/problem_207.md",
-    "problems/problem_206.md",
-    "problems/problem_205.md",
-    "problems/problem_204.md",
     "problems/dirty_problems/temp_images",
     "problems/dirty_problems",
     "vector_analysis/images",

@@ -4,19 +4,54 @@ A comprehensive collection of mathematical problems, solutions, and reference ma
 
 ## Quick Navigation
 
-- **[214 Problems](./problems/)** - Practice problems with solutions
-- **[Fundamentals](./fundamentals/)** - Reference guides and cheat sheets
-- **[Vector Analysis](./vector_analysis/)** - Textbook content (73 pages)
-- **[Collections](./collections/)** - Organized problem indexes by topic
-- **[Exam Questions](./exam_questions/)** - Past exam problems and solutions
-- **[Notes](./notes/)** - Study notes and review materials
+| Section | Description | Link |
+|---------|-------------|------|
+| [Problems](#problems) | 214 practice problems | [View Index](./problems/README.md) |
+| [Fundamentals](#fundamentals) | Reference guides and cheat sheets | [View Index](./fundamentals/index.md) |
+| [Vector Analysis](#vector-analysis) | Textbook content (73 pages) | [View Index](./vector_analysis/README.md) |
+| [Collections](#collections) | Organized problem indexes by topic | [View Index](./collections/index.md) |
+| [Exam Questions](#exam-questions) | Past exam problems and solutions | [View Index](./exam_questions/README.md) |
+| [Notes](#notes) | Study notes and review materials | [View Index](./notes/index.md) |
 
-## Collections by Topic
+## Problems
 
-- **[Problems by Category](./collections/problems_by_category.md)** - All 214 problems organized by topic and difficulty
-- **[Green's Theorem](./collections/greens_theorem_questions.md)** - 8 problems on Green's theorem
-- **[Complex Analysis](./collections/complex_analysis_questions.md)** - 24+ problems on complex analysis
-- **[Exam Questions Index](./collections/exam_questions_index.md)** - Exam questions organized by topic
+**Index:** [problems/README.md](./problems/README.md)
+
+A collection of **214 problems** extracted from `the_dirty_file.pdf`, covering vector calculus, complex analysis, and related topics.
+
+## Fundamentals
+
+**Index:** [fundamentals/index.md](./fundamentals/index.md)
+
+Essential mathematical reference materials and cheat sheets including integration by parts, trigonometry, vector operations, work and line integrals, conservative force fields, and more.
+
+## Vector Analysis
+
+**Index:** [vector_analysis/README.md](./vector_analysis/README.md)
+
+Content extracted from `101.pdf`, covering vector analysis fundamentals through Green's theorem (73 pages).
+
+## Collections
+
+**Index:** [collections/index.md](./collections/index.md)
+
+Organized indexes and collections of problems by topic:
+- [Problems by Category](./collections/problems_by_category.md) - All 214 problems organized by topic and difficulty
+- [Green's Theorem](./collections/greens_theorem_questions.md) - 8 problems on Green's theorem
+- [Complex Analysis](./collections/complex_analysis_questions.md) - 24+ problems on complex analysis
+- [Exam Questions Index](./collections/exam_questions_index.md) - Exam questions organized by topic
+
+## Exam Questions
+
+**Index:** [exam_questions/README.md](./exam_questions/README.md)
+
+Past exam questions and solutions, including Final Exam 2015 with 5 questions covering vector calculus, line integrals, Green's theorem, and complex analysis.
+
+## Notes
+
+**Index:** [notes/index.md](./notes/index.md)
+
+General notes and review materials including problem-specific notes, gradient reference, polar coordinates, and exam review guide.
 
 ## Topics Covered
 
