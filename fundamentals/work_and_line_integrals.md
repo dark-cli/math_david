@@ -486,5 +486,5 @@ $$= \int_0^{\pi/2} [K\cos t \sin t - K\sin t \cos t] dt = \int_0^{\pi/2} 0 \, dt
 
 ---
 
-*This guide covers the fundamental concepts needed to solve work problems in vector calculus. Practice with the problems in the dirty_problems folder to master these techniques!*
+*This guide covers the fundamental concepts needed to solve work problems in vector calculus. Practice with the problems in the [problems](../problems/) folder to master these techniques!*
 
