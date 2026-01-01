@@ -57,6 +57,15 @@ General notes and review materials including problem-specific notes, gradient re
 
 Vector calculus, line integrals, Green's theorem, conservative fields, complex analysis, analytic functions, conformal mapping, fluid flow, and more.
 
+## Project Rules and Procedures
+
+**Important for AI Agents and Developers:**
+
+- **Project Rules**: All project rules are saved in `.cursor/rules/` directory. The main rules file is `.cursor/rules/project-rules.md` which contains all project conventions, formatting requirements, and standards.
+- **Automated Task Procedures**: Step-by-step guides for automated tasks are located in `.cursor/guides/` (PDF processing, problem processing, etc.)
+
+These files are automatically loaded by Cursor agents at the start of each session. All developers and AI agents should consult these files before starting work.
+
 ---
 
 **Disclaimer:** This repository has been heavily written and organized by AI. Content includes problems extracted from PDFs, solutions, and reference materials that have been processed, formatted, and structured using artificial intelligence tools.

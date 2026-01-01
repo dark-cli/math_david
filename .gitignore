@@ -1,0 +1,5 @@
+# .gitignore
+
+# Ensure .cursor directory is tracked
+!.cursor/
+!.cursor/**
