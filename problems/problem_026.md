@@ -28,15 +28,19 @@ $$V = \frac{-2x}{x^2 + (2x)^2} = \frac{-2x}{5x^2} = \frac{-2}{5x}$$
 
 **Find the relationship between U and V:**
 
-From $U = \frac{1}{5x}$, we get $x = \frac{1}{5U}$.
+From $U = \frac{1}{5x}$ and $V = \frac{-2}{5x}$, we can see directly that:
+
+$$V = -2U$$
+
+Alternatively, from $U = \frac{1}{5x}$, we get $x = \frac{1}{5U}$.
 
 Substituting into $V$:
 
-$$V = \frac{-2}{5 \cdot \frac{1}{5U}} = \frac{-2}{U}$$
+$$V = \frac{-2}{5 \cdot \frac{1}{5U}} = \frac{-2}{\frac{1}{U}} = -2U$$
 
-Therefore: $UV = -2$ or $V = -\frac{2}{U}$.
+Therefore: $V = -2U$ or equivalently $U = -\frac{V}{2}$.
 
-This is a hyperbola in the $w$-plane.
+This is a straight line through the origin in the $w$-plane with slope $-2$.
 
 ### Step 3: Image of the Line x + y = 6
 
@@ -55,12 +59,12 @@ From the equations, we can derive that the image is also a curve in the $w$-plan
 ### Step 4: Graphical Representation
 
 The images in the $w$-plane are:
-- The line $y = 2x$ maps to the hyperbola $UV = -2$ (or $V = -\frac{2}{U}$)
+- The line $y = 2x$ maps to the line $V = -2U$ (a straight line through the origin)
 - The line $x + y = 6$ maps to a curve in the $w$-plane
 
 ## Answer
 
-- **Image of $y = 2x$:** The hyperbola $UV = -2$ or $V = -\frac{2}{U}$
+- **Image of $y = 2x$:** The line $V = -2U$ (straight line through the origin with slope $-2$)
 - **Image of $x + y = 6$:** A curve in the $w$-plane determined by the transformation
 
 $$\boxed{\text{See graphical representation above}}$$
