@@ -9,6 +9,7 @@ Essential mathematical reference materials and cheat sheets.
 | [Integration by Parts](./integration_by_parts.md) | Standard formula, tabular method (D/I), LIATE rule |
 | [Trigonometry Cheat Sheet](./trigonometry_cheatsheet.md) | Power reduction, double/half angle, sum/difference formulas |
 | [Vector Operations](./vector_operations.md) | Dot product, cross product, gradient, divergence, curl, Laplacian |
+| [Surfaces and Normal Vectors](./surfaces_and_normals.md) | Normal vectors, unit normals, outer normal (outward normal) |
 | [Work and Line Integrals](./work_and_line_integrals.md) | Work as line integral, conservative fields, path independence |
 | [Conservative Force Fields](./conservative_force_fields.md) | Definition, testing methods, finding potentials |
 | [Gradient and Del Operator](./gradient_and_del_operator.md) | Understanding ∇ operator, gradient properties |

@@ -345,6 +345,18 @@ $\nabla \times (\nabla \times \mathbf{F}) = \nabla(\nabla \cdot \mathbf{F}) - \n
 
 All formulas above are given in Cartesian coordinates $(x, y, z)$.
 
+### 2D Polar Coordinates $(r, \theta)$
+
+For functions in the $xy$-plane, where $x = r\cos\theta$ and $y = r\sin\theta$:
+
+**Gradient:**
+$\nabla f = \frac{\partial f}{\partial r} \hat{\mathbf{r}} + \frac{1}{r}\frac{\partial f}{\partial \theta} \hat{\boldsymbol{\theta}}$
+
+**Laplacian:**
+$\nabla^2 f = \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f}{\partial r}\right) + \frac{1}{r^2}\frac{\partial^2 f}{\partial \theta^2}$
+
+**Note:** This is the 2D case (no $z$-dependence). For 3D problems, use cylindrical coordinates.
+
 ### Cylindrical Coordinates $(r, \theta, z)$
 
 **Gradient:**
