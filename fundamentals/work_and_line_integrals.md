@@ -113,7 +113,7 @@ $$W = \int_0^2 [x \cdot dx + y \cdot dy] = \int_0^2 [t \cdot dt + t \cdot dt] = 
 $$W = \left[t^2\right]_0^2 = 4 - 0 = 4$$
 
 **Answer:** $W = 4$ Joules
-
+	
 ### Method 2: Use the Path Equation Directly
 
 If the path is given as $y = f(x)$, you can eliminate the parameter.
