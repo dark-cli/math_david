@@ -17,4 +17,13 @@ This folder contains additional questions and clarifications that come up during
 - **[Final Exam 2023, Question 3: Green's Theorem for Laplacian](./final_2023_q3.md)** - Proving ∫∫_R ∇²w dxdy = ∫_C (∂w/∂n) ds using Green's theorem
 - **[Final Exam 2023, Question 4: Analytic Function as Function of z Only](./final_2023_q4.md)** - Proving analytic function depends only on z when x, y replaced by z, z̄
 - **[Final Exam 2023, Question 5: Image of Rectangle Under w = e^z](./final_2023_q5.md)** - Determining and sketching the image of rectangle 1 ≤ x ≤ 2, 0 ≤ y ≤ π under w = e^z
+- **[Final Exam 2021, Question 1: Laplacian of f(r)](./final_2021_q1.md)** - Proving ∇²f(r) = (2/r)f'(r) + f''(r) where r = |r⃗|
+- **[Final Exam 2021, Question 2: Particle Motion Under Force Field](./final_2021_q2.md)** - Proving that particle under F = -kx i - ky j moves in an elliptical path
+- **[Final Exam 2021, Question 3: Area Formula in Polar Coordinates](./final_2021_q3.md)** - Using Green's theorem to prove area formula A = (1/2)∫[f(θ)]² dθ
+- **[Final Exam 2021, Question 4: Modulus of Derivative of Analytic Function](./final_2021_q4.md)** - Proving |f'(z)|² formula using Cauchy-Riemann equations
+- **[Final Exam 2021, Question 5: Image of Circles Under w = (z-2)/(2z-1)](./final_2021_q5.md)** - Determining and sketching images of circles under Möbius transformation
+- **[Final Exam 2021 (18/3/2021), Question 1: Vector Identities](./final_2021_mar_q1.md)** - Proving divergence product rule and curl/gradient identity with k vector
+- **[Final Exam 2021 (18/3/2021), Question 2: Path Independence and Green's Theorem](./final_2021_mar_q2.md)** - Showing path independence, finding potential function, and applying Green's theorem
+- **[Final Exam 2021 (18/3/2021), Question 3: Circular Motion Properties](./final_2021_mar_q3.md)** - Showing velocity perpendicular to position, acceleration toward origin, and constant angular momentum
+- **[Final Exam 2021 (18/3/2021), Question 4: Complex Transformation Mapping](./final_2021_mar_q4.md)** - Finding locus of point P when Q traces circle |w| = 3 under w = (3-z)/(z+1)
 
