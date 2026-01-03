@@ -12,7 +12,7 @@ This file lists all questions and problems related to Green's theorem found in t
   - [Problem 115: Verification (Triangle)](#problem-115-verify-greens-theorem-triangle)
   - [Problem 117: Verification (Square)](#problem-117-verify-greens-theorem-square)
   - [Example: Region Bounded by Curves](#example-verify-greens-theorem-region-bounded-by-curves)
-  - [Exam Question Q-3: Coordinate Transformation](#exam-question-q-3-coordinate-transformation-using-greens-theorem)
+  - [Exam Questions](#exam-questions)
 - [Summary](#summary)
 
 ## Quick Reference Table
@@ -26,7 +26,11 @@ This file lists all questions and problems related to Green's theorem found in t
 | [Problem 115](../problems/problem_115.md) | Verification | Triangle | Triangular region, double integration |
 | [Problem 117](../problems/problem_117.md) | Verification | Square | Rectangular region, direct line integral |
 | [Example](../vector_analysis/pages/page_036.md) | Verification | Bounded by curves | Two curves, intersection points |
-| [Exam Q-3](.../exam_questions/final_2015.md) | Theoretical | Coordinate transformation | Jacobian determinant |
+| [Final Exam 2025, Q3](../additional_questions/final_2025_q3.md) | Theoretical | Flux form | Orthogonal vector field |
+| [Final Exam 2023, Q3](../additional_questions/final_2023_q3.md) | Theoretical | Laplacian form | Normal derivatives |
+| [Final Exam 2021, Q3](../additional_questions/final_2021_q3.md) | Application | Polar coordinates | Area formula |
+| [Final Exam 2021 (Mar), Q2](../additional_questions/final_2021_mar_q2.md) | Application | Path independence | Potential functions |
+| [Final Exam 2015, Q3](../additional_questions/final_2015.md#q-3-14-marks) | Theoretical | Coordinate transformation | Jacobian determinant |
 
 ---
 
@@ -119,9 +123,55 @@ where $C$ is the closed curve of the region bounded by $y = x^2$ and $y^2 = x$.
 
 ---
 
-## [Exam Question Q-3: Coordinate Transformation Using Green's Theorem](../exam_questions/final_2015.md)
+## Exam Questions
 
-**Source:** [exam_questions/final_2015.md](../exam_questions/final_2015.md)
+### [Final Exam 2025, Question 3: Green's Theorem in Flux Form](../additional_questions/final_2025_q3.md)
+
+**Source:** [additional_questions/final_2025_q3.md](../additional_questions/final_2025_q3.md)
+
+**Question:**
+Prove Green's theorem in flux form using an orthogonal vector field.
+
+**Key Concepts:** Green's theorem, flux form, orthogonal vector fields
+
+---
+
+### [Final Exam 2023, Question 3: Green's Theorem for Laplacian](../additional_questions/final_2023_q3.md)
+
+**Source:** [additional_questions/final_2023_q3.md](../additional_questions/final_2023_q3.md)
+
+**Question:**
+Prove that $\iint_R \nabla^2 w \, dx \, dy = \oint_C \frac{\partial w}{\partial n} \, ds$ using Green's theorem.
+
+**Key Concepts:** Green's theorem, Laplacian, normal derivatives
+
+---
+
+### [Final Exam 2021, Question 3: Area Formula in Polar Coordinates](../additional_questions/final_2021_q3.md)
+
+**Source:** [additional_questions/final_2021_q3.md](../additional_questions/final_2021_q3.md)
+
+**Question:**
+Use Green's theorem to prove the area formula $A = \frac{1}{2}\int [f(\theta)]^2 \, d\theta$ in polar coordinates.
+
+**Key Concepts:** Green's theorem, polar coordinates, area calculations
+
+---
+
+### [Final Exam 2021 (March), Question 2: Path Independence and Green's Theorem](../additional_questions/final_2021_mar_q2.md)
+
+**Source:** [additional_questions/final_2021_mar_q2.md](../additional_questions/final_2021_mar_q2.md)
+
+**Question:**
+Show path independence, find potential function, and apply Green's theorem.
+
+**Key Concepts:** Path independence, potential functions, Green's theorem
+
+---
+
+### [Final Exam 2015, Question 3: Coordinate Transformation Using Green's Theorem](../additional_questions/final_2015.md#q-3-14-marks)
+
+**Source:** [additional_questions/final_2015.md](../additional_questions/final_2015.md)
 
 **Question:**
 For a region $R$ in the $xy$-plane with boundary $C$, the equations $x = f(u, v)$, $y = g(u, v)$ map $R$ and $C$ onto a region $R'$ and curve $C'$ respectively. Use Green's theorem to show that:
@@ -134,12 +184,17 @@ $$\iint_R dx \, dy = \iint_{R'} \left(\frac{\partial f}{\partial u} \frac{\parti
 
 ## Summary
 
-**Total Questions:** 8
+**Total Questions:** 13 (8 problems + 5 exam questions)
 
 **Categories:**
 - **Verification Problems:** [Problem 112](../problems/problem_112.md), [Problem 113](../problems/problem_113.md), [Problem 115](../problems/problem_115.md), [Problem 117](../problems/problem_117.md), and the [example from page 36-37](./../vector_analysis/pages/page_036.md)
 - **Application Problems:** [Problem 9](../problems/problem_009.md) (multiply-connected), [Problem 114](../problems/problem_114.md) (general form)
-- **Theoretical Problems:** [Exam Q-3](../exam_questions/final_2015.md) (coordinate transformation)
+- **Exam Questions:** 
+  - [Final Exam 2025, Q3](../additional_questions/final_2025_q3.md) - Flux form
+  - [Final Exam 2023, Q3](../additional_questions/final_2023_q3.md) - Laplacian form
+  - [Final Exam 2021, Q3](../additional_questions/final_2021_q3.md) - Area formula in polar coordinates
+  - [Final Exam 2021 (Mar), Q2](../additional_questions/final_2021_mar_q2.md) - Path independence
+  - [Final Exam 2015, Q3](../additional_questions/final_2015.md#q-3-14-marks) - Coordinate transformation
 
 **Common Themes:**
 - Verifying Green's theorem by computing both line integrals and double integrals

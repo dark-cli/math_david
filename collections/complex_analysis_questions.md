@@ -40,8 +40,19 @@ This file lists all questions and problems related to complex numbers and confor
 | [Problem 42](../problems/problem_042.md) | Conformal Mapping | Transformations, images of curves |
 | [Problem 43](../problems/problem_043.md) | Conformal Mapping | Images of lines |
 | [Problem 46](../problems/problem_046.md) | Conformal Mapping | Circles, straight lines |
-| [Exam Q-4](.../exam_questions/final_2015.md) | Exam | Analytic functions |
-| [Exam Q-5](.../exam_questions/final_2015.md) | Exam | Temperature distribution, conformal mapping |
+| [Final Exam 2025, Q4](../additional_questions/final_2025_q4.md) | Exam | Constant modulus theorem |
+| [Final Exam 2025, Q5](../additional_questions/final_2025_q5.md) | Exam | Inversion (w = 1/z) |
+| [Final Exam 2023, Q4](../additional_questions/final_2023_q4.md) | Exam | Analytic functions, z and z̄ |
+| [Final Exam 2023, Q5](../additional_questions/final_2023_q5.md) | Exam | Exponential mapping (w = e^z) |
+| [Final Exam 2021, Q4](../additional_questions/final_2021_q4.md) | Exam | Modulus of derivative |
+| [Final Exam 2021, Q5](../additional_questions/final_2021_q5.md) | Exam | Möbius transformations |
+| [Final Exam 2021 (Mar), Q4](../additional_questions/final_2021_mar_q4.md) | Exam | Möbius transformations, locus |
+| [Final Exam 2019 (Supp), Q4](../additional_questions/final_2019_supp_q4.md) | Exam | Orthogonal trajectories |
+| [Final Exam 2019 (Supp), Q5](../additional_questions/final_2019_supp_q5.md) | Exam | w = z + 1/z |
+| [Final Exam 2014 (Supp), Q4](../additional_questions/final_2014_supp_q4.md) | Exam | Constant modulus theorem |
+| [Final Exam 2014 (Supp), Q5](../additional_questions/final_2014_supp_q5.md) | Exam | w = z + 1/z |
+| [Final Exam 2015, Q4](../additional_questions/final_2015.md#q-4-14-marks) | Exam | Analytic functions, Cauchy-Riemann |
+| [Final Exam 2015, Q5](../additional_questions/final_2015.md#q-5-14-marks) | Exam | Temperature distribution, conformal mapping |
 
 ---
 
@@ -326,9 +337,66 @@ Find the equations of the transformation defined by $w = \frac{z - i}{z}$, and s
 
 ## Exam Questions
 
-### [Exam Question Q-4: Analytic Functions and Cauchy-Riemann](../exam_questions/final_2015.md)
+### Analytic Functions
 
-**Source:** [exam_questions/final_2015.md](../exam_questions/final_2015.md)
+#### [Final Exam 2025, Question 4: Analytic Function with Constant Modulus is Constant](../additional_questions/final_2025_q4.md)
+
+**Source:** [additional_questions/final_2025_q4.md](../additional_questions/final_2025_q4.md)
+
+**Question:**
+Prove that an analytic function with constant modulus must be constant.
+
+**Key Concepts:** Analytic functions, constant modulus theorem, Cauchy-Riemann equations
+
+---
+
+#### [Final Exam 2023, Question 4: Analytic Function as Function of z Only](../additional_questions/final_2023_q4.md)
+
+**Source:** [additional_questions/final_2023_q4.md](../additional_questions/final_2023_q4.md)
+
+**Question:**
+Prove that an analytic function depends only on z when x, y are replaced by z, z̄.
+
+**Key Concepts:** Analytic functions, complex variables, z and z̄
+
+---
+
+#### [Final Exam 2021, Question 4: Modulus of Derivative of Analytic Function](../additional_questions/final_2021_q4.md)
+
+**Source:** [additional_questions/final_2021_q4.md](../additional_questions/final_2021_q4.md)
+
+**Question:**
+Prove the formula for |f'(z)|² using Cauchy-Riemann equations.
+
+**Key Concepts:** Analytic functions, modulus of derivative, Cauchy-Riemann equations
+
+---
+
+#### [Final Exam 2019 (Supplementary), Question 4: Orthogonal Trajectories of Analytic Functions](../additional_questions/final_2019_supp_q4.md)
+
+**Source:** [additional_questions/final_2019_supp_q4.md](../additional_questions/final_2019_supp_q4.md)
+
+**Question:**
+Prove that level curves of real and imaginary parts of an analytic function are orthogonal.
+
+**Key Concepts:** Analytic functions, orthogonal trajectories, level curves
+
+---
+
+#### [Final Exam 2014 (Supplementary), Question 4: Analytic Function with Constant Modulus is Constant](../additional_questions/final_2014_supp_q4.md)
+
+**Source:** [additional_questions/final_2014_supp_q4.md](../additional_questions/final_2014_supp_q4.md)
+
+**Question:**
+Prove that an analytic function with constant modulus must be constant.
+
+**Key Concepts:** Analytic functions, constant modulus theorem, Cauchy-Riemann equations
+
+---
+
+#### [Final Exam 2015, Question 4: Analytic Functions and Cauchy-Riemann](../additional_questions/final_2015.md#q-4-14-marks)
+
+**Source:** [additional_questions/final_2015.md](../additional_questions/final_2015.md)
 
 **Question:**
 Let $f(z) = u + iv$ be an analytic function. Given that $u = v^2$ show that $f(z)$ is a constant.
@@ -337,9 +405,77 @@ Let $f(z) = u + iv$ be an analytic function. Given that $u = v^2$ show that $f(z
 
 ---
 
-### [Exam Question Q-5: Temperature Distribution Using Conformal Mapping](../exam_questions/final_2015.md)
+### Complex Transformations
 
-**Source:** [exam_questions/final_2015.md](../exam_questions/final_2015.md)
+#### [Final Exam 2025, Question 5: Image of Line Under w = 1/z](../additional_questions/final_2025_q5.md)
+
+**Source:** [additional_questions/final_2025_q5.md](../additional_questions/final_2025_q5.md)
+
+**Question:**
+Determine and sketch the image of the line y = 1/2 under the transformation w = 1/z.
+
+**Key Concepts:** Complex transformations, inversion, mapping lines
+
+---
+
+#### [Final Exam 2023, Question 5: Image of Rectangle Under w = e^z](../additional_questions/final_2023_q5.md)
+
+**Source:** [additional_questions/final_2023_q5.md](../additional_questions/final_2023_q5.md)
+
+**Question:**
+Determine and sketch the image of rectangle 1 ≤ x ≤ 2, 0 ≤ y ≤ π under w = e^z.
+
+**Key Concepts:** Complex transformations, exponential mapping, rectangular regions
+
+---
+
+#### [Final Exam 2021, Question 5: Image of Circles Under Möbius Transformation](../additional_questions/final_2021_q5.md)
+
+**Source:** [additional_questions/final_2021_q5.md](../additional_questions/final_2021_q5.md)
+
+**Question:**
+Determine and sketch images of circles under Möbius transformation w = (z-2)/(2z-1).
+
+**Key Concepts:** Complex transformations, Möbius transformations, mapping circles
+
+---
+
+#### [Final Exam 2021 (March), Question 4: Complex Transformation Mapping](../additional_questions/final_2021_mar_q4.md)
+
+**Source:** [additional_questions/final_2021_mar_q4.md](../additional_questions/final_2021_mar_q4.md)
+
+**Question:**
+Find the locus of point P when Q traces circle |w| = 3 under w = (3-z)/(z+1).
+
+**Key Concepts:** Complex transformations, Möbius transformations, locus problems
+
+---
+
+#### [Final Exam 2019 (Supplementary), Question 5: Image of Circle Under w = z + 1/z](../additional_questions/final_2019_supp_q5.md)
+
+**Source:** [additional_questions/final_2019_supp_q5.md](../additional_questions/final_2019_supp_q5.md)
+
+**Question:**
+Determine and sketch the image of |z| = k under transformation w = z + 1/z, examining k = 1 case.
+
+**Key Concepts:** Complex transformations, mapping circles, special cases
+
+---
+
+#### [Final Exam 2014 (Supplementary), Question 5: Image of Circle Under w = z + 1/z](../additional_questions/final_2014_supp_q5.md)
+
+**Source:** [additional_questions/final_2014_supp_q5.md](../additional_questions/final_2014_supp_q5.md)
+
+**Question:**
+Determine and sketch the image of |z| = k under transformation w = z + 1/z, examining k = 1 case.
+
+**Key Concepts:** Complex transformations, mapping circles, special cases
+
+---
+
+#### [Final Exam 2015, Question 5: Temperature Distribution Using Conformal Mapping](../additional_questions/final_2015.md#q-5-14-marks)
+
+**Source:** [additional_questions/final_2015.md](../additional_questions/final_2015.md)
 
 **Question:**
 Determine the temperature distribution $T(x,y)$ in the region between the eccentric circles shown in figure. The constant temperature on the inner boundary is $T_1$ and that on the outer boundary is $T_2$. Use the mapping function:
@@ -351,7 +487,7 @@ $$w = \frac{z - 2 + \sqrt{3}}{(2 - \sqrt{3})z - 1}$$
 
 ## Summary
 
-**Total Questions:** 24+
+**Total Questions:** 36+ (24+ problems + 12 exam questions)
 
 **Categories:**
 - **Complex Numbers Basics:** Problem 13
@@ -359,7 +495,21 @@ $$w = \frac{z - 2 + \sqrt{3}}{(2 - \sqrt{3})z - 1}$$
 - **Complex Derivatives:** Problems 20, 22, 23, 24, 25
 - **Complex Potential & Fluid Flow:** Problems 16, 34, 35, 36, 37, 38, 39, 40, 41
 - **Conformal Mapping:** Problems 32, 42, 43, 46
-- **Exam Questions:** Q-4, Q-5
+- **Exam Questions - Analytic Functions:**
+  - Final Exam 2025, Q4 - Constant modulus theorem
+  - Final Exam 2023, Q4 - Function of z only
+  - Final Exam 2021, Q4 - Modulus of derivative
+  - Final Exam 2019 (Supp), Q4 - Orthogonal trajectories
+  - Final Exam 2014 (Supp), Q4 - Constant modulus theorem
+  - Final Exam 2015, Q4 - Analytic functions, Cauchy-Riemann
+- **Exam Questions - Complex Transformations:**
+  - Final Exam 2025, Q5 - Inversion (w = 1/z)
+  - Final Exam 2023, Q5 - Exponential (w = e^z)
+  - Final Exam 2021, Q5 - Möbius transformation
+  - Final Exam 2021 (Mar), Q4 - Möbius transformation, locus
+  - Final Exam 2019 (Supp), Q5 - w = z + 1/z
+  - Final Exam 2014 (Supp), Q5 - w = z + 1/z
+  - Final Exam 2015, Q5 - Temperature distribution, conformal mapping
 
 **Common Themes:**
 - Verifying analyticity using Cauchy-Riemann equations
