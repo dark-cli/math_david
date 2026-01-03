@@ -1,0 +1,3308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title></title>
+  <style>
+    /* Hide page number headings */
+    h1[id^="page-"] {
+      display: none;
+    }
+    @media print {
+      h1[id^="page-"] {
+        display: none !important;
+      }
+      @page {
+        margin: 1in;
+      }
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown.min.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title"> </h1>
+</header>
+<!-- ===== page_01.md ===== -->
+<h1 id="chapter-1-vector-analysis">Chapter 1: Vector Analysis</h1>
+<h2 id="definition-of-a-vector">Definition of a Vector</h2>
+<p>A vector is defined as a directed line segment <span
+class="math inline">\(\overrightarrow{PQ}\)</span> from one point <span
+class="math inline">\(P\)</span> called the “initial point” to another
+point <span class="math inline">\(Q\)</span> called the “terminal
+point.”</p>
+<p>Vectors are denoted by bold faced letters or letters with an arrow
+over them.</p>
+<p>The “magnitude” or “length” of the vector is denoted by <span
+class="math inline">\(|\overrightarrow{PQ}|\)</span>.</p>
+<h2 id="vector-algebra">Vector Algebra</h2>
+<h3 id="equal-vectors">1. Equal Vectors</h3>
+<p>Two vectors <span class="math inline">\(\vec{A}\)</span> and <span
+class="math inline">\(\vec{B}\)</span> are “equal” if they have the same
+magnitude and direction regardless of their initial points. Thus <span
+class="math inline">\(\vec{A} = \vec{B}\)</span> in the figure
+above.</p>
+<p><strong>Note:</strong> Two parallel vectors with the same magnitude
+and direction are equal, even if they start at different points.</p>
+<h3 id="negative-vector">2. Negative Vector</h3>
+<p>A vector having direction opposite to that of vector <span
+class="math inline">\(\vec{A}\)</span> but with the same magnitude is
+denoted by <span class="math inline">\(-\vec{A}\)</span>.</p>
+<p><strong>Note:</strong> The negative vector has the same length as the
+original vector but points in the opposite direction.</p>
+<!-- ===== page_02.md ===== -->
+<h1 id="vector-addition-subtraction-and-scalar-multiplication">Vector
+Addition, Subtraction, and Scalar Multiplication</h1>
+<h2 id="the-sum-or-resultant-of-vectors">3. The Sum or Resultant of
+Vectors</h2>
+<p>The “sum” or resultant of vectors <span
+class="math inline">\(\vec{A}\)</span> and <span
+class="math inline">\(\vec{B}\)</span> is a vector <span
+class="math inline">\(\vec{C}\)</span>.</p>
+<p>To find <span class="math inline">\(\vec{C} = \vec{A} +
+\vec{B}\)</span>: - Place the initial point of vector <span
+class="math inline">\(\vec{B}\)</span> at the terminal point of vector
+<span class="math inline">\(\vec{A}\)</span> - Draw <span
+class="math inline">\(\vec{C}\)</span> from the initial point of <span
+class="math inline">\(\vec{A}\)</span> to the terminal point of <span
+class="math inline">\(\vec{B}\)</span></p>
+<p>This is known as the <strong>triangle rule</strong> for vector
+addition.</p>
+<h2 id="the-difference-of-vectors">4. The Difference of Vectors</h2>
+<p>The “difference” of vectors <span
+class="math inline">\(\vec{A}\)</span> and <span
+class="math inline">\(\vec{B}\)</span>, denoted as <span
+class="math inline">\(\vec{A} - \vec{B}\)</span>, is the vector <span
+class="math inline">\(\vec{C}\)</span> which, when added to <span
+class="math inline">\(\vec{B}\)</span>, gives <span
+class="math inline">\(\vec{A}\)</span>.</p>
+<p>Alternatively, <span class="math inline">\(\vec{A} - \vec{B}\)</span>
+can be defined as <span class="math inline">\(\vec{A} +
+(-\vec{B})\)</span>.</p>
+<h2 id="multiplication-of-a-vector-by-a-scalar">5. Multiplication of a
+Vector by a Scalar</h2>
+<p>Multiplication of a vector <span
+class="math inline">\(\vec{A}\)</span> by a scalar <span
+class="math inline">\(m\)</span> produces a new vector <span
+class="math inline">\(m\vec{A}\)</span> whose: -
+<strong>Magnitude:</strong> <span class="math inline">\(|m\vec{A}| = |m|
+\cdot |\vec{A}|\)</span> (absolute value of <span
+class="math inline">\(m\)</span> times the magnitude of <span
+class="math inline">\(\vec{A}\)</span>) - <strong>Direction:</strong> -
+Same as <span class="math inline">\(\vec{A}\)</span> if <span
+class="math inline">\(m &gt; 0\)</span> - Opposite to <span
+class="math inline">\(\vec{A}\)</span> if <span class="math inline">\(m
+&lt; 0\)</span></p>
+<h2 id="unit-vectors">Unit Vectors</h2>
+<p><strong>Definition:</strong> Unit vectors are vectors having a length
+of one (unit length).</p>
+<p><strong>Finding a Unit Vector:</strong> If <span
+class="math inline">\(\vec{A}\)</span> is any vector with length <span
+class="math inline">\(|\vec{A}| &gt; 0\)</span>, then the expression
+<span class="math inline">\(\frac{\vec{A}}{|\vec{A}|}\)</span>
+represents a unit vector that has the same direction as <span
+class="math inline">\(\vec{A}\)</span>.</p>
+<!-- ===== page_03.md ===== -->
+<h1 id="rectangular-unit-vectors-and-vector-components">Rectangular Unit
+Vectors and Vector Components</h1>
+<h2 id="rectangular-unit-vectors">Rectangular Unit Vectors</h2>
+<p>The rectangular unit vectors <span
+class="math inline">\(\vec{i}\)</span>, <span
+class="math inline">\(\vec{j}\)</span> and <span
+class="math inline">\(\vec{k}\)</span> are unit vectors having the
+direction of the positive <span class="math inline">\(x\)</span>-, <span
+class="math inline">\(y\)</span>- and <span
+class="math inline">\(z\)</span>- axes of a rectangular coordinate
+system.</p>
+<p><strong>Note:</strong> We use right-handed rectangular coordinate
+systems.</p>
+<h2 id="components-of-a-vector">Components of a Vector</h2>
+<p>Any vector can be represented with initial point at the origin <span
+class="math inline">\(O\)</span> of a rectangular coordinate system. Let
+<span class="math inline">\((A_1, A_2, A_3)\)</span> be the coordinates
+of the terminal point of vector <span
+class="math inline">\(\vec{A}\)</span> with initial point at <span
+class="math inline">\(O\)</span>.</p>
+<p>The vectors <span class="math inline">\(A_1\vec{i}\)</span>, <span
+class="math inline">\(A_2\vec{j}\)</span> and <span
+class="math inline">\(A_3\vec{k}\)</span> are called the “component
+vectors” of <span class="math inline">\(\vec{A}\)</span> in the <span
+class="math inline">\(x\)</span>-, <span
+class="math inline">\(y\)</span>- and <span
+class="math inline">\(z\)</span>- directions respectively.</p>
+<p>We write:</p>
+<p><span class="math display">\[\vec{A} = A_1\vec{i} + A_2\vec{j} +
+A_3\vec{k}\]</span></p>
+<p>The magnitude of <span class="math inline">\(\vec{A}\)</span> is:</p>
+<p><span class="math display">\[|\vec{A}| = \sqrt{A_1^2 + A_2^2 +
+A_3^2}\]</span></p>
+<!-- ===== page_04.md ===== -->
+<h1 id="position-vector-dot-product-and-cross-product">Position Vector,
+Dot Product, and Cross Product</h1>
+<h2 id="position-vector">Position Vector</h2>
+<p>The “position vector” <span class="math inline">\(\vec{r}\)</span>
+from <span class="math inline">\(O\)</span> to the point <span
+class="math inline">\((x, y, z)\)</span> is written:</p>
+<p><span class="math display">\[\vec{r} = x\vec{i} + y\vec{j} +
+z\vec{k}\]</span></p>
+<p>and has magnitude:</p>
+<p><span class="math display">\[|\vec{r}| = \sqrt{x^2 + y^2 +
+z^2}\]</span></p>
+<h2 id="dot-or-scalar-product">Dot or Scalar Product</h2>
+<p><strong>Definition:</strong></p>
+<p><span class="math display">\[\vec{A} \cdot \vec{B} = |\vec{A}|
+|\vec{B}| \cos \theta, \quad 0 \leq \theta \leq \pi\]</span></p>
+<p>where <span class="math inline">\(\theta\)</span> is the angle
+between vectors <span class="math inline">\(\vec{A}\)</span> and <span
+class="math inline">\(\vec{B}\)</span>.</p>
+<p><strong>Property:</strong> <span class="math inline">\(\vec{A} \cdot
+\vec{B}\)</span> is a scalar and not a vector.</p>
+<p><strong>Component Form:</strong> If <span
+class="math inline">\(\vec{A} = A_1\vec{i} + A_2\vec{j} +
+A_3\vec{k}\)</span> and <span class="math inline">\(\vec{B} = B_1\vec{i}
++ B_2\vec{j} + B_3\vec{k}\)</span>, then:</p>
+<p><span class="math display">\[\vec{A} \cdot \vec{B} = A_1B_1 + A_2B_2
++ A_3B_3\]</span></p>
+<p><strong>Dot Product with Itself:</strong></p>
+<p><span class="math display">\[\vec{A} \cdot \vec{A} = A_1^2 + A_2^2 +
+A_3^2\]</span></p>
+<p><span class="math display">\[\vec{B} \cdot \vec{B} = B_1^2 + B_2^2 +
+B_3^2\]</span></p>
+<h2 id="cross-or-vector-product">Cross or Vector Product</h2>
+<p><strong>Definition:</strong></p>
+<p><span class="math display">\[\vec{A} \times \vec{B} = |\vec{A}|
+|\vec{B}| \sin \theta \, \vec{u}, \quad 0 \leq \theta \leq
+\pi\]</span></p>
+<p>where <span class="math inline">\(\vec{u}\)</span> is a unit
+vector.</p>
+<p><strong>Property:</strong> <span class="math inline">\(\vec{A} \times
+\vec{B}\)</span> is a vector whose direction is indicated by the unit
+vector <span class="math inline">\(\vec{u}\)</span> which is
+perpendicular to the plane of <span
+class="math inline">\(\vec{A}\)</span> and <span
+class="math inline">\(\vec{B}\)</span>, and <span
+class="math inline">\(\vec{A}\)</span>, <span
+class="math inline">\(\vec{B}\)</span> and <span
+class="math inline">\(\vec{u}\)</span> form a right-handed system.</p>
+<!-- ===== page_05.md ===== -->
+<h1 id="cross-product-as-a-determinant">Cross Product as a
+Determinant</h1>
+<h2 id="cross-product-formula">Cross Product Formula</h2>
+<p>If:</p>
+<p><span class="math display">\[\vec{A} = A_1\vec{i} + A_2\vec{j} +
+A_3\vec{k}\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[\vec{B} = B_1\vec{i} + B_2\vec{j} +
+B_3\vec{k}\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[\vec{A} \times \vec{B} = \begin{vmatrix}
+\vec{i} &amp; \vec{j} &amp; \vec{k} \\
+A_1 &amp; A_2 &amp; A_3 \\
+B_1 &amp; B_2 &amp; B_3
+\end{vmatrix}\]</span></p>
+<p>This determinant can be expanded as:</p>
+<p><span class="math display">\[\vec{A} \times \vec{B} =
+\vec{i}\begin{vmatrix} A_2 &amp; A_3 \\ B_2 &amp; B_3 \end{vmatrix} -
+\vec{j}\begin{vmatrix} A_1 &amp; A_3 \\ B_1 &amp; B_3 \end{vmatrix} +
+\vec{k}\begin{vmatrix} A_1 &amp; A_2 \\ B_1 &amp; B_2
+\end{vmatrix}\]</span></p>
+<p><span class="math display">\[= (A_2B_3 - A_3B_2)\vec{i} - (A_1B_3 -
+A_3B_1)\vec{j} + (A_1B_2 - A_2B_1)\vec{k}\]</span></p>
+<p><span class="math display">\[= (A_2B_3 - A_3B_2)\vec{i} + (A_3B_1 -
+A_1B_3)\vec{j} + (A_1B_2 - A_2B_1)\vec{k}\]</span></p>
+<!-- ===== page_06.md ===== -->
+<h1 id="vector-functions">Vector Functions</h1>
+<h2 id="definition">Definition</h2>
+<p>If corresponding to each value of a scalar <span
+class="math inline">\(u\)</span> we associate a vector <span
+class="math inline">\(\vec{A}\)</span>, then <span
+class="math inline">\(\vec{A}\)</span> is called a “function of <span
+class="math inline">\(u\)</span>” denoted by <span
+class="math inline">\(\vec{A}(u)\)</span>.</p>
+<p>We can write:</p>
+<p><span class="math display">\[\vec{A}(u) = A_1(u)\vec{i} +
+A_2(u)\vec{j} + A_3(u)\vec{k}\]</span></p>
+<h2 id="extension-of-function-concept">Extension of Function
+Concept</h2>
+<p>The function concept is easily extended. Thus, if to each point <span
+class="math inline">\((x, y, z)\)</span> there corresponds a vector
+<span class="math inline">\(\vec{A}\)</span>, then <span
+class="math inline">\(\vec{A}\)</span> is a function of <span
+class="math inline">\((x, y, z)\)</span> indicated by:</p>
+<p><span class="math display">\[\vec{A}(x, y, z) = A_1(x, y, z)\vec{i} +
+A_2(x, y, z)\vec{j} + A_3(x, y, z)\vec{k}\]</span></p>
+<h2 id="vector-and-scalar-fields">Vector and Scalar Fields</h2>
+<p>A vector function <span class="math inline">\(\vec{A}(x, y,
+z)\)</span> defines a <strong>vector field</strong> since it associates
+a vector with each point of a region.</p>
+<p>Similarly, <span class="math inline">\(\phi(x, y, z)\)</span> defines
+a <strong>scalar field</strong> since it associates a scalar with each
+point of a region.</p>
+<h2 id="limits-continuity-and-derivatives-of-vector-functions">Limits,
+Continuity and Derivatives of Vector Functions</h2>
+<h3 id="continuity">1. Continuity</h3>
+<p>The vector function <span class="math inline">\(\vec{A}(u)\)</span>
+is said to be <strong>continuous</strong> at <span
+class="math inline">\(u_0\)</span> if given any positive number <span
+class="math inline">\(\epsilon\)</span>, we can find some positive
+number <span class="math inline">\(\delta\)</span> such that:</p>
+<p><span class="math display">\[|\vec{A}(u) - \vec{A}(u_0)| &lt;
+\epsilon \quad \text{whenever} \quad |u - u_0| &lt; \delta\]</span></p>
+<p>This is equivalent to the statement:</p>
+<p><span class="math display">\[\lim_{u \to u_0} \vec{A}(u) =
+\vec{A}(u_0)\]</span></p>
+<!-- ===== page_07.md ===== -->
+<h1 id="derivatives-and-differentials-of-vector-functions">Derivatives
+and Differentials of Vector Functions</h1>
+<h2 id="the-derivative-of-a-vector-function">2. The Derivative of a
+Vector Function</h2>
+<p>The derivative of <span class="math inline">\(\vec{A}(u)\)</span> is
+defined as:</p>
+<p><span class="math display">\[\frac{d\vec{A}}{du} = \lim_{\Delta u \to
+0} \frac{\vec{A}(u + \Delta u) - \vec{A}(u)}{\Delta u}\]</span></p>
+<p>provided this limit exists.</p>
+<p><strong>Component Form:</strong> In case <span
+class="math inline">\(\vec{A}(u) = A_1(u)\vec{i} + A_2(u)\vec{j} +
+A_3(u)\vec{k}\)</span>, then:</p>
+<p><span class="math display">\[\frac{d\vec{A}}{du} =
+\frac{dA_1}{du}\vec{i} + \frac{dA_2}{du}\vec{j} +
+\frac{dA_3}{du}\vec{k}\]</span></p>
+<h2 id="the-differential-of-a-vector-function">3. The Differential of a
+Vector Function</h2>
+<p>If <span class="math inline">\(\vec{A}(x, y, z) = A_1(x, y, z)\vec{i}
++ A_2(x, y, z)\vec{j} + A_3(x, y, z)\vec{k}\)</span>, then:</p>
+<p><span class="math display">\[d\vec{A} =
+\frac{\partial\vec{A}}{\partial x} dx + \frac{\partial\vec{A}}{\partial
+y} dy + \frac{\partial\vec{A}}{\partial z} dz\]</span></p>
+<p>is the <strong>differential</strong> of <span
+class="math inline">\(\vec{A}\)</span>.</p>
+<h2 id="derivatives-of-products">4. Derivatives of Products</h2>
+<p>Derivatives of products obey rules similar to those for scalar
+functions. However, when cross products are involved the order may be
+important.</p>
+<p><strong>Product Rules:</strong></p>
+<p><strong>(a)</strong> Scalar times vector: <span
+class="math display">\[\frac{d}{du}(\phi\vec{A}) =
+\phi\frac{d\vec{A}}{du} + \frac{d\phi}{du}\vec{A}\]</span></p>
+<p><strong>(b)</strong> Dot product: <span
+class="math display">\[\frac{\partial}{\partial y}(\vec{A} \cdot
+\vec{B}) = \vec{A} \cdot \frac{\partial\vec{B}}{\partial y} +
+\frac{\partial\vec{A}}{\partial y} \cdot \vec{B}\]</span></p>
+<p><strong>(c)</strong> Cross product: <span
+class="math display">\[\frac{\partial}{\partial z}(\vec{A} \times
+\vec{B}) = \vec{A} \times \frac{\partial\vec{B}}{\partial z} +
+\frac{\partial\vec{A}}{\partial z} \times \vec{B}\]</span></p>
+<!-- ===== page_08.md ===== -->
+<h1 id="example-product-rule-for-dot-product">Example: Product Rule for
+Dot Product</h1>
+<h2 id="problem">Problem</h2>
+<p>If <span class="math inline">\(\vec{A}\)</span> and <span
+class="math inline">\(\vec{B}\)</span> are differentiable functions of a
+scalar <span class="math inline">\(u\)</span>, prove:</p>
+<p><span class="math display">\[\frac{d}{du}(\vec{A} \cdot \vec{B}) =
+\vec{A} \cdot \frac{d\vec{B}}{du} + \frac{d\vec{A}}{du} \cdot
+\vec{B}\]</span></p>
+<h2 id="method-1-using-the-definition-of-the-derivative">Method (1):
+Using the Definition of the Derivative</h2>
+<p><span class="math display">\[\frac{d}{du}(\vec{A} \cdot \vec{B}) =
+\lim_{\Delta u \to 0} \frac{(\vec{A} + \Delta\vec{A}) \cdot (\vec{B} +
+\Delta\vec{B}) - \vec{A} \cdot \vec{B}}{\Delta u}\]</span></p>
+<p>Expanding the numerator:</p>
+<p><span class="math display">\[= \lim_{\Delta u \to 0} \frac{\vec{A}
+\cdot \Delta\vec{B} + \Delta\vec{A} \cdot \vec{B} + \Delta\vec{A} \cdot
+\Delta\vec{B}}{\Delta u}\]</span></p>
+<p>Separating terms and applying the limit:</p>
+<p><span class="math display">\[= \lim_{\Delta u \to 0} \frac{\vec{A}
+\cdot \Delta\vec{B}}{\Delta u} + \lim_{\Delta u \to 0}
+\frac{\Delta\vec{A} \cdot \vec{B}}{\Delta u} + \lim_{\Delta u \to 0}
+\frac{\Delta\vec{A} \cdot \Delta\vec{B}}{\Delta u}\]</span></p>
+<p>Evaluating the limits:</p>
+<p><span class="math display">\[= \vec{A} \cdot \frac{d\vec{B}}{du} +
+\frac{d\vec{A}}{du} \cdot \vec{B}\]</span></p>
+<h2 id="method-2-using-component-form">Method (2): Using Component
+Form</h2>
+<p>Let <span class="math inline">\(\vec{A} = A_1\vec{i} + A_2\vec{j} +
+A_3\vec{k}\)</span> and <span class="math inline">\(\vec{B} = B_1\vec{i}
++ B_2\vec{j} + B_3\vec{k}\)</span>.</p>
+<p>Then:</p>
+<p><span class="math display">\[\frac{d}{du}(\vec{A} \cdot \vec{B}) =
+\frac{d}{du}(A_1B_1 + A_2B_2 + A_3B_3)\]</span></p>
+<p>Applying the product rule for scalar functions:</p>
+<p><span class="math display">\[= \left(A_1\frac{dB_1}{du} +
+A_2\frac{dB_2}{du} + A_3\frac{dB_3}{du}\right) +
+\left(\frac{dA_1}{du}B_1 + \frac{dA_2}{du}B_2 +
+\frac{dA_3}{du}B_3\right)\]</span></p>
+<p>Regrouping into vector dot products:</p>
+<p><span class="math display">\[= \vec{A} \cdot \frac{d\vec{B}}{du} +
+\frac{d\vec{A}}{du} \cdot \vec{B}\]</span></p>
+<!-- ===== page_09.md ===== -->
+<h1 id="geometric-interpretation-of-a-vector-derivative">Geometric
+Interpretation of a Vector Derivative</h1>
+<h2 id="position-vector-and-space-curves">Position Vector and Space
+Curves</h2>
+<p>If <span class="math inline">\(\vec{r}\)</span> is the vector joining
+the origin <span class="math inline">\(O\)</span> of a coordinate system
+and the point <span class="math inline">\((x, y, z)\)</span>, then
+specification of the vector function <span
+class="math inline">\(\vec{r}(u)\)</span> defines <span
+class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>
+and <span class="math inline">\(z\)</span> as functions of <span
+class="math inline">\(u\)</span>.</p>
+<p>As <span class="math inline">\(u\)</span> changes, the terminal point
+of <span class="math inline">\(\vec{r}\)</span> describes a
+<strong>space curve</strong> having parametric equations:</p>
+<p><span class="math display">\[x = x(u), \quad y = y(u), \quad z =
+z(u)\]</span></p>
+<h2 id="unit-tangent-vector">Unit Tangent Vector</h2>
+<p>If the parameter <span class="math inline">\(u\)</span> is the arc
+length <span class="math inline">\(s\)</span> measured from some fixed
+point on the curve, then:</p>
+<p><span class="math display">\[\frac{d\vec{r}}{ds} =
+\frac{dx}{ds}\vec{i} + \frac{dy}{ds}\vec{j} + \frac{dz}{ds}\vec{k} =
+\vec{T}\]</span></p>
+<p><span class="math inline">\(\vec{T}\)</span> is a unit vector in the
+direction of the tangent to the curve and is called the <strong>unit
+tangent vector</strong>.</p>
+<h2 id="velocity-and-acceleration">Velocity and Acceleration</h2>
+<p>If <span class="math inline">\(u\)</span> is the time <span
+class="math inline">\(t\)</span>, then:</p>
+<ul>
+<li><span class="math inline">\(\frac{d\vec{r}}{dt}\)</span> represents
+the <strong>velocity</strong> <span
+class="math inline">\(\vec{v}\)</span> with which the terminal point of
+<span class="math inline">\(\vec{r}\)</span> describes the curve.</li>
+<li><span class="math inline">\(\frac{d^2\vec{r}}{dt^2}\)</span>
+represents its <strong>acceleration</strong> <span
+class="math inline">\(\vec{a}\)</span> along the curve.</li>
+</ul>
+<h2 id="displacement-vector">Displacement Vector</h2>
+<p>For a small change <span class="math inline">\(\Delta u\)</span> in
+the parameter:</p>
+<p><span class="math display">\[\Delta\vec{r} = \vec{r}(u + \Delta u) -
+\vec{r}(u)\]</span></p>
+<p>This represents the displacement vector between two points on the
+curve, where <span class="math inline">\(\Delta s\)</span> is the
+corresponding arc length along the curve.</p>
+<!-- ===== page_10.md ===== -->
+<h1 id="gradient-divergence-and-curl">Gradient, Divergence and Curl</h1>
+<h2 id="the-del-operator">The Del Operator (∇)</h2>
+<p>The vector differential operator <span
+class="math inline">\(\nabla\)</span> (del), is defined by:</p>
+<p><span class="math display">\[\nabla = \vec{i}\frac{\partial}{\partial
+x} + \vec{j}\frac{\partial}{\partial y} +
+\vec{k}\frac{\partial}{\partial z}\]</span></p>
+<p>This vector operator possesses properties analogous to those of
+ordinary vectors. It is useful in defining three quantities which arise
+in practical applications and are known as the
+<strong>gradient</strong>, the <strong>divergence</strong> and the
+<strong>curl</strong>.</p>
+<h2 id="gradient">1. Gradient</h2>
+<p>Let <span class="math inline">\(\phi(x, y, z)\)</span> be defined and
+differentiable at each point <span class="math inline">\((x, y,
+z)\)</span> in a certain region of space (i.e., <span
+class="math inline">\(\phi\)</span> defines a differentiable scalar
+field). Then the <strong>gradient</strong> of <span
+class="math inline">\(\phi\)</span> is defined by:</p>
+<p><span class="math display">\[\text{grad } \phi = \nabla\phi =
+\left(\vec{i}\frac{\partial}{\partial x} +
+\vec{j}\frac{\partial}{\partial y} + \vec{k}\frac{\partial}{\partial
+z}\right)\phi\]</span></p>
+<p>Expanding:</p>
+<p><span class="math display">\[\nabla\phi =
+\frac{\partial\phi}{\partial x}\vec{i} + \frac{\partial\phi}{\partial
+y}\vec{j} + \frac{\partial\phi}{\partial z}\vec{k}\]</span></p>
+<h2 id="interpretation-of-gradient">Interpretation of Gradient</h2>
+<p>An interesting interpretation is that if <span
+class="math inline">\(\phi(x, y, z) = c\)</span> is the equation of a
+surface, then <span class="math inline">\(\nabla\phi\)</span> is a
+normal to this surface.</p>
+<!-- ===== page_11.md ===== -->
+<h1 id="divergence-and-curl">Divergence and Curl</h1>
+<h2 id="divergence">2. Divergence</h2>
+<p>If <span class="math inline">\(\vec{A}(x, y, z) = A_1\vec{i} +
+A_2\vec{j} + A_3\vec{k}\)</span> is a vector field defined and
+differentiable at each point <span class="math inline">\((x, y,
+z)\)</span> in a certain region of space, then the
+<strong>divergence</strong> of <span
+class="math inline">\(\vec{A}\)</span> is defined by:</p>
+<p><span class="math display">\[\text{div } \vec{A} = \nabla \cdot
+\vec{A}\]</span></p>
+<p>Expanding the dot product:</p>
+<p><span class="math display">\[\nabla \cdot \vec{A} =
+\left(\vec{i}\frac{\partial}{\partial x} +
+\vec{j}\frac{\partial}{\partial y} + \vec{k}\frac{\partial}{\partial
+z}\right) \cdot (A_1\vec{i} + A_2\vec{j} + A_3\vec{k})\]</span></p>
+<p><span class="math display">\[= \frac{\partial A_1}{\partial x} +
+\frac{\partial A_2}{\partial y} + \frac{\partial A_3}{\partial
+z}\]</span></p>
+<h2 id="curl">3. Curl</h2>
+<p>If <span class="math inline">\(\vec{A}(x, y, z)\)</span> is a
+differentiable vector field, then the <strong>curl</strong> of <span
+class="math inline">\(\vec{A}\)</span> is defined by:</p>
+<p><span class="math display">\[\text{curl } \vec{A} = \nabla \times
+\vec{A}\]</span></p>
+<p>Expanding the cross product:</p>
+<p><span class="math display">\[\nabla \times \vec{A} =
+\left(\vec{i}\frac{\partial}{\partial x} +
+\vec{j}\frac{\partial}{\partial y} + \vec{k}\frac{\partial}{\partial
+z}\right) \times (A_1\vec{i} + A_2\vec{j} + A_3\vec{k})\]</span></p>
+<p>This can be written as a determinant:</p>
+<p><span class="math display">\[\nabla \times \vec{A} = \begin{vmatrix}
+\vec{i} &amp; \vec{j} &amp; \vec{k} \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp;
+\frac{\partial}{\partial z} \\
+A_1 &amp; A_2 &amp; A_3
+\end{vmatrix}\]</span></p>
+<p>Expanding the determinant:</p>
+<p><span class="math display">\[\nabla \times \vec{A} =
+\left(\frac{\partial A_3}{\partial y} - \frac{\partial A_2}{\partial
+z}\right)\vec{i} + \left(\frac{\partial A_1}{\partial z} -
+\frac{\partial A_3}{\partial x}\right)\vec{j} + \left(\frac{\partial
+A_2}{\partial x} - \frac{\partial A_1}{\partial
+y}\right)\vec{k}\]</span></p>
+<p><strong>Important Note:</strong> In the expansion of the determinant,
+the operators <span class="math inline">\(\frac{\partial}{\partial
+x}\)</span>, <span class="math inline">\(\frac{\partial}{\partial
+y}\)</span>, <span class="math inline">\(\frac{\partial}{\partial
+z}\)</span> must precede <span class="math inline">\(A_1\)</span>, <span
+class="math inline">\(A_2\)</span>, <span
+class="math inline">\(A_3\)</span>.</p>
+<!-- ===== page_12.md ===== -->
+<h1 id="formulas-involving">Formulas Involving ∇</h1>
+<p>If the partial derivatives of <span
+class="math inline">\(\vec{A}\)</span>, <span
+class="math inline">\(\vec{B}\)</span>, <span
+class="math inline">\(u\)</span> and <span
+class="math inline">\(V\)</span> are assumed to exist, then:</p>
+<h2 id="gradient-of-sum">1. Gradient of Sum</h2>
+<p><span class="math display">\[\nabla(u + V) = \nabla u + \nabla
+V\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\text{grad}(u + V) = \text{grad } u +
+\text{grad } V\]</span></p>
+<h2 id="divergence-of-sum">2. Divergence of Sum</h2>
+<p><span class="math display">\[\nabla \cdot (\vec{A} + \vec{B}) =
+\nabla \cdot \vec{A} + \nabla \cdot \vec{B}\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\text{div}(\vec{A} + \vec{B}) =
+\text{div } \vec{A} + \text{div } \vec{B}\]</span></p>
+<h2 id="curl-of-sum">3. Curl of Sum</h2>
+<p><span class="math display">\[\nabla \times (\vec{A} + \vec{B}) =
+\nabla \times \vec{A} + \nabla \times \vec{B}\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\text{curl}(\vec{A} + \vec{B}) =
+\text{curl } \vec{A} + \text{curl } \vec{B}\]</span></p>
+<h2 id="divergence-of-scalar-times-vector">4. Divergence of Scalar Times
+Vector</h2>
+<p><span class="math display">\[\nabla \cdot (u\vec{A}) = (\nabla u)
+\cdot \vec{A} + u(\nabla \cdot \vec{A})\]</span></p>
+<h2 id="curl-of-scalar-times-vector">5. Curl of Scalar Times Vector</h2>
+<p><span class="math display">\[\nabla \times (u\vec{A}) = (\nabla u)
+\times \vec{A} + u(\nabla \times \vec{A})\]</span></p>
+<h2 id="divergence-of-cross-product">6. Divergence of Cross Product</h2>
+<p><span class="math display">\[\nabla \cdot (\vec{A} \times \vec{B}) =
+\vec{B} \cdot (\nabla \times \vec{A}) - \vec{A} \cdot (\nabla \times
+\vec{B})\]</span></p>
+<h2 id="laplacian">7. Laplacian</h2>
+<p><span class="math display">\[\nabla \cdot (\nabla u) = \nabla^2 u =
+\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} +
+\frac{\partial^2 u}{\partial z^2}\]</span></p>
+<p>is called the <strong>Laplacian</strong> of <span
+class="math inline">\(u\)</span>, and <span
+class="math inline">\(\nabla^2 = \frac{\partial^2}{\partial x^2} +
+\frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial
+z^2}\)</span> is called the <strong>Laplacian operator</strong>.</p>
+<h2 id="curl-of-gradient">8. Curl of Gradient</h2>
+<p><span class="math display">\[\nabla \times (\nabla u) =
+0\]</span></p>
+<p>The curl of the gradient of <span class="math inline">\(u\)</span> is
+zero.</p>
+<h2 id="divergence-of-curl">9. Divergence of Curl</h2>
+<p><span class="math display">\[\nabla \cdot (\nabla \times \vec{A}) =
+0\]</span></p>
+<p>The divergence of the curl of <span
+class="math inline">\(\vec{A}\)</span> is zero.</p>
+<h2 id="curl-of-curl">10. Curl of Curl</h2>
+<p><span class="math display">\[\nabla \times (\nabla \times \vec{A}) =
+\nabla(\nabla \cdot \vec{A}) - \nabla^2\vec{A}\]</span></p>
+<!-- ===== page_13.md ===== -->
+<h1 id="example-1-gradient-divergence-and-curl">Example 1: Gradient,
+Divergence, and Curl</h1>
+<h2 id="problem-1">Problem</h2>
+<p>If <span class="math inline">\(\phi = x^2yz^3\)</span> and <span
+class="math inline">\(\vec{A} = xz\vec{i} - y^2\vec{j} +
+2x^2y\vec{k}\)</span>, find:</p>
+<ol type="a">
+<li><p><span class="math inline">\(\nabla\phi\)</span></p></li>
+<li><p><span class="math inline">\(\nabla \cdot
+\vec{A}\)</span></p></li>
+<li><p><span class="math inline">\(\nabla \times
+\vec{A}\)</span></p></li>
+<li><p><span
+class="math inline">\(\text{div}(\phi\vec{A})\)</span></p></li>
+<li><p><span
+class="math inline">\(\text{curl}(\phi\vec{A})\)</span></p></li>
+</ol>
+<h2 id="solution">Solution</h2>
+<h3 id="part-a-gradient-of-φ">Part (a): Gradient of φ</h3>
+<p><span class="math display">\[\nabla\phi =
+\left(\vec{i}\frac{\partial}{\partial x} +
+\vec{j}\frac{\partial}{\partial y} + \vec{k}\frac{\partial}{\partial
+z}\right)\phi\]</span></p>
+<p><span class="math display">\[= \frac{\partial\phi}{\partial x}\vec{i}
++ \frac{\partial\phi}{\partial y}\vec{j} + \frac{\partial\phi}{\partial
+z}\vec{k}\]</span></p>
+<p>Substituting <span class="math inline">\(\phi = x^2yz^3\)</span>:</p>
+<p><span class="math display">\[= \frac{\partial}{\partial
+x}(x^2yz^3)\vec{i} + \frac{\partial}{\partial y}(x^2yz^3)\vec{j} +
+\frac{\partial}{\partial z}(x^2yz^3)\vec{k}\]</span></p>
+<p><span class="math display">\[= 2xyz^3\vec{i} + x^2z^3\vec{j} +
+3x^2yz^2\vec{k}\]</span></p>
+<h3 id="part-b-divergence-of-a">Part (b): Divergence of A</h3>
+<p><span class="math display">\[\nabla \cdot \vec{A} =
+\left(\vec{i}\frac{\partial}{\partial x} +
+\vec{j}\frac{\partial}{\partial y} + \vec{k}\frac{\partial}{\partial
+z}\right) \cdot (xz\vec{i} - y^2\vec{j} + 2x^2y\vec{k})\]</span></p>
+<p><span class="math display">\[= \frac{\partial}{\partial x}(xz) +
+\frac{\partial}{\partial y}(-y^2) + \frac{\partial}{\partial
+z}(2x^2y)\]</span></p>
+<p><span class="math display">\[= z - 2y + 0 = z - 2y\]</span></p>
+<h3 id="part-c-curl-of-a">Part (c): Curl of A</h3>
+<p><span class="math display">\[\nabla \times \vec{A} = \begin{vmatrix}
+\vec{i} &amp; \vec{j} &amp; \vec{k} \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp;
+\frac{\partial}{\partial z} \\
+xz &amp; -y^2 &amp; 2x^2y
+\end{vmatrix}\]</span></p>
+<p>Expanding the determinant:</p>
+<p><span class="math display">\[= \left(\frac{\partial}{\partial
+y}(2x^2y) - \frac{\partial}{\partial z}(-y^2)\right)\vec{i} -
+\left(\frac{\partial}{\partial x}(2x^2y) - \frac{\partial}{\partial
+z}(xz)\right)\vec{j} + \left(\frac{\partial}{\partial x}(-y^2) -
+\frac{\partial}{\partial y}(xz)\right)\vec{k}\]</span></p>
+<p><span class="math display">\[= (2x^2 - 0)\vec{i} - (4xy - x)\vec{j} +
+(0 - 0)\vec{k}\]</span></p>
+<p><span class="math display">\[= 2x^2\vec{i} + (x -
+4xy)\vec{j}\]</span></p>
+<!-- ===== page_14.md ===== -->
+<h1 id="example-1-continued-divergence-and-curl-of-φa">Example 1
+(continued): Divergence and Curl of φA</h1>
+<h2 id="part-d-divergence-of-φa">Part (d): Divergence of φA</h2>
+<p>First, compute <span class="math inline">\(\phi\vec{A}\)</span>:</p>
+<p><span class="math display">\[\phi\vec{A} = (x^2yz^3)(xz\vec{i} -
+y^2\vec{j} + 2x^2y\vec{k})\]</span></p>
+<p><span class="math display">\[= x^3y^4\vec{i} - x^2y^3z^3\vec{j} +
+2x^4y^2z^3\vec{k}\]</span></p>
+<p>Now compute the divergence:</p>
+<p><span class="math display">\[\text{div}(\phi\vec{A}) = \nabla \cdot
+(\phi\vec{A})\]</span></p>
+<p><span class="math display">\[= \nabla \cdot (x^3y^4\vec{i} -
+x^2y^3z^3\vec{j} + 2x^4y^2z^3\vec{k})\]</span></p>
+<p><span class="math display">\[= \frac{\partial}{\partial x}(x^3y^4) +
+\frac{\partial}{\partial y}(-x^2y^3z^3) + \frac{\partial}{\partial
+z}(2x^4y^2z^3)\]</span></p>
+<p><span class="math display">\[= 3x^2y^4 - 3x^2y^2z^3 +
+6x^4y^2z^2\]</span></p>
+<h2 id="part-e-curl-of-φa">Part (e): Curl of φA</h2>
+<p><span class="math display">\[\text{curl}(\phi\vec{A}) = \nabla \times
+(\phi\vec{A})\]</span></p>
+<p><span class="math display">\[= \nabla \times (x^3y^4\vec{i} -
+x^2y^3z^3\vec{j} + 2x^4y^2z^3\vec{k})\]</span></p>
+<p>Using the determinant form:</p>
+<p><span class="math display">\[= \begin{vmatrix}
+\vec{i} &amp; \vec{j} &amp; \vec{k} \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp;
+\frac{\partial}{\partial z} \\
+x^3y^4 &amp; -x^2y^3z^3 &amp; 2x^4y^2z^3
+\end{vmatrix}\]</span></p>
+<p>Expanding:</p>
+<p><span class="math display">\[= \left(\frac{\partial}{\partial
+y}(2x^4y^2z^3) - \frac{\partial}{\partial
+z}(-x^2y^3z^3)\right)\vec{i}\]</span></p>
+<p><span class="math display">\[+ \left(\frac{\partial}{\partial
+z}(x^3y^4) - \frac{\partial}{\partial
+x}(2x^4y^2z^3)\right)\vec{j}\]</span></p>
+<p><span class="math display">\[+ \left(\frac{\partial}{\partial
+x}(-x^2y^3z^3) - \frac{\partial}{\partial
+y}(x^3y^4)\right)\vec{k}\]</span></p>
+<p>Computing the partial derivatives:</p>
+<p><span class="math display">\[= (4x^4yz^3 + 3x^2y^3z^2)\vec{i} +
+(4x^3y^2z^3 - 8x^3y^2z^3)\vec{j} - (2xy^3z^3 +
+x^3z^4)\vec{k}\]</span></p>
+<p>Simplifying:</p>
+<p><span class="math display">\[= (4x^4yz^3 + 3x^2y^3z^2)\vec{i} -
+4x^3y^2z^3\vec{j} - (2xy^3z^3 + x^3z^4)\vec{k}\]</span></p>
+<!-- ===== page_15.md ===== -->
+<h1 id="example-2-gradient-is-perpendicular-to-level-surfaces">Example
+2: Gradient is Perpendicular to Level Surfaces</h1>
+<h2 id="problem-2">Problem</h2>
+<p>Prove that <span class="math inline">\(\nabla\phi\)</span> is a
+vector perpendicular to the surface <span class="math inline">\(\phi(x,
+y, z) = c\)</span>, where <span class="math inline">\(c\)</span> is a
+constant.</p>
+<h2 id="solution-1">Solution</h2>
+<p>Let <span class="math inline">\(\vec{r} = x\vec{i} + y\vec{j} +
+z\vec{k}\)</span> be the position vector to any point <span
+class="math inline">\(P(x, y, z)\)</span> on the surface.</p>
+<p>Then <span class="math inline">\(d\vec{r} = dx\vec{i} + dy\vec{j} +
+dz\vec{k}\)</span> lies in the plane tangent to the surface at <span
+class="math inline">\(P\)</span>.</p>
+<p>Since <span class="math inline">\(\phi(x, y, z) = c\)</span> is
+constant on the surface, the total differential of <span
+class="math inline">\(\phi\)</span> is zero:</p>
+<p><span class="math display">\[d\phi = \frac{\partial\phi}{\partial
+x}dx + \frac{\partial\phi}{\partial y}dy + \frac{\partial\phi}{\partial
+z}dz = 0\]</span></p>
+<p>This can be written as a dot product:</p>
+<p><span class="math display">\[\left(\frac{\partial\phi}{\partial
+x}\vec{i} + \frac{\partial\phi}{\partial y}\vec{j} +
+\frac{\partial\phi}{\partial z}\vec{k}\right) \cdot (dx\vec{i} +
+dy\vec{j} + dz\vec{k}) = 0\]</span></p>
+<p>Recognizing that the first term is <span
+class="math inline">\(\nabla\phi\)</span> and the second is <span
+class="math inline">\(d\vec{r}\)</span>:</p>
+<p><span class="math display">\[\nabla\phi \cdot d\vec{r} =
+0\]</span></p>
+<p>Since <span class="math inline">\(d\vec{r}\)</span> lies in the
+tangent plane to the surface, and <span class="math inline">\(\nabla\phi
+\cdot d\vec{r} = 0\)</span>, it follows that <span
+class="math inline">\(\nabla\phi\)</span> is perpendicular to <span
+class="math inline">\(d\vec{r}\)</span> and therefore perpendicular to
+the surface.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The gradient <span class="math inline">\(\nabla\phi\)</span> is a
+vector perpendicular (normal) to the level surface <span
+class="math inline">\(\phi(x, y, z) = c\)</span>.</p>
+<!-- ===== page_16.md ===== -->
+<h1 id="laplacian-operator">Laplacian Operator</h1>
+<h2 id="definition-1">Definition</h2>
+<p>The Laplacian of a scalar field <span
+class="math inline">\(\phi\)</span> is defined as:</p>
+<p><span class="math display">\[\nabla \cdot \nabla\phi =
+\left(\vec{i}\frac{\partial}{\partial x} +
+\vec{j}\frac{\partial}{\partial y} + \vec{k}\frac{\partial}{\partial
+z}\right) \cdot \left(\frac{\partial\phi}{\partial x}\vec{i} +
+\frac{\partial\phi}{\partial y}\vec{j} + \frac{\partial\phi}{\partial
+z}\vec{k}\right)\]</span></p>
+<p>Expanding the dot product:</p>
+<p><span class="math display">\[= \frac{\partial}{\partial
+x}\left(\frac{\partial\phi}{\partial x}\right) +
+\frac{\partial}{\partial y}\left(\frac{\partial\phi}{\partial y}\right)
++ \frac{\partial}{\partial z}\left(\frac{\partial\phi}{\partial
+z}\right)\]</span></p>
+<p>Simplifying:</p>
+<p><span class="math display">\[= \frac{\partial^2\phi}{\partial x^2} +
+\frac{\partial^2\phi}{\partial y^2} + \frac{\partial^2\phi}{\partial
+z^2}\]</span></p>
+<p>Factoring out <span class="math inline">\(\phi\)</span>:</p>
+<p><span class="math display">\[= \left(\frac{\partial^2}{\partial x^2}
++ \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial
+z^2}\right)\phi = \nabla^2\phi\]</span></p>
+<p>where <span class="math inline">\(\nabla^2 =
+\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} +
+\frac{\partial^2}{\partial z^2}\)</span> is called the <strong>Laplacian
+operator</strong>.</p>
+<!-- ===== page_17.md ===== -->
+<h1 id="physical-interpretation-of-divergence">Physical Interpretation
+of Divergence</h1>
+<h2 id="introduction">Introduction</h2>
+<p>To give a physical interpretation for the divergence:</p>
+<p>Consider a typical volume element in a region filled with a moving
+fluid.</p>
+<p>Let <span class="math inline">\(\vec{v} = v_1\vec{i} + v_2\vec{j} +
+v_3\vec{k}\)</span> be a vector function representing at each point the
+instantaneous velocity of the particle of fluid.</p>
+<h2 id="the-loss-of-fluid-through-each-face">The Loss of Fluid Through
+Each Face</h2>
+<p>For a rectangular volume element with dimensions <span
+class="math inline">\(\Delta x\)</span>, <span
+class="math inline">\(\Delta y\)</span>, <span
+class="math inline">\(\Delta z\)</span> centered at point <span
+class="math inline">\((x, y, z)\)</span>:</p>
+<p><strong>Right face (positive y-direction):</strong> <span
+class="math display">\[[Pv_2 + \frac{\partial(Pv_2)}{\partial y}\Delta
+y]\Delta x \Delta z \Delta t\]</span></p>
+<p><strong>Left face (negative y-direction):</strong> <span
+class="math display">\[-Pv_2 \Delta x \Delta z \Delta t\]</span></p>
+<p><em>(Note: Density × Volume = Mass)</em></p>
+<p><strong>Front face (positive x-direction):</strong> <span
+class="math display">\[[Pv_1 + \frac{\partial(Pv_1)}{\partial x}\Delta
+x]\Delta y \Delta z \Delta t\]</span></p>
+<p><strong>Rear face (negative x-direction):</strong> <span
+class="math display">\[-Pv_1 \Delta y \Delta z \Delta t\]</span></p>
+<p><strong>Top face (positive z-direction):</strong> <span
+class="math display">\[[Pv_3 + \frac{\partial(Pv_3)}{\partial z}\Delta
+z]\Delta x \Delta y \Delta t\]</span></p>
+<p><strong>Bottom face (negative z-direction):</strong> <span
+class="math display">\[-Pv_3 \Delta x \Delta y \Delta t\]</span></p>
+<p>where <span class="math inline">\(P\)</span> is the density and <span
+class="math inline">\(\Delta t\)</span> is a time interval.</p>
+<!-- ===== page_18.md ===== -->
+<h1 id="equation-of-continuity">Equation of Continuity</h1>
+<h2 id="rate-of-loss-per-unit-volume">Rate of Loss Per Unit Volume</h2>
+<p>Adding the contributions from all faces and dividing by <span
+class="math inline">\(\Delta V \Delta t = \Delta x \Delta y \Delta z
+\Delta t\)</span>, we obtain in the limit:</p>
+<p><strong>Rate of loss per unit volume:</strong></p>
+<p><span class="math display">\[-\left(\frac{\partial(Pv_1)}{\partial x}
++ \frac{\partial(Pv_2)}{\partial y} + \frac{\partial(Pv_3)}{\partial
+z}\right)\]</span></p>
+<p>which is the divergence of the vector <span
+class="math inline">\(P\vec{v}\)</span>:</p>
+<p><span class="math display">\[-\nabla \cdot (P\vec{v})\]</span></p>
+<h2 id="physical-interpretation">Physical Interpretation</h2>
+<p>Therefore, one possible interpretation of the divergence is
+<strong>the rate of loss of fluid per unit volume</strong>.</p>
+<h2 id="equation-of-continuity-for-incompressible-fluids">Equation of
+Continuity for Incompressible Fluids</h2>
+<p>For an incompressible fluid, the density <span
+class="math inline">\(P\)</span> is constant, and there is neither gain
+nor loss in a general element. Hence:</p>
+<p><span class="math display">\[\nabla \cdot (P\vec{v}) = P \nabla \cdot
+\vec{v} = 0\]</span></p>
+<p>which simplifies to:</p>
+<p><span class="math display">\[\nabla \cdot \vec{v} = 0\]</span></p>
+<p>This is known as the <strong>equation of continuity</strong> for
+incompressible fluids.</p>
+<!-- ===== page_19.md ===== -->
+<h1 id="physical-interpretation-of-curl">Physical Interpretation of
+Curl</h1>
+<h2 id="problem-3">Problem</h2>
+<p>To interpret the curl physically:</p>
+<p>If <span class="math inline">\(\vec{v} = \vec{\omega} \times
+\vec{r}\)</span>, where: - <span class="math inline">\(\vec{v}\)</span>
+is the linear velocity vector - <span
+class="math inline">\(\vec{\omega}\)</span> is the angular velocity
+vector</p>
+<h2 id="derivation">Derivation</h2>
+<p>Then:</p>
+<p><span class="math display">\[\text{curl } \vec{v} = \nabla \times
+\vec{v} = \nabla \times (\vec{\omega} \times \vec{r})\]</span></p>
+<p>First, compute <span class="math inline">\(\vec{\omega} \times
+\vec{r}\)</span>:</p>
+<p><span class="math display">\[\vec{\omega} \times \vec{r} =
+\begin{vmatrix}
+\vec{i} &amp; \vec{j} &amp; \vec{k} \\
+\omega_1 &amp; \omega_2 &amp; \omega_3 \\
+x &amp; y &amp; z
+\end{vmatrix}\]</span></p>
+<p><span class="math display">\[= (\omega_2 z - \omega_3 y)\vec{i} +
+(\omega_3 x - \omega_1 z)\vec{j} + (\omega_1 y - \omega_2
+x)\vec{k}\]</span></p>
+<p>Now compute the curl:</p>
+<p><span class="math display">\[\nabla \times (\vec{\omega} \times
+\vec{r}) = \begin{vmatrix}
+\vec{i} &amp; \vec{j} &amp; \vec{k} \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp;
+\frac{\partial}{\partial z} \\
+(\omega_2 z - \omega_3 y) &amp; (\omega_3 x - \omega_1 z) &amp;
+(\omega_1 y - \omega_2 x)
+\end{vmatrix}\]</span></p>
+<p>Evaluating the determinant:</p>
+<p><span class="math display">\[= 2(\omega_1\vec{i} + \omega_2\vec{j} +
+\omega_3\vec{k}) = 2\vec{\omega}\]</span></p>
+<h2 id="conclusion-1">Conclusion</h2>
+<p>Therefore:</p>
+<p><span class="math display">\[\vec{\omega} = \frac{1}{2}\nabla \times
+\vec{v} = \frac{1}{2}\text{ curl } \vec{v}\]</span></p>
+<p><strong>Physical Interpretation:</strong> The angular velocity of a
+rotating body is equal to one-half the curl of the linear velocity of
+any point of the body.</p>
+<!-- ===== page_20.md ===== -->
+<h1
+id="chapter-2-line-integrals-and-greens-theorem-in-the-plane">Chapter 2:
+Line Integrals and Green’s Theorem in the Plane</h1>
+<h2 id="line-integrals">Line Integrals</h2>
+<h3 id="setup">Setup</h3>
+<p>Let <span class="math inline">\(C\)</span> be a curve in the <span
+class="math inline">\(xy\)</span>-plane which connects points <span
+class="math inline">\(A(a_1, b_1)\)</span> and <span
+class="math inline">\(B(a_2, b_2)\)</span>.</p>
+<p>Let <span class="math inline">\(P(x, y)\)</span> and <span
+class="math inline">\(Q(x, y)\)</span> be single-valued functions
+defined at all points of <span class="math inline">\(C\)</span>.</p>
+<h3 id="subdivision-of-the-curve">Subdivision of the Curve</h3>
+<p>Subdivide <span class="math inline">\(C\)</span> into <span
+class="math inline">\(n\)</span> parts by choosing <span
+class="math inline">\((n-1)\)</span> points on it given by <span
+class="math inline">\((x_1, y_1)\)</span>, <span
+class="math inline">\((x_2, y_2)\)</span>, <span
+class="math inline">\(\ldots\)</span>, <span
+class="math inline">\((x_{n-1}, y_{n-1})\)</span>.</p>
+<p>Define: - <span class="math inline">\(\Delta x_k = x_k -
+x_{k-1}\)</span> - <span class="math inline">\(\Delta y_k = y_k -
+y_{k-1}\)</span></p>
+<p>for <span class="math inline">\(k = 1, 2, \ldots, n\)</span>, where:
+- <span class="math inline">\((a_1, b_1) = (x_0, y_0)\)</span> - <span
+class="math inline">\((a_2, b_2) = (x_n, y_n)\)</span></p>
+<p>Suppose that points <span class="math inline">\((\xi_k,
+\eta_k)\)</span> are chosen so that they are situated on <span
+class="math inline">\(C\)</span> between points <span
+class="math inline">\((x_{k-1}, y_{k-1})\)</span> and <span
+class="math inline">\((x_k, y_k)\)</span>.</p>
+<h3 id="definition-of-line-integral">Definition of Line Integral</h3>
+<p>Form the sum:</p>
+<p><span class="math display">\[\sum_{k=1}^{n} \left[P(\xi_k,
+\eta_k)\Delta x_k + Q(\xi_k, \eta_k)\Delta y_k\right]
+\tag{2.1}\]</span></p>
+<p>This sum approximates the line integral along curve <span
+class="math inline">\(C\)</span>.</p>
+<!-- ===== page_21.md ===== -->
+<h1 id="definition-of-line-integral-1">Definition of Line Integral</h1>
+<h2 id="d-line-integral">2D Line Integral</h2>
+<p>The limit of the sum as <span class="math inline">\(n \to
+\infty\)</span> in such a way that all the quantities <span
+class="math inline">\(\Delta x_k\)</span>, <span
+class="math inline">\(\Delta y_k\)</span> approach zero, is called a
+<strong>line integral</strong> along <span
+class="math inline">\(C\)</span> and is denoted by:</p>
+<p><span class="math display">\[\int_{(a_1,b_1)}^{(a_2,b_2)} P(x,y) \,
+dx + Q(x,y) \, dy\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\int_{(a_1,b_1)}^{(a_2,b_2)} P \, dx + Q
+\, dy \tag{2.2}\]</span></p>
+<h2 id="d-line-integral-1">3D Line Integral</h2>
+<p>A line integral along a curve <span class="math inline">\(C\)</span>
+in three-dimensional space is defined as:</p>
+<p><span class="math display">\[\lim_{n \to \infty} \sum_{k=1}^{n}
+\left[A_1(\xi_k, \eta_k, \zeta_k)\Delta x_k + A_2(\xi_k, \eta_k,
+\zeta_k)\Delta y_k + A_3(\xi_k, \eta_k, \zeta_k)\Delta
+z_k\right]\]</span></p>
+<p><span class="math display">\[= \int_C [A_1 \, dx + A_2 \, dy + A_3 \,
+dz] \tag{2.3}\]</span></p>
+<p>where <span class="math inline">\(A_1\)</span>, <span
+class="math inline">\(A_2\)</span> and <span
+class="math inline">\(A_3\)</span> are functions of <span
+class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>
+and <span class="math inline">\(z\)</span>.</p>
+<h2 id="vector-notation-for-line-integrals">Vector Notation for Line
+Integrals</h2>
+<p>It is often convenient to express a line integral in vector form as
+an aid in physical or geometric understanding as well as for brevity of
+notation.</p>
+<p>The 3D line integral can be written as:</p>
+<p><span class="math display">\[\int_C [A_1 \, dx + A_2 \, dy + A_3 \,
+dz] = \int_C (A_1\vec{i} + A_2\vec{j} + A_3\vec{k}) \cdot (dx\vec{i} +
+dy\vec{j} + dz\vec{k})\]</span></p>
+<p><span class="math display">\[= \int_C \vec{A} \cdot d\vec{r}
+\tag{2.4}\]</span></p>
+<!-- ===== page_22.md ===== -->
+<h1 id="parametric-form-and-properties-of-line-integrals">Parametric
+Form and Properties of Line Integrals</h1>
+<h2 id="parametric-form-of-line-integral">Parametric Form of Line
+Integral</h2>
+<p>If <span class="math inline">\(C\)</span> is given in parametric form
+<span class="math inline">\(x = \phi(t)\)</span>, <span
+class="math inline">\(y = \psi(t)\)</span>, the line integral
+becomes:</p>
+<p><span class="math display">\[\int_{t_1}^{t_2} \left[P\{\phi(t),
+\psi(t)\}\phi&#39;(t) \, dt + Q\{\phi(t), \psi(t)\}\psi&#39;(t) \,
+dt\right] \tag{2.7}\]</span></p>
+<p>where <span class="math inline">\(t_1\)</span> and <span
+class="math inline">\(t_2\)</span> denote the values corresponding to
+points <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> respectively.</p>
+<h2 id="properties-of-line-integrals">Properties of Line Integrals</h2>
+<h3 id="property-1-separation">Property 1: Separation</h3>
+<p><span class="math display">\[\int_C [P(x,y) \, dx + Q(x,y) \, dy] =
+\int_C P(x,y) \, dx + \int_C Q(x,y) \, dy\]</span></p>
+<h3 id="property-2-reversal-of-path">Property 2: Reversal of Path</h3>
+<p><span class="math display">\[\int_{(a_1,b_1)}^{(a_2,b_2)} [P \, dx +
+Q \, dy] = -\int_{(a_2,b_2)}^{(a_1,b_1)} [P \, dx + Q \,
+dy]\]</span></p>
+<h3 id="property-3-path-addition">Property 3: Path Addition</h3>
+<p><span class="math display">\[\int_{(a_1,b_1)}^{(a_2,b_2)} [P \, dx +
+Q \, dy] = \int_{(a_1,b_1)}^{(a_3,b_3)} [P \, dx + Q \, dy] +
+\int_{(a_3,b_3)}^{(a_2,b_2)} [P \, dx + Q \, dy]\]</span></p>
+<p>where <span class="math inline">\((a_3, b_3)\)</span> is an
+intermediate point on the curve <span
+class="math inline">\(C\)</span>.</p>
+<!-- ===== page_23.md ===== -->
+<h1 id="example-1-line-integral-along-different-paths">Example 1: Line
+Integral Along Different Paths</h1>
+<h2 id="problem-4">Problem</h2>
+<p><strong>Example (1):</strong> What is the value of <span
+class="math inline">\(\int_A^B \frac{1}{x+y} \, dx\)</span> along each
+of the paths shown in the figure?</p>
+<p>The paths are: 1. Parabolic arc: <span class="math inline">\(y =
+x^2\)</span> from <span class="math inline">\(A(1,1)\)</span> to <span
+class="math inline">\(B(2,4)\)</span> 2. Piecewise linear path: from
+<span class="math inline">\(A(1,1)\)</span> to <span
+class="math inline">\(Q(2,1)\)</span> (horizontal), then from <span
+class="math inline">\(Q(2,1)\)</span> to <span
+class="math inline">\(B(2,4)\)</span> (vertical)</p>
+<h2 id="solution-2">Solution</h2>
+<p>Before this integral can be evaluated, <span
+class="math inline">\(y\)</span> must be expressed in terms of <span
+class="math inline">\(x\)</span>. To do this, we recall from the
+definition of a line integral that the integrand is always to be
+evaluated <strong>ALONG THE PATH OF INTEGRATION</strong>.</p>
+<h3 id="path-1-parabolic-arc">Path 1: Parabolic Arc</h3>
+<p>Along the parabolic arc joining <span
+class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span>, we have <span class="math inline">\(y
+= x^2\)</span>.</p>
+<p>The integral becomes:</p>
+<p><span class="math display">\[\int_1^2 \frac{dx}{x + x^2} = \int_1^2
+\frac{dx}{x(1 + x)}\]</span></p>
+<p>Using partial fraction decomposition:</p>
+<p><span class="math display">\[\frac{1}{x(1 + x)} = \frac{1}{x} -
+\frac{1}{1 + x}\]</span></p>
+<p>Therefore:</p>
+<p><span class="math display">\[\int_1^2 \left(\frac{1}{x} - \frac{1}{1
++ x}\right) dx = \left[\ln x - \ln(1 + x)\right]_1^2\]</span></p>
+<p><span class="math display">\[= [\ln 2 - \ln 3] - [\ln 1 - \ln
+2]\]</span></p>
+<p><span class="math display">\[= \ln 2 - \ln 3 + \ln 2 =
+\ln\left(\frac{4}{3}\right)\]</span></p>
+<p><strong>Answer for Path 1:</strong> <span
+class="math inline">\(\boxed{\ln\left(\frac{4}{3}\right)}\)</span></p>
+<!-- ===== page_24.md ===== -->
+<h1 id="example-1-continued-other-paths">Example 1 (continued): Other
+Paths</h1>
+<h2 id="path-2-straight-line-from-a-to-b">Path 2: Straight Line from A
+to B</h2>
+<p>Along the straight-line path from <span
+class="math inline">\(A\)</span> to <span
+class="math inline">\(B\)</span>, we have <span class="math inline">\(y
+= 3x - 2\)</span>, and making the substitution in the integrand, we
+obtain the ordinary definite integral:</p>
+<p><span class="math display">\[\int_1^2 \frac{dx}{x + (3x - 2)} =
+\int_1^2 \frac{dx}{4x - 2}\]</span></p>
+<p><span class="math display">\[= \frac{1}{4}\int_1^2 \frac{dx}{x -
+\frac{1}{2}} = \frac{1}{4}\left[\ln(4x - 2)\right]_1^2\]</span></p>
+<p><span class="math display">\[= \frac{1}{4}[\ln(6) - \ln(2)] =
+\frac{1}{4}\ln 3\]</span></p>
+<p><strong>Answer for Path 2:</strong> <span
+class="math inline">\(\boxed{\frac{1}{4}\ln 3}\)</span></p>
+<h2 id="path-3-piecewise-linear-path-apb">Path 3: Piecewise Linear Path
+APB</h2>
+<p>To compute the line integral along the path <span
+class="math inline">\(APB\)</span>, we must perform two integrations,
+one along <span class="math inline">\(AP\)</span> and one along <span
+class="math inline">\(PB\)</span>, since the relation expressing <span
+class="math inline">\(y\)</span> in terms of <span
+class="math inline">\(x\)</span> is different on these two segments.</p>
+<p><strong>Along AP:</strong> The integral is zero, since <span
+class="math inline">\(x\)</span> remains constant and therefore in the
+sum leading to the integral each <span class="math inline">\(\Delta
+x_k\)</span> is zero.</p>
+<p><strong>Along PB:</strong> On which <span class="math inline">\(y =
+4\)</span>, we have the integral:</p>
+<p><span class="math display">\[\int_1^2 \frac{dx}{x + 4} = \left[\ln(x
++ 4)\right]_1^2 = \ln 6 - \ln 5 =
+\ln\left(\frac{6}{5}\right)\]</span></p>
+<p><strong>Answer for Path 3:</strong> <span
+class="math inline">\(\boxed{\ln\left(\frac{6}{5}\right)}\)</span></p>
+<h2 id="path-4-piecewise-linear-path-aqb">Path 4: Piecewise Linear Path
+AQB</h2>
+<p>Along the path <span class="math inline">\(AQB\)</span> we again have
+two integrations to perform.</p>
+<p><strong>Along AQ:</strong> On which <span class="math inline">\(y =
+1\)</span>, we have the integral:</p>
+<p><span class="math display">\[\int_1^2 \frac{dx}{x + 1} = \left[\ln(x
++ 1)\right]_1^2 = \ln 3 - \ln 2 =
+\ln\left(\frac{3}{2}\right)\]</span></p>
+<p><strong>Along QB:</strong> The vertical segment <span
+class="math inline">\(QB\)</span>: the integral is again zero (since
+<span class="math inline">\(x\)</span> is constant).</p>
+<p><strong>Answer for Path 4:</strong> <span
+class="math inline">\(\boxed{\ln\left(\frac{3}{2}\right)}\)</span></p>
+<!-- ===== page_25.md ===== -->
+<h1 id="example-2-line-integral-of-vector-field">Example 2: Line
+Integral of Vector Field</h1>
+<h2 id="problem-5">Problem</h2>
+<p><strong>Example (2):</strong> If <span class="math inline">\(\vec{A}
+= (3x^2 - 6yz)\vec{i} + (2y + 3xz)\vec{j} + (1 -
+4xyz^2)\vec{k}\)</span>, evaluate <span class="math inline">\(\int_C
+\vec{A} \cdot d\vec{r}\)</span> from <span
+class="math inline">\((0,0,0)\)</span> to <span
+class="math inline">\((1,1,1)\)</span> along the following paths <span
+class="math inline">\(C\)</span>:</p>
+<ol type="a">
+<li><p><span class="math inline">\(x = t\)</span>, <span
+class="math inline">\(y = t^2\)</span>, <span class="math inline">\(z =
+t^3\)</span></p></li>
+<li><p>The straight lines from <span
+class="math inline">\((0,0,0)\)</span> to <span
+class="math inline">\((0,0,1)\)</span>, then to <span
+class="math inline">\((0,1,1)\)</span>, and then to <span
+class="math inline">\((1,1,1)\)</span></p></li>
+<li><p>The straight line joining <span
+class="math inline">\((0,0,0)\)</span> and <span
+class="math inline">\((1,1,1)\)</span></p></li>
+</ol>
+<h2 id="solution-for-path-a">Solution for Path (a)</h2>
+<p>The line integral is:</p>
+<p><span class="math display">\[\int_C \vec{A} \cdot d\vec{r} = \int_C
+[(3x^2 - 6yz)\vec{i} + (2y + 3xz)\vec{j} + (1 - 4xyz^2)\vec{k}] \cdot
+(dx\vec{i} + dy\vec{j} + dz\vec{k})\]</span></p>
+<p><span class="math display">\[= \int_C [(3x^2 - 6yz) \, dx + (2y +
+3xz) \, dy + (1 - 4xyz^2) \, dz]\]</span></p>
+<h3 id="parameterization">Parameterization</h3>
+<p>If <span class="math inline">\(x = t\)</span>, <span
+class="math inline">\(y = t^2\)</span>, <span class="math inline">\(z =
+t^3\)</span>, points <span class="math inline">\((0,0,0)\)</span> and
+<span class="math inline">\((1,1,1)\)</span> correspond to <span
+class="math inline">\(t = 0\)</span> and <span class="math inline">\(t =
+1\)</span> respectively.</p>
+<p>Then: - <span class="math inline">\(\vec{A} = (3t^2 - 6t^5)\vec{i} +
+(2t^2 + 3t^4)\vec{j} + (1 - 4t^9)\vec{k}\)</span> - <span
+class="math inline">\(\vec{r} = t\vec{i} + t^2\vec{j} +
+t^3\vec{k}\)</span> - <span class="math inline">\(d\vec{r} = (1\vec{i} +
+2t\vec{j} + 3t^2\vec{k}) \, dt\)</span></p>
+<h3 id="computing-the-dot-product">Computing the Dot Product</h3>
+<p><span class="math display">\[\vec{A} \cdot d\vec{r} = (3t^2 -
+6t^5)(1) + (2t^2 + 3t^4)(2t) + (1 - 4t^9)(3t^2)\]</span></p>
+<p><span class="math display">\[= (3t^2 - 6t^5) + (4t^3 + 6t^5) + (3t^2
+- 12t^{11})\]</span></p>
+<p><span class="math display">\[= 6t^2 + 4t^3 - 12t^{11}\]</span></p>
+<h3 id="evaluating-the-integral">Evaluating the Integral</h3>
+<p><span class="math display">\[\int_C \vec{A} \cdot d\vec{r} = \int_0^1
+(6t^2 + 4t^3 - 12t^{11}) \, dt\]</span></p>
+<p><span class="math display">\[= \left[2t^3 + t^4 - t^{12}\right]_0^1 =
+2 + 1 - 1 = 2\]</span></p>
+<p><strong>Answer for Path (a):</strong> <span
+class="math inline">\(\boxed{2}\)</span></p>
+<!-- ===== page_26.md ===== -->
+<h1 id="example-2-continued-path-b---piecewise-straight-lines">Example 2
+(continued): Path (b) - Piecewise Straight Lines</h1>
+<h2
+id="path-b-straight-lines-from-000-to-001-then-to-011-then-to-111">Path
+(b): Straight Lines from (0,0,0) to (0,0,1), then to (0,1,1), then to
+(1,1,1)</h2>
+<h3 id="segment-1-from-000-to-001">Segment 1: From (0,0,0) to
+(0,0,1)</h3>
+<p>Along the straight line from <span
+class="math inline">\((0,0,0)\)</span> to <span
+class="math inline">\((0,0,1)\)</span>: - <span class="math inline">\(x
+= 0\)</span>, <span class="math inline">\(y = 0\)</span>, <span
+class="math inline">\(dx = 0\)</span>, <span class="math inline">\(dy =
+0\)</span> - <span class="math inline">\(z\)</span> varies from <span
+class="math inline">\(0\)</span> to <span
+class="math inline">\(1\)</span></p>
+<p>The integral over this part of the path is:</p>
+<p><span class="math display">\[\int_0^1 \left[\{3(0)^2 - 6(0)(z)\}0 +
+\{2(0) + 3(0)(z)\}0 + \{1 - 4(0)(0)(z^2)\} dz\right]\]</span></p>
+<p><span class="math display">\[= \int_0^1 dz = 1\]</span></p>
+<h3 id="segment-2-from-001-to-011">Segment 2: From (0,0,1) to
+(0,1,1)</h3>
+<p>Along the straight line from <span
+class="math inline">\((0,0,1)\)</span> to <span
+class="math inline">\((0,1,1)\)</span>: - <span class="math inline">\(x
+= 0\)</span>, <span class="math inline">\(z = 1\)</span>, <span
+class="math inline">\(dx = 0\)</span>, <span class="math inline">\(dz =
+0\)</span> - <span class="math inline">\(y\)</span> varies from <span
+class="math inline">\(0\)</span> to <span
+class="math inline">\(1\)</span></p>
+<p>The integral over this part of the path is:</p>
+<p><span class="math display">\[\int_0^1 \left[\{3(0)^2 - 6(y)(1)\}0 +
+\{2y + 3(0)(1)\} dy + \{1 - 4(0)(y)(1)^2\}0\right]\]</span></p>
+<p><span class="math display">\[= \int_0^1 2y \, dy =
+\left[y^2\right]_0^1 = 1\]</span></p>
+<h3 id="segment-3-from-011-to-111">Segment 3: From (0,1,1) to
+(1,1,1)</h3>
+<p>Along the straight line from <span
+class="math inline">\((0,1,1)\)</span> to <span
+class="math inline">\((1,1,1)\)</span>: - <span class="math inline">\(y
+= 1\)</span>, <span class="math inline">\(z = 1\)</span>, <span
+class="math inline">\(dy = 0\)</span>, <span class="math inline">\(dz =
+0\)</span> - <span class="math inline">\(x\)</span> varies from <span
+class="math inline">\(0\)</span> to <span
+class="math inline">\(1\)</span></p>
+<p>The integral over this part of the path is:</p>
+<p><span class="math display">\[\int_0^1 \left[\{3x^2 - 6(1)(1)\}dx +
+\{2(1) + 3x(1)\}0 + \{1 - 4x(1)(1)^2\}0\right]\]</span></p>
+<p><span class="math display">\[= \int_0^1 (3x^2 - 6) \, dx = \left[x^3
+- 6x\right]_0^1 = 1 - 6 = -5\]</span></p>
+<h3 id="total-for-path-b">Total for Path (b)</h3>
+<p>Adding all three segments:</p>
+<p><span class="math display">\[\int_C \vec{A} \cdot d\vec{r} = 1 + 1 -
+5 = -3\]</span></p>
+<p><strong>Answer for Path (b):</strong> <span
+class="math inline">\(\boxed{-3}\)</span></p>
+<!-- ===== page_27.md ===== -->
+<h1 id="example-2-continued-path-c---straight-line">Example 2
+(continued): Path (c) - Straight Line</h1>
+<h2 id="path-c-straight-line-joining-000-and-111">Path (c): Straight
+Line Joining (0,0,0) and (1,1,1)</h2>
+<p>The straight line joining <span
+class="math inline">\((0,0,0)\)</span> and <span
+class="math inline">\((1,1,1)\)</span> is given in parametric form
+by:</p>
+<p><span class="math display">\[x = t, \quad y = t, \quad z =
+t\]</span></p>
+<p>where <span class="math inline">\(t\)</span> varies from <span
+class="math inline">\(0\)</span> to <span
+class="math inline">\(1\)</span>.</p>
+<p>Then:</p>
+<p><span class="math display">\[\int_C \vec{A} \cdot d\vec{r} = \int_0^1
+\left[(3t^2 - 6t^2) \, dt + (2t + 3t^2) \, dt + (1 - 4t^4) \,
+dt\right]\]</span></p>
+<p>Simplifying each term: - First term: <span class="math inline">\(3t^2
+- 6t^2 = -3t^2\)</span> - Second term: <span class="math inline">\(2t +
+3t^2\)</span> - Third term: <span class="math inline">\(1 -
+4t^4\)</span></p>
+<p>Combining:</p>
+<p><span class="math display">\[= \int_0^1 (-3t^2 + 2t + 3t^2 + 1 -
+4t^4) \, dt\]</span></p>
+<p><span class="math display">\[= \int_0^1 (2t + 1 - 4t^4) \,
+dt\]</span></p>
+<p><span class="math display">\[= \left[t^2 + t -
+\frac{4t^5}{5}\right]_0^1\]</span></p>
+<p><span class="math display">\[= 1 + 1 - \frac{4}{5} = 2 - \frac{4}{5}
+= \frac{6}{5}\]</span></p>
+<p><strong>Answer for Path (c):</strong> <span
+class="math inline">\(\boxed{\frac{6}{5}}\)</span></p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li><strong>Path (a):</strong> <span class="math inline">\(\int_C
+\vec{A} \cdot d\vec{r} = 2\)</span></li>
+<li><strong>Path (b):</strong> <span class="math inline">\(\int_C
+\vec{A} \cdot d\vec{r} = -3\)</span></li>
+<li><strong>Path (c):</strong> <span class="math inline">\(\int_C
+\vec{A} \cdot d\vec{r} = \frac{6}{5}\)</span></li>
+</ul>
+<p><strong>Note:</strong> The line integral depends on the path taken,
+indicating that <span class="math inline">\(\vec{A}\)</span> is not a
+conservative vector field.</p>
+<!-- ===== page_28.md ===== -->
+<h1 id="simple-closed-curves-and-connected-regions">Simple Closed Curves
+and Connected Regions</h1>
+<h2 id="simple-closed-curves">Simple Closed Curves</h2>
+<p>A <strong>simple closed curve</strong> is a closed curve which does
+not intersect itself anywhere.</p>
+<p><strong>Examples:</strong> - A circle is simple - An irregular smooth
+closed loop (bean-shaped) is simple - A figure-eight shape is
+<strong>not simple</strong> (it intersects itself)</p>
+<h2 id="simply-and-multiply-connected-regions">Simply and Multiply
+Connected Regions</h2>
+<p>If a plane region has the property that any closed curve in it can be
+continuously shrunk to a point without leaving the region, then the
+region is called <strong>simply connected</strong>, otherwise it is
+called <strong>multiply connected</strong>.</p>
+<p><strong>Examples of simply connected regions:</strong> - Interior of
+a circle - Exterior of a circle</p>
+<p><strong>Example of multiply connected region:</strong> - The area
+between two concentric circles</p>
+<h2 id="positive-direction">Positive Direction</h2>
+<p>The <strong>positive direction</strong> around a closed curve is
+defined as the direction in which an observer would move if he traversed
+the curve in such a way that the area of <span
+class="math inline">\(R\)</span> was always on his left.</p>
+<p><strong>According to this definition:</strong> - If <span
+class="math inline">\(R\)</span> is the interior of a simple closed
+curve <span class="math inline">\(C\)</span>, then the positive
+direction around <span class="math inline">\(C\)</span> is the
+<strong>counter-clockwise</strong> direction. - If <span
+class="math inline">\(R\)</span> is the region exterior to a simple
+closed curve <span class="math inline">\(C\)</span>, then the positive
+direction around <span class="math inline">\(C\)</span> is the
+<strong>clockwise</strong> direction.</p>
+<!-- ===== page_29.md ===== -->
+<h1 id="greens-theorem-in-the-plane">Green’s Theorem in the Plane</h1>
+<h2 id="statement-of-greens-theorem">Statement of Green’s Theorem</h2>
+<p>Let <span class="math inline">\(P\)</span>, <span
+class="math inline">\(Q\)</span>, <span
+class="math inline">\(\frac{\partial P}{\partial y}\)</span>, <span
+class="math inline">\(\frac{\partial Q}{\partial x}\)</span> be
+single-valued and continuous in a simply-connected region <span
+class="math inline">\(R\)</span> bounded by a simple closed curve <span
+class="math inline">\(C\)</span>. Then:</p>
+<p><span class="math display">\[\oint_C [P \, dx + Q \, dy] = \iint_R
+\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
+y}\right) dx \, dy \tag{2.8}\]</span></p>
+<p>where <span class="math inline">\(\oint_C\)</span> is used to
+emphasize that <span class="math inline">\(C\)</span> is closed and that
+it is described in the positive direction.</p>
+<h2 id="extension">Extension</h2>
+<p>This theorem is also true for regions bounded by two or more closed
+curves (i.e., multiply-connected regions).</p>
+<h2 id="physical-interpretation-1">Physical Interpretation</h2>
+<p>Green’s Theorem relates a line integral around a closed curve to a
+double integral over the region enclosed by the curve. It is a special
+case of Stokes’ Theorem in two dimensions.</p>
+<!-- ===== page_30.md ===== -->
+<h1 id="proof-of-greens-theorem-in-the-plane">Proof of Green’s Theorem
+in the Plane</h1>
+<h2 id="setup-1">Setup</h2>
+<p>To prove Green’s theorem in the plane, if <span
+class="math inline">\(C\)</span> is a closed curve which has the
+property that any straight line parallel to the coordinate axes cuts
+<span class="math inline">\(C\)</span> in at most two points.</p>
+<p>Let the equations of the curves <span
+class="math inline">\(AEB\)</span> and <span
+class="math inline">\(AFB\)</span> be <span class="math inline">\(y =
+Y_1(x)\)</span> and <span class="math inline">\(y = Y_2(x)\)</span>
+respectively. If <span class="math inline">\(R\)</span> is the region
+bounded by <span class="math inline">\(C\)</span>, we have:</p>
+<h2 id="proof-for-the-fracpartial-ppartial-y-term">Proof for the <span
+class="math inline">\(\frac{\partial P}{\partial y}\)</span> Term</h2>
+<p><span class="math display">\[\iint_R \frac{\partial P}{\partial y} \,
+dx \, dy = \int_{x=a}^{x=b} \left[\int_{y=Y_1(x)}^{y=Y_2(x)}
+\frac{\partial P}{\partial y} \, dy\right] dx\]</span></p>
+<p>Integrating with respect to <span
+class="math inline">\(y\)</span>:</p>
+<p><span class="math display">\[= \int_{x=a}^{x=b}
+\left[P(x,y)\right]_{y=Y_1(x)}^{y=Y_2(x)} dx\]</span></p>
+<p><span class="math display">\[= \int_a^b [P(x, Y_2) - P(x, Y_1)] \,
+dx\]</span></p>
+<p>Rearranging:</p>
+<p><span class="math display">\[= \int_a^b P(x, Y_1) \, dx - \int_a^b
+P(x, Y_2) \, dx\]</span></p>
+<p>Changing the limits on the second integral:</p>
+<p><span class="math display">\[= \int_a^b P(x, Y_1) \, dx - \int_b^a
+P(x, Y_2) \, dx\]</span></p>
+<p>Recognizing these as line integrals along <span
+class="math inline">\(C_1\)</span> (lower curve) and <span
+class="math inline">\(C_2\)</span> (upper curve):</p>
+<p><span class="math display">\[= -\oint_C P \, dx\]</span></p>
+<p>This proves the part of Green’s Theorem involving <span
+class="math inline">\(\frac{\partial P}{\partial y}\)</span>.</p>
+<p>A similar argument can be made for the <span
+class="math inline">\(\frac{\partial Q}{\partial x}\)</span> term,
+leading to the complete statement of Green’s Theorem.</p>
+<!-- ===== page_31.md ===== -->
+<h1 id="proof-of-greens-theorem-continued">Proof of Green’s Theorem
+(continued)</h1>
+<h2 id="completion-of-the-proof">Completion of the Proof</h2>
+<p>From the previous page, we had:</p>
+<p><span class="math display">\[\oint_C P \, dx = -\iint_R
+\frac{\partial P}{\partial y} \, dx \, dy \tag{2.9}\]</span></p>
+<h2 id="proof-for-the-fracpartial-qpartial-x-term">Proof for the <span
+class="math inline">\(\frac{\partial Q}{\partial x}\)</span> Term</h2>
+<p>Similarly, let the equations of curves <span
+class="math inline">\(EAF\)</span> and <span
+class="math inline">\(EBF\)</span> be <span class="math inline">\(x =
+x_1(y)\)</span> and <span class="math inline">\(x = x_2(y)\)</span>
+respectively. Then:</p>
+<p><span class="math display">\[\iint_R \frac{\partial Q}{\partial x} \,
+dx \, dy = \int_{y=e}^{y=f} \left[\int_{x=x_1(y)}^{x=x_2(y)}
+\frac{\partial Q}{\partial x} \, dx\right] dy\]</span></p>
+<p>Integrating with respect to <span
+class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[= \int_e^f [Q(x_2(y), y) - Q(x_1(y), y)]
+\, dy\]</span></p>
+<p>Rearranging:</p>
+<p><span class="math display">\[= -\int_e^f Q(x_1(y), y) \, dy +
+\int_e^f Q(x_2(y), y) \, dy\]</span></p>
+<p>Recognizing these as line integrals along the curve:</p>
+<p><span class="math display">\[= \oint_C Q \, dy\]</span></p>
+<p>Therefore:</p>
+<p><span class="math display">\[\oint_C Q \, dy = \iint_R \frac{\partial
+Q}{\partial x} \, dx \, dy \tag{2.10}\]</span></p>
+<h2 id="combining-the-results">Combining the Results</h2>
+<p>Adding equations (2.9) and (2.10):</p>
+<p><span class="math display">\[\oint_C [P \, dx + Q \, dy] = \iint_R
+\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
+y}\right) dx \, dy\]</span></p>
+<p>This completes the proof of Green’s Theorem.</p>
+<!-- ===== page_32.md ===== -->
+<h1 id="extension-of-greens-theorem-to-complex-curves">Extension of
+Green’s Theorem to Complex Curves</h1>
+<h2 id="problem-6">Problem</h2>
+<p>To extend the proof to curves for which lines parallel to the
+coordinate axes may cut the curve in more than two points.</p>
+<h2 id="method">Method</h2>
+<p>Consider a closed curve <span class="math inline">\(C\)</span> such
+as shown in the figure. By constructing line <span
+class="math inline">\(ST\)</span>, the region is divided into two
+regions which are of the type considered in the previous proof and for
+which Green’s theorem applies, i.e.:</p>
+<p><span class="math display">\[\int_{STUS} [P \, dx + Q \, dy] =
+\iint_{R_1} \left(\frac{\partial Q}{\partial x} - \frac{\partial
+P}{\partial y}\right) dx \, dy \tag{2.11}\]</span></p>
+<p><span class="math display">\[\int_{SVTS} [P \, dx + Q \, dy] =
+\iint_{R_2} \left(\frac{\partial Q}{\partial x} - \frac{\partial
+P}{\partial y}\right) dx \, dy \tag{2.12}\]</span></p>
+<h2 id="adding-the-left-hand-sides">Adding the Left-Hand Sides</h2>
+<p>Adding the left-hand sides:</p>
+<p><span class="math display">\[\int_{STUS} + \int_{SVTS} = \int_{ST} +
+\int_{TUS} + \int_{SVT} + \int_{TS}\]</span></p>
+<p>Since <span class="math inline">\(\int_{ST} + \int_{TS} = 0\)</span>
+(the integrals cancel as they are in opposite directions):</p>
+<p><span class="math display">\[= \int_{TUS} + \int_{SVT} =
+\oint_C\]</span></p>
+<h2 id="adding-the-right-hand-sides">Adding the Right-Hand Sides</h2>
+<p>Adding the right-hand sides:</p>
+<p><span class="math display">\[\iint_{R_1} + \iint_{R_2} =
+\iint_R\]</span></p>
+<h2 id="conclusion-2">Conclusion</h2>
+<p>Then:</p>
+<p><span class="math display">\[\oint_C [P \, dx + Q \, dy] = \iint_R
+\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
+y}\right) dx \, dy\]</span></p>
+<p>This extends Green’s Theorem to more complex curves.</p>
+<!-- ===== page_33.md ===== -->
+<h1 id="greens-theorem-for-multiply-connected-regions">Green’s Theorem
+for Multiply-Connected Regions</h1>
+<h2 id="setup-2">Setup</h2>
+<p>To extend the theorem to multiply-connected regions, consider the
+shaded region shown in the figure.</p>
+<p>The region is multiply-connected since not every closed curve can be
+shrunk to a point without leaving <span
+class="math inline">\(R\)</span>, as is observed by considering a curve
+surrounding <span class="math inline">\(DEFGD\)</span> for example.</p>
+<h2 id="boundary-and-positive-direction">Boundary and Positive
+Direction</h2>
+<p>The boundary of <span class="math inline">\(R\)</span>, which
+consists of the exterior boundary <span
+class="math inline">\(AHJKLA\)</span> and the interior boundary <span
+class="math inline">\(DEFGD\)</span>, is to be traversed in the positive
+direction, so that a person traveling in this direction always has the
+region on his left. It is seen that the positive directions are those
+indicated in the figure.</p>
+<h2 id="construction-of-cross-cut">Construction of Cross-Cut</h2>
+<p>In order to establish the theorem, construct a line, such as <span
+class="math inline">\(AD\)</span>, called a <strong>cross-cut</strong>,
+connecting the exterior and interior boundaries. The region bounded by
+<span class="math inline">\(ADEFGDALKJHA\)</span> is simply-connected,
+and so Green’s theorem is valid.</p>
+<h2 id="application-of-greens-theorem">Application of Green’s
+Theorem</h2>
+<p>Then:</p>
+<p><span class="math display">\[\oint_{ADEFGDALKJHA} [P \, dx + Q \, dy]
+= \iint_R \left(\frac{\partial Q}{\partial x} - \frac{\partial
+P}{\partial y}\right) dx \, dy\]</span></p>
+<p>But the integral on the left (leaving out the integrand) is equal
+to:</p>
+<p><span class="math display">\[\int_{AD} + \int_{DEFGD} + \int_{DA} +
+\int_{ALKJHA} = \int_{DEFGD} + \int_{ALKJHA}\]</span></p>
+<p>since <span class="math inline">\(\int_{AD} + \int_{DA} = 0\)</span>
+(the integrals cancel as they are in opposite directions).</p>
+<h2 id="final-result">Final Result</h2>
+<p>Thus, if <span class="math inline">\(C_1\)</span> is the curve <span
+class="math inline">\(ALKJHA\)</span>, <span
+class="math inline">\(C_2\)</span> is the curve <span
+class="math inline">\(DEFGD\)</span>, and <span
+class="math inline">\(C\)</span> is the boundary of <span
+class="math inline">\(R\)</span> consisting of <span
+class="math inline">\(C_1\)</span> and <span
+class="math inline">\(C_2\)</span> (traversed in the positive
+directions), then:</p>
+<p><span class="math display">\[\oint_{C_1} + \oint_{C_2} =
+\oint_C\]</span></p>
+<p>and so:</p>
+<p><span class="math display">\[\oint_C [P \, dx + Q \, dy] = \iint_R
+\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
+y}\right) dx \, dy\]</span></p>
+<!-- ===== page_34.md ===== -->
+<h1 id="greens-theorem-in-vector-notation">Green’s Theorem in Vector
+Notation</h1>
+<h2 id="vector-form-of-the-line-integral">Vector Form of the Line
+Integral</h2>
+<p>To express Green’s theorem in the plane in vector notation:</p>
+<p>We have:</p>
+<p><span class="math display">\[P \, dx + Q \, dy = (P\vec{i} +
+Q\vec{j}) \cdot (dx\vec{i} + dy\vec{j}) = \vec{A} \cdot
+d\vec{r}\]</span></p>
+<p>where: - <span class="math inline">\(\vec{A} = P\vec{i} +
+Q\vec{j}\)</span> - <span class="math inline">\(\vec{r} = x\vec{i} +
+y\vec{j}\)</span>, so <span class="math inline">\(d\vec{r} = dx\vec{i} +
+dy\vec{j}\)</span></p>
+<h2 id="curl-of-a-in-2d">Curl of A in 2D</h2>
+<p>Also:</p>
+<p><span class="math display">\[\nabla \times \vec{A} = \begin{vmatrix}
+\vec{i} &amp; \vec{j} &amp; \vec{k} \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp;
+\frac{\partial}{\partial z} \\
+P &amp; Q &amp; 0
+\end{vmatrix}\]</span></p>
+<p>Expanding the determinant:</p>
+<p><span class="math display">\[= \left(\frac{\partial}{\partial y}(0) -
+\frac{\partial}{\partial z}(Q)\right)\vec{i} -
+\left(\frac{\partial}{\partial x}(0) - \frac{\partial}{\partial
+z}(P)\right)\vec{j} + \left(\frac{\partial}{\partial x}(Q) -
+\frac{\partial}{\partial y}(P)\right)\vec{k}\]</span></p>
+<p>Since <span class="math inline">\(P\)</span> and <span
+class="math inline">\(Q\)</span> are functions of <span
+class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span> only:</p>
+<p><span class="math display">\[= \left(\frac{\partial Q}{\partial x} -
+\frac{\partial P}{\partial y}\right)\vec{k}\]</span></p>
+<h2 id="dot-product-with-unit-vector">Dot Product with Unit Vector</h2>
+<p><span class="math display">\[(\nabla \times \vec{A}) \cdot \vec{k} =
+\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
+y}\]</span></p>
+<h2 id="greens-theorem-in-vector-form">Green’s Theorem in Vector
+Form</h2>
+<p>Then Green’s theorem in the plane can be written:</p>
+<p><span class="math display">\[\oint_C \vec{A} \cdot d\vec{r} = \iint_R
+(\nabla \times \vec{A}) \cdot \vec{k} \, dx \, dy
+\tag{2.13}\]</span></p>
+<!-- ===== page_35.md ===== -->
+<h1 id="area-calculation-using-greens-theorem">Area Calculation Using
+Green’s Theorem</h1>
+<h2 id="area-formula">Area Formula</h2>
+<p>The area of a region <span class="math inline">\(R\)</span> bounded
+by a simple closed curve <span class="math inline">\(C\)</span> can be
+expressed using Green’s Theorem.</p>
+<p>If we choose <span class="math inline">\(P = 0\)</span> and <span
+class="math inline">\(Q = x\)</span>, then:</p>
+<p><span class="math display">\[\oint_C x \, dy = \iint_R
+\left(\frac{\partial x}{\partial x} - \frac{\partial 0}{\partial
+y}\right) dx \, dy = \iint_R dx \, dy = \text{Area of } R\]</span></p>
+<p>Alternatively, if we choose <span class="math inline">\(P =
+-y\)</span> and <span class="math inline">\(Q = 0\)</span>, then:</p>
+<p><span class="math display">\[\oint_C (-y) \, dx = \iint_R
+\left(\frac{\partial 0}{\partial x} - \frac{\partial (-y)}{\partial
+y}\right) dx \, dy = \iint_R dx \, dy = \text{Area of } R\]</span></p>
+<h2 id="combined-formula">Combined Formula</h2>
+<p>Combining both formulas:</p>
+<p><span class="math display">\[\text{Area} = \frac{1}{2}\oint_C (x \,
+dy - y \, dx)\]</span></p>
+<p>This provides a convenient way to calculate the area of a region
+using a line integral around its boundary.</p>
+<!-- ===== page_36.md ===== -->
+<h1 id="area-formula-and-example-verifying-greens-theorem">Area Formula
+and Example: Verifying Green’s Theorem</h1>
+<h2 id="area-formula-1">Area Formula</h2>
+<p>The area bounded by a simple closed curve <span
+class="math inline">\(C\)</span> is given by:</p>
+<p><span class="math display">\[A = \frac{1}{2}\oint_C [x \, dy - y \,
+dx]\]</span></p>
+<p><strong>Derivation:</strong></p>
+<p>Putting <span class="math inline">\(P = -y\)</span>, <span
+class="math inline">\(Q = x\)</span>, then:</p>
+<p><span class="math display">\[\oint_C [x \, dy - y \, dx] = \iint_R
+\left[\frac{\partial}{\partial x}(x) - \frac{\partial}{\partial
+y}(-y)\right] dx \, dy\]</span></p>
+<p><span class="math display">\[= \iint_R [1 - (-1)] dx \, dy = 2\iint_R
+dx \, dy = 2A\]</span></p>
+<p>where <span class="math inline">\(A\)</span> is the required
+area.</p>
+<p>Thus:</p>
+<p><span class="math display">\[A = \frac{1}{2}\oint_C [x \, dy - y \,
+dx]\]</span></p>
+<h2 id="example-verify-greens-theorem">Example: Verify Green’s
+Theorem</h2>
+<p>Verify Green’s theorem in the plane for:</p>
+<p><span class="math display">\[\oint_C [(2xy - x^2) \, dx + (x + y^2)
+\, dy]\]</span></p>
+<p>where <span class="math inline">\(C\)</span> is the closed curve of
+the region bounded by <span class="math inline">\(y = x^2\)</span> and
+<span class="math inline">\(y^2 = x\)</span>.</p>
+<p><strong>Intersection Points:</strong> The plane curves <span
+class="math inline">\(y = x^2\)</span> and <span
+class="math inline">\(y^2 = x\)</span> intersect at <span
+class="math inline">\((0,0)\)</span> and <span
+class="math inline">\((1,1)\)</span>.</p>
+<p><strong>Positive Direction:</strong> The positive direction in
+traversing <span class="math inline">\(C\)</span> is as shown in the
+figure (counter-clockwise).</p>
+<!-- ===== page_37.md ===== -->
+<h1 id="example-verification-of-greens-theorem-solution">Example:
+Verification of Green’s Theorem (Solution)</h1>
+<h2 id="solution-3">Solution</h2>
+<h3 id="method-1-direct-line-integral-calculation">Method 1: Direct Line
+Integral Calculation</h3>
+<p><strong>Along <span class="math inline">\(y = x^2\)</span> (from
+<span class="math inline">\((0,0)\)</span> to <span
+class="math inline">\((1,1)\)</span>):</strong></p>
+<p>The line integral equals:</p>
+<p><span class="math display">\[\int_{x=0}^1 \left[\{2x(x^2) - x^2\} dx
++ \{x + (x^2)^2\} d(x^2)\right]\]</span></p>
+<p><span class="math display">\[= \int_0^1 \left[(2x^3 - x^2) dx + (x +
+x^4)(2x \, dx)\right]\]</span></p>
+<p><span class="math display">\[= \int_0^1 (2x^3 - x^2 + 2x^2 + 2x^5) dx
+= \int_0^1 (2x^3 + x^2 + 2x^5) dx\]</span></p>
+<p><span class="math display">\[= \left[\frac{x^4}{2} + \frac{x^3}{3} +
+\frac{x^6}{3}\right]_0^1 = \frac{1}{2} + \frac{1}{3} + \frac{1}{3} =
+\frac{7}{6}\]</span></p>
+<p><strong>Along <span class="math inline">\(y^2 = x\)</span> (from
+<span class="math inline">\((1,1)\)</span> to <span
+class="math inline">\((0,0)\)</span>):</strong></p>
+<p>The line integral equals:</p>
+<p><span class="math display">\[\int_{y=1}^0 \left[\{2(y^2)(y) -
+(y^2)^2\} d(y^2) + \{y^2 + y^2\} dy\right]\]</span></p>
+<p><span class="math display">\[= \int_1^0 \left[(2y^3 - y^4)(2y \, dy)
++ 2y^2 dy\right]\]</span></p>
+<p><span class="math display">\[= \int_1^0 (4y^4 - 2y^5 + 2y^2) dy =
+-\int_0^1 (4y^4 - 2y^5 + 2y^2) dy\]</span></p>
+<p><span class="math display">\[= -\left[\frac{4y^5}{5} - \frac{2y^6}{6}
++ \frac{2y^3}{3}\right]_0^1 = -\left(\frac{4}{5} - \frac{1}{3} +
+\frac{2}{3}\right) = -\frac{17}{15}\]</span></p>
+<p><strong>Total Line Integral:</strong></p>
+<p><span class="math display">\[\oint_C = \frac{7}{6} - \frac{17}{15} =
+\frac{35 - 34}{30} = \frac{1}{30}\]</span></p>
+<h3 id="method-2-using-greens-theorem-double-integral">Method 2: Using
+Green’s Theorem (Double Integral)</h3>
+<p><span class="math display">\[\iint_R \left(\frac{\partial Q}{\partial
+x} - \frac{\partial P}{\partial y}\right) dx \, dy = \iint_R
+\left[\frac{\partial}{\partial x}(x + y^2) - \frac{\partial}{\partial
+y}(2xy - x^2)\right] dx \, dy\]</span></p>
+<p><span class="math display">\[= \iint_R (1 - 2x) dx \, dy\]</span></p>
+<p>Setting up the iterated integral:</p>
+<p><span class="math display">\[= \int_{x=0}^1 \int_{y=x^2}^{\sqrt{x}}
+(1 - 2x) dy \, dx\]</span></p>
+<p><span class="math display">\[= \int_0^1 \left[y -
+2xy\right]_{y=x^2}^{\sqrt{x}} dx\]</span></p>
+<p><span class="math display">\[= \int_0^1 \left[(\sqrt{x} - 2x^{3/2}) -
+(x^2 - 2x^3)\right] dx\]</span></p>
+<p><span class="math display">\[= \int_0^1 (x^{1/2} - 2x^{3/2} - x^2 +
+2x^3) dx\]</span></p>
+<p><span class="math display">\[= \left[\frac{2x^{3/2}}{3} -
+\frac{4x^{5/2}}{5} - \frac{x^3}{3} +
+\frac{x^4}{2}\right]_0^1\]</span></p>
+<p><span class="math display">\[= \frac{2}{3} - \frac{4}{5} -
+\frac{1}{3} + \frac{1}{2} = \frac{1}{30}\]</span></p>
+<h2 id="conclusion-3">Conclusion</h2>
+<p>Both methods yield the same result: <span
+class="math inline">\(\frac{1}{30}\)</span>. <strong>Green’s theorem is
+verified.</strong></p>
+<!-- ===== page_38.md ===== -->
+<h1 id="independence-of-the-path-for-a-line-integral">Independence of
+the Path for a Line Integral</h1>
+<h2 id="necessary-and-sufficient-condition">Necessary and Sufficient
+Condition</h2>
+<p>A necessary and sufficient condition for <span
+class="math inline">\(\int [P \, dx + Q \, dy]\)</span> to be
+independent of the path <span class="math inline">\(C\)</span> joining
+any two given points in a region <span class="math inline">\(R\)</span>
+is that in <span class="math inline">\(R\)</span>:</p>
+<p><span class="math display">\[\frac{\partial P}{\partial y} =
+\frac{\partial Q}{\partial x} \tag{2.14}\]</span></p>
+<p>where it is supposed that these partial derivatives are continuous in
+<span class="math inline">\(R\)</span>.</p>
+<h2 id="exact-differential">Exact Differential</h2>
+<p>The condition (2.14) is also the condition that <span
+class="math inline">\(P \, dx + Q \, dy\)</span> is an <strong>exact
+differential</strong>, i.e., that there exists a function <span
+class="math inline">\(\phi(x, y)\)</span> such that:</p>
+<p><span class="math display">\[P \, dx + Q \, dy = d\phi\]</span></p>
+<h2 id="evaluation-of-the-line-integral">Evaluation of the Line
+Integral</h2>
+<p>In such case, if the end points of curve <span
+class="math inline">\(C\)</span> are <span class="math inline">\((x_1,
+y_1)\)</span> and <span class="math inline">\((x_2, y_2)\)</span>, the
+value of the line integral is given by:</p>
+<p><span class="math display">\[\int_{(x_1,y_1)}^{(x_2,y_2)} [P \, dx +
+Q \, dy] = \int_{(x_1,y_1)}^{(x_2,y_2)} d\phi = \phi(x_2, y_2) -
+\phi(x_1, y_1) \tag{2.15}\]</span></p>
+<h2 id="special-case-closed-path">Special Case: Closed Path</h2>
+<p>In particular, if (2.14) holds and <span
+class="math inline">\(C\)</span> is closed, we have:</p>
+<p><span class="math display">\[\oint_C [P \, dx + Q \, dy] = 0
+\tag{2.16}\]</span></p>
+<!-- ===== page_39.md ===== -->
+<h1 id="proof-path-independence-condition">Proof: Path Independence
+Condition</h1>
+<h2 id="sufficiency">Sufficiency</h2>
+<p><strong>Suppose</strong> <span class="math inline">\(\frac{\partial
+P}{\partial y} = \frac{\partial Q}{\partial x}\)</span>. Then by Green’s
+theorem:</p>
+<p><span class="math display">\[\oint_C [P \, dx + Q \, dy] = \iint_R
+\left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial
+y}\right) dx \, dy = 0\]</span></p>
+<p>where <span class="math inline">\(R\)</span> is the region bounded by
+<span class="math inline">\(C\)</span>.</p>
+<p>Since the integrand is zero, the line integral around any closed path
+is zero, which implies path independence.</p>
+<h2 id="necessity">Necessity</h2>
+<p><strong>Suppose</strong> <span class="math inline">\(\oint_C [P \, dx
++ Q \, dy] = 0\)</span> around every closed path <span
+class="math inline">\(C\)</span> in <span
+class="math inline">\(R\)</span> and that <span
+class="math inline">\(\frac{\partial P}{\partial y}\)</span> and <span
+class="math inline">\(\frac{\partial Q}{\partial x}\)</span> are
+continuous in <span class="math inline">\(R\)</span>.</p>
+<p>In particular, suppose <span class="math inline">\(\frac{\partial
+P}{\partial y} - \frac{\partial Q}{\partial x} &gt; 0\)</span> at the
+point <span class="math inline">\((x_0, y_0)\)</span>.</p>
+<p>By hypothesis, <span class="math inline">\(\frac{\partial P}{\partial
+y}\)</span> and <span class="math inline">\(\frac{\partial Q}{\partial
+x}\)</span> are continuous in <span class="math inline">\(R\)</span>, so
+that there must be some region <span class="math inline">\(\tau\)</span>
+containing <span class="math inline">\((x_0, y_0)\)</span> as an
+interior point for which <span class="math inline">\(\frac{\partial
+P}{\partial y} - \frac{\partial Q}{\partial x} &gt; 0\)</span>.</p>
+<p>If <span class="math inline">\(\Gamma\)</span> is the boundary of
+<span class="math inline">\(\tau\)</span>, then by Green’s theorem:</p>
+<p><span class="math display">\[\oint_\Gamma [P \, dx + Q \, dy] =
+\iint_\tau \left(\frac{\partial Q}{\partial x} - \frac{\partial
+P}{\partial y}\right) dx \, dy &gt; 0\]</span></p>
+<p>which contradicts the hypothesis that <span
+class="math inline">\(\oint_C [P \, dx + Q \, dy] = 0\)</span> for
+<strong>all</strong> closed curves in <span
+class="math inline">\(R\)</span>.</p>
+<h2 id="conclusion-4">Conclusion</h2>
+<p>Thus <span class="math inline">\(\frac{\partial Q}{\partial x} -
+\frac{\partial P}{\partial y}\)</span> cannot be positive. Similarly, it
+cannot be negative, and it follows that it must be identically zero,
+i.e.:</p>
+<p><span class="math display">\[\frac{\partial P}{\partial y} =
+\frac{\partial Q}{\partial x}\]</span></p>
+<p>identically in <span class="math inline">\(R\)</span>.</p>
+<!-- ===== page_40.md ===== -->
+
+<h2 id="completion-of-the-pathindependence-proof">Completion of the
+Path–Independence Proof</h2>
+<p>From the previous arguments we saw that if, in a region <span
+class="math inline">\(R\)</span>,</p>
+<p><span class="math display">\[
+\oint_C [P \, dx + Q \, dy] = 0
+\]</span></p>
+<p>for every closed curve <span class="math inline">\(C\)</span> in
+<span class="math inline">\(R\)</span>, then</p>
+<p><span class="math display">\[
+\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}
+\]</span></p>
+<p>cannot be <strong>positive</strong> anywhere in <span
+class="math inline">\(R\)</span>.<br />
+Similarly, it cannot be <strong>negative</strong> anywhere in <span
+class="math inline">\(R\)</span>, and therefore it must be identically
+zero; that is,</p>
+<p><span class="math display">\[
+\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}
+\]</span></p>
+<p>identically in <span class="math inline">\(R\)</span>.</p>
+<p>To prove that this condition is also <strong>sufficient</strong>
+for</p>
+<p><span class="math display">\[
+\int_A^B [P \, dx + Q \, dy]
+\]</span></p>
+<p>to be independent of the path in <span
+class="math inline">\(R\)</span> joining the points <span
+class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span>, assume that</p>
+<p><span class="math display">\[
+\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}
+\]</span></p>
+<p>everywhere in <span class="math inline">\(R\)</span>.</p>
+<p>From the result just obtained, for any closed curve <span
+class="math inline">\(C\)</span> in <span
+class="math inline">\(R\)</span> we then have</p>
+<p><span class="math display">\[
+\oint_C [P \, dx + Q \, dy] = 0 .
+\]</span></p>
+<p>Let <span class="math inline">\(C_1\)</span> and <span
+class="math inline">\(C_2\)</span> be two different paths from <span
+class="math inline">\(A\)</span> to <span
+class="math inline">\(B\)</span> contained in <span
+class="math inline">\(R\)</span>, and let <span
+class="math inline">\(C\)</span> be the closed curve obtained by
+traversing <span class="math inline">\(C_1\)</span> from <span
+class="math inline">\(A\)</span> to <span
+class="math inline">\(B\)</span> and then <span
+class="math inline">\(C_2\)</span> from <span
+class="math inline">\(B\)</span> back to <span
+class="math inline">\(A\)</span>.<br />
+Along this closed curve</p>
+<p><span class="math display">\[
+\oint_C [P \, dx + Q \, dy]
+  = \int_{C_1} [P \, dx + Q \, dy]
+    + \int_{C_2} [P \, dx + Q \, dy]
+  = 0 .
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\int_{C_1} [P \, dx + Q \, dy]
+  = -\int_{C_2} [P \, dx + Q \, dy],
+\]</span></p>
+<p>but the second integral is taken from <span
+class="math inline">\(B\)</span> to <span
+class="math inline">\(A\)</span>. Reversing its direction gives</p>
+<p><span class="math display">\[
+\int_A^B{}_{C_1} [P \, dx + Q \, dy]
+  = \int_A^B{}_{C_2} [P \, dx + Q \, dy],
+\]</span></p>
+<p>and therefore the integral is <strong>independent of the
+path</strong> joining <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span> in <span
+class="math inline">\(R\)</span>.</p>
+<!-- ===== page_41.md ===== -->
+
+<h2 id="example-pathindependent-line-integral">Example: Path–Independent
+Line Integral</h2>
+<p>Prove that</p>
+<p><span class="math display">\[
+\int_{(1,2)}^{(3,4)}
+  \big[(6xy^2 - y^3)\,dx + (6x^2y - 3xy^2)\,dy\big]
+\]</span></p>
+<p>is independent of the path joining <span
+class="math inline">\((1,2)\)</span> and <span
+class="math inline">\((3,4)\)</span>, and evaluate the integral.</p>
+<p>We have</p>
+<p><span class="math display">\[
+P = 6xy^2 - y^3,
+  \qquad
+Q = 6x^2y - 3xy^2 .
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+\frac{\partial P}{\partial y}
+  = 12xy - 3y^2,
+  \qquad
+\frac{\partial Q}{\partial x}
+  = 12xy - 3y^2 .
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\frac{\partial P}{\partial y}
+  = \frac{\partial Q}{\partial x}
+\]</span></p>
+<p>everywhere, and therefore the line integral is <strong>independent of
+the path</strong>.</p>
+<p>To evaluate the integral we may use any convenient path.</p>
+<h3 id="method-1-piecewise-linear-path">Method (1): Piecewise Linear
+Path</h3>
+<p>Since the integral is path–independent, choose the broken line from
+<span class="math inline">\((1,2)\)</span> to <span
+class="math inline">\((3,2)\)</span> and then from <span
+class="math inline">\((3,2)\)</span> to <span
+class="math inline">\((3,4)\)</span>.</p>
+<ul>
+<li>On the first segment, <span class="math inline">\(y = 2\)</span> (so
+<span class="math inline">\(dy = 0\)</span>) and <span
+class="math inline">\(x\)</span> goes from <span
+class="math inline">\(1\)</span> to <span
+class="math inline">\(3\)</span>.</li>
+<li>On the second segment, <span class="math inline">\(x = 3\)</span>
+(so <span class="math inline">\(dx = 0\)</span>) and <span
+class="math inline">\(y\)</span> goes from <span
+class="math inline">\(2\)</span> to <span
+class="math inline">\(4\)</span>.</li>
+</ul>
+<p>On <span class="math inline">\((1,2)\)</span> to <span
+class="math inline">\((3,2)\)</span>:</p>
+<p><span class="math display">\[
+\int_{x=1}^{3} (6x\cdot 2^2 - 2^3)\,dx
+  = \int_{1}^{3} (24x - 8)\,dx .
+\]</span></p>
+<p>On <span class="math inline">\((3,2)\)</span> to <span
+class="math inline">\((3,4)\)</span>:</p>
+<p><span class="math display">\[
+\int_{y=2}^{4} (6\cdot 3^2 y - 3\cdot 3 y^2)\,dy
+  = \int_{2}^{4} (54y - 9y^2)\,dy .
+\]</span></p>
+<p>Thus the required integral equals</p>
+<p><span class="math display">\[
+\int_{1}^{3} (24x - 8)\,dx
+  + \int_{2}^{4} (54y - 9y^2)\,dy
+  = 80 + 156 = 236 .
+\]</span></p>
+<!-- ===== page_42.md ===== -->
+
+<h2 id="example-continued-method-2">Example (continued): Method (2)</h2>
+<h3 id="finding-a-potential-function">Finding a Potential Function</h3>
+<p>Since</p>
+<p><span class="math display">\[
+\frac{\partial P}{\partial y}
+  = \frac{\partial Q}{\partial x},
+\]</span></p>
+<p>there exists a scalar potential function <span
+class="math inline">\(\phi(x,y)\)</span> such that</p>
+<p><span class="math display">\[
+P \, dx + Q \, dy = d\phi .
+\]</span></p>
+<p>From</p>
+<p><span class="math display">\[
+P = \frac{\partial \phi}{\partial x} = 6xy^2 - y^3
+\]</span></p>
+<p>we integrate with respect to <span class="math inline">\(x\)</span>
+(treating <span class="math inline">\(y\)</span> as constant):</p>
+<p><span class="math display">\[
+\phi(x,y)
+  = 3x^2y^2 - xy^3 + f(y),
+\]</span></p>
+<p>where <span class="math inline">\(f(y)\)</span> is a function of
+<span class="math inline">\(y\)</span> only.</p>
+<p>Similarly, from</p>
+<p><span class="math display">\[
+Q = \frac{\partial \phi}{\partial y}
+  = 6x^2y - 3xy^2,
+\]</span></p>
+<p>integration with respect to <span class="math inline">\(y\)</span>
+gives</p>
+<p><span class="math display">\[
+\phi(x,y)
+  = 3x^2y^2 - x y^3 + g(x),
+\]</span></p>
+<p>where <span class="math inline">\(g(x)\)</span> is a function of
+<span class="math inline">\(x\)</span> only.</p>
+<p>The only way these two expressions for <span
+class="math inline">\(\phi\)</span> can be equal for all <span
+class="math inline">\((x,y)\)</span> is that</p>
+<p><span class="math display">\[
+f(y) = g(x) = c,
+\]</span></p>
+<p>a constant. Hence we may take</p>
+<p><span class="math display">\[
+\phi(x,y) = 3x^2y^2 - xy^3 + c .
+\]</span></p>
+<h3 id="evaluating-the-line-integral">Evaluating the Line Integral</h3>
+<p>Then</p>
+<p><span class="math display">\[
+\int_{(1,2)}^{(3,4)}
+  \big[(6xy^2 - y^3)\,dx + (6x^2y - 3xy^2)\,dy\big]
+  = \phi(3,4) - \phi(1,2).
+\]</span></p>
+<p>That is,</p>
+<p><span class="math display">\[
+\phi(3,4)
+  = 3\cdot 3^2 \cdot 4^2 - 3 \cdot 4^3 + c
+  = 432 - 192 + c = 240 + c,
+\]</span></p>
+<p><span class="math display">\[
+\phi(1,2)
+  = 3\cdot 1^2 \cdot 2^2 - 1 \cdot 2^3 + c
+  = 12 - 8 + c = 4 + c.
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+\phi(3,4) - \phi(1,2)
+  = (240 + c) - (4 + c)
+  = 236 .
+\]</span></p>
+<p>Thus, by Method (2), the value of the line integral is again</p>
+<p><span class="math display">\[
+\boxed{236}.
+\]</span></p>
+<!-- ===== page_43.md ===== -->
+
+<h2 id="complex-variables-and-conformal-mapping">Complex Variables and
+Conformal Mapping</h2>
+<h3 id="complex-numbers">Complex Numbers</h3>
+<p>A <strong>complex number</strong> is a number of the form</p>
+<p><span class="math display">\[
+z = a + bi,
+\]</span></p>
+<p>where <span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span> are real numbers and <span
+class="math inline">\(i\)</span>, called the <strong>imaginary
+unit</strong>, has the property that <span class="math inline">\(i^2 =
+-1\)</span>.</p>
+<p>If <span class="math inline">\(z = a + bi\)</span>, then:</p>
+<ul>
+<li><span class="math inline">\(a\)</span> is called the <strong>real
+part</strong> of <span class="math inline">\(z\)</span>,</li>
+<li><span class="math inline">\(b\)</span> is called the
+<strong>imaginary part</strong> of <span
+class="math inline">\(z\)</span>.</li>
+</ul>
+<p>The symbol <span class="math inline">\(z\)</span>, which represents
+any complex number, is called a <strong>complex variable</strong>.</p>
+<p>Two complex numbers <span class="math inline">\(a + bi\)</span> and
+<span class="math inline">\(c + di\)</span> are <strong>equal</strong>
+if and only if</p>
+<p><span class="math display">\[
+a = c
+  \quad\text{and}\quad
+b = d .
+\]</span></p>
+<p>The <strong>complex conjugate</strong> (or simply <em>conjugate</em>)
+of a complex number <span class="math inline">\(a + bi\)</span> is</p>
+<p><span class="math display">\[
+\overline{z} = a - bi .
+\]</span></p>
+<p>The conjugate of a complex number <span
+class="math inline">\(z\)</span> is often denoted by <span
+class="math inline">\(\overline{z}\)</span>.</p>
+<hr />
+<h3 id="fundamental-operations-with-complex-numbers">Fundamental
+Operations with Complex Numbers</h3>
+<ol type="1">
+<li><strong>Addition</strong></li>
+</ol>
+<p>For <span class="math inline">\(z_1 = a + bi\)</span> and <span
+class="math inline">\(z_2 = c + di\)</span>,</p>
+<p><span class="math display">\[
+z_1 + z_2
+  = (a + bi) + (c + di)
+  = (a + c) + (b + d)i .
+\]</span></p>
+<ol start="2" type="1">
+<li><strong>Subtraction</strong></li>
+</ol>
+<p><span class="math display">\[
+(a + bi) - (c + di)
+  = (a - c) + (b - d)i .
+\]</span></p>
+<p>Further operations (multiplication, division, modulus, argument,
+etc.) continue on the next pages.</p>
+<!-- ===== page_44.md ===== -->
+
+<h2
+id="fundamental-operations-with-complex-numbers-continued">Fundamental
+Operations with Complex Numbers (continued)</h2>
+<ol start="3" type="1">
+<li><strong>Multiplication</strong></li>
+</ol>
+<p>Let</p>
+<p><span class="math display">\[
+z_1 = a + bi, \qquad z_2 = c + di.
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+z_1 z_2
+  = (a + bi)(c + di)
+  = ac + adi + bci + bd i^2
+  = (ac - bd) + (ad + bc)i .
+\]</span></p>
+<ol start="4" type="1">
+<li><strong>Division</strong></li>
+</ol>
+<p>For <span class="math inline">\(z_1 = a + bi\)</span> and <span
+class="math inline">\(z_2 = c + di \neq 0\)</span>,</p>
+<p><span class="math display">\[
+\frac{a + bi}{c + di}
+  = \frac{a + bi}{c + di} \cdot \frac{c - di}{c - di}
+  = \frac{ac - adi + bci - bd i^2}{c^2 + d^2}
+  = \frac{ac + bd}{c^2 + d^2}
+    + \frac{bc - ad}{c^2 + d^2} i .
+\]</span></p>
+<hr />
+<h2 id="examples">Examples</h2>
+<ol type="1">
+<li><p><span class="math display">\[
+(7 - i) + (3 + 2i)
+  = 7 + 3 + (-1 + 2)i
+  = 10 + i .
+\]</span></p></li>
+<li><p><span class="math display">\[
+(5 + 3i) + \big[(1 + 2i) + (7 - 5i)\big]
+= (5 + 3i) + (8 - 3i)
+= 13 .
+\]</span></p></li>
+<li><p><span class="math display">\[
+(2 - 3i)(4 + 2i)
+= 2(4 + 2i) - 3i(4 + 2i)
+= 8 + 4i - 12i - 6i^2
+= 14 - 8i .
+\]</span></p></li>
+<li><p><span class="math display">\[
+\frac{3 - 2i}{-1 + i}
+= \frac{3 - 2i}{-1 + i} \cdot \frac{-1 - i}{-1 - i}
+= \frac{-3 - 3i + 2i + 2i^2}{1 - i^2}
+= \frac{-5 - i}{2}
+= -\frac{5}{2} - \frac{1}{2} i .
+\]</span></p></li>
+</ol>
+<!-- ===== page_45.md ===== -->
+
+<h2 id="geometric-representation-of-complex-numbers">Geometric
+Representation of Complex Numbers</h2>
+<p>A complex number</p>
+<p><span class="math display">\[
+z = x + iy
+\]</span></p>
+<p>can be represented as a point <span class="math inline">\(P\)</span>
+with coordinates <span class="math inline">\((x,y)\)</span> in a
+rectangular <span class="math inline">\(xy\)</span>–plane called the
+<strong>complex plane</strong> or <strong>Argand diagram</strong>.<br />
+The number <span class="math inline">\(z\)</span> can also be
+represented as a vector <span
+class="math inline">\(\overrightarrow{OP}\)</span> which joins the
+origin <span class="math inline">\(O\)</span> to <span
+class="math inline">\(P\)</span>.</p>
+<p>Let</p>
+<p><span class="math display">\[
+x = r\cos\theta, \qquad y = r\sin\theta,
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+r = \sqrt{x^2 + y^2}
+\]</span></p>
+<p>is the <strong>modulus</strong> (or absolute value) of <span
+class="math inline">\(z\)</span>, and</p>
+<p><span class="math display">\[
+\theta = \tan^{-1}\frac{y}{x}
+\]</span></p>
+<p>is the <strong>argument</strong> (or amplitude) of <span
+class="math inline">\(z\)</span>.</p>
+<p>Since <span class="math inline">\(z = x + iy\)</span>, we may
+write</p>
+<p><span class="math display">\[
+z = r\cos\theta + ir\sin\theta
+  = r(\cos\theta + i\sin\theta)
+  = r\operatorname{cis}\theta .
+\]</span></p>
+<p>This is known as the <strong>polar form</strong> of a complex
+number.</p>
+<!-- ===== page_46.md ===== -->
+
+<h2 id="geometric-interpretation-of-basic-operations">Geometric
+Interpretation of Basic Operations</h2>
+<p>Let <span class="math inline">\(z = a + ib\)</span> be represented by
+the point <span class="math inline">\((a,b)\)</span> in the complex
+plane.</p>
+<ul>
+<li>The point representing the <strong>conjugate</strong> <span
+class="math inline">\(\overline{z} = a - ib\)</span> is the reflection
+of <span class="math inline">\((a,b)\)</span> in the real axis.</li>
+<li>The point representing <span class="math inline">\(-z = -a -
+ib\)</span> is the reflection of <span
+class="math inline">\((a,b)\)</span> in the origin.</li>
+</ul>
+<p>If <span class="math inline">\(z_1\)</span> and <span
+class="math inline">\(z_2\)</span> are represented by vectors <span
+class="math inline">\(\overrightarrow{Oz_1}\)</span> and <span
+class="math inline">\(\overrightarrow{Oz_2}\)</span>, then:</p>
+<ul>
+<li>The vector for <span class="math inline">\(z_1 + z_2\)</span> is the
+diagonal of the parallelogram constructed on <span
+class="math inline">\(\overrightarrow{Oz_1}\)</span> and <span
+class="math inline">\(\overrightarrow{Oz_2}\)</span>.</li>
+<li>The vector for <span class="math inline">\(z_1 - z_2\)</span> is
+obtained by adding <span class="math inline">\(z_1\)</span> and <span
+class="math inline">\(-z_2\)</span>, i.e. by the parallelogram rule with
+<span class="math inline">\(\overrightarrow{O(-z_2)}\)</span>.</li>
+</ul>
+<p>These diagrams illustrate addition and subtraction of complex numbers
+as vector addition and subtraction in the Argand plane.</p>
+<!-- ===== page_47.md ===== -->
+
+<h2 id="example-rectangular-to-polar-form">Example: Rectangular to Polar
+Form</h2>
+<p><strong>Example.</strong> Express each of the following complex
+numbers in polar form.</p>
+<h3 id="a-2-2i">(a) (2 + 2,i)</h3>
+<p><strong>Modulus</strong></p>
+<p><span class="math display">\[
+r = |2 + 2\sqrt{3}\,i|
+  = \sqrt{2^2 + (2\sqrt{3})^2}
+  = \sqrt{4 + 12}
+  = 4 .
+\]</span></p>
+<p><strong>Argument</strong></p>
+<p><span class="math display">\[
+\theta = \sin^{-1}\frac{2\sqrt{3}}{4}
+       = \sin^{-1}\frac{\sqrt{3}}{2}
+       = 60^\circ = \frac{\pi}{3}.
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+2 + 2\sqrt{3}\,i
+  = r(\cos\theta + i\sin\theta)
+  = 4\big(\cos\frac{\pi}{3} + i\sin\frac{\pi}{3}\big).
+\]</span></p>
+<h3 id="b-----i">(b) (- - ,i)</h3>
+<p><strong>Modulus</strong></p>
+<p><span class="math display">\[
+r = |-\sqrt{6} - \sqrt{2}\,i|
+  = \sqrt{(\!-\sqrt{6})^2 + (\!-\sqrt{2})^2}
+  = \sqrt{6 + 2}
+  = 2\sqrt{2}.
+\]</span></p>
+<p>The point lies in the third quadrant. The reference angle is <span
+class="math inline">\(30^\circ\)</span>, so</p>
+<p><span class="math display">\[
+\theta = 180^\circ + 30^\circ = 210^\circ = \frac{7\pi}{6}.
+\]</span></p>
+<p>Thus</p>
+<p><span class="math display">\[
+-\sqrt{6} - \sqrt{2}\,i
+  = 2\sqrt{2}\big(\cos\frac{7\pi}{6} + i\sin\frac{7\pi}{6}\big).
+\]</span></p>
+<!-- ===== page_48.md ===== -->
+
+<h2 id="absolute-value-modulus">Absolute Value (Modulus)</h2>
+<p>The <strong>absolute value</strong> or <strong>modulus</strong> of a
+complex number <span class="math inline">\(a + bi\)</span> is defined
+as</p>
+<p><span class="math display">\[
+|a + bi| = \sqrt{a^2 + b^2}.
+\]</span></p>
+<p>If <span class="math inline">\(z_1\)</span> and <span
+class="math inline">\(z_2\)</span> are complex numbers, the following
+properties hold:</p>
+<ol type="1">
+<li><p><span class="math display">\[
+|z_1 z_2| = |z_1|\,|z_2|.
+\]</span></p></li>
+<li><p><span class="math display">\[
+\left|\frac{z_1}{z_2}\right|
+= \frac{|z_1|}{|z_2|}
+\qquad (z_2 \ne 0).
+\]</span></p></li>
+<li><p><strong>Triangle inequality</strong></p></li>
+</ol>
+<p><span class="math display">\[
+|z_1 + z_2| \le |z_1| + |z_2|.
+\]</span></p>
+<ol start="4" type="1">
+<li><span class="math display">\[
+|z_1 - z_2| \ge \big||z_1| - |z_2|\big|.
+\]</span></li>
+</ol>
+<hr />
+<h2 id="eulers-formula">Euler’s Formula</h2>
+<p>The Taylor series expansion for <span
+class="math inline">\(e^x\)</span> is</p>
+<p><span class="math display">\[
+e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots .
+\]</span></p>
+<p>Substituting <span class="math inline">\(x = i\theta\)</span>
+gives</p>
+<p><span class="math display">\[
+e^{i\theta}
+  = 1 + i\theta - \frac{\theta^2}{2!} - i\frac{\theta^3}{3!} + \cdots,
+\]</span></p>
+<p>which separates into real and imaginary parts:</p>
+<p><span class="math display">\[
+e^{i\theta}
+  = \Big(1 - \frac{\theta^2}{2!} + \frac{\theta^4}{4!} - \cdots\Big)
+    + i\Big(\theta - \frac{\theta^3}{3!} + \frac{\theta^5}{5!} -
+\cdots\Big)
+  = \cos\theta + i\sin\theta.
+\]</span></p>
+<p>This fundamental relation</p>
+<p><span class="math display">\[
+e^{i\theta} = \cos\theta + i\sin\theta
+\]</span></p>
+<p>is called <strong>Euler’s formula</strong>.</p>
+<!-- ===== page_49.md ===== -->
+
+<h2 id="de-moivres-theorem">De Moivre’s Theorem</h2>
+<p>Let</p>
+<p><span class="math display">\[
+z_1 = x_1 + iy_1 = r_1(\cos\theta_1 + i\sin\theta_1),
+\]</span> <span class="math display">\[
+z_2 = x_2 + iy_2 = r_2(\cos\theta_2 + i\sin\theta_2).
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+z_1 z_2
+  = r_1(\cos\theta_1 + i\sin\theta_1)\,
+    r_2(\cos\theta_2 + i\sin\theta_2)
+\]</span> <span class="math display">\[
+  = r_1 r_2\{\cos\theta_1\cos\theta_2 - \sin\theta_1\sin\theta_2
+        + i(\sin\theta_1\cos\theta_2 + \cos\theta_1\sin\theta_2)\}
+\]</span> <span class="math display">\[
+  = r_1 r_2\{\cos(\theta_1 + \theta_2)
+        + i\sin(\theta_1 + \theta_2)\}.
+\]</span></p>
+<p>If <span class="math inline">\(z_1 = z_2 = \cdots = z_n = z =
+r(\cos\theta + i\sin\theta)\)</span>, then by repeated
+multiplication,</p>
+<p><span class="math display">\[
+z^n = \{r(\cos\theta + i\sin\theta)\}^n
+    = r^n\big(\cos n\theta + i\sin n\theta\big).
+\]</span></p>
+<p>This is known as <strong>De Moivre’s Theorem</strong>.</p>
+<hr />
+<h2 id="example">Example</h2>
+<p>Find all values of <span class="math inline">\(z\)</span> for
+which</p>
+<p><span class="math display">\[
+z^5 = -32,
+\]</span></p>
+<p>and locate these values in the complex plane.</p>
+<p>In polar form</p>
+<p><span class="math display">\[
+-32 = 32\{\cos(\pi + 2k\pi) + i\sin(\pi + 2k\pi)\},
+  \qquad k = 0, \pm1, \pm2, \ldots
+\]</span></p>
+<!-- ===== page_50.md ===== -->
+
+<p>Continuing the example <span class="math inline">\(z^5 =
+-32\)</span>.</p>
+<p>Let</p>
+<p><span class="math display">\[
+z = r(\cos\theta + i\sin\theta).
+\]</span></p>
+<p>Then by De Moivre’s Theorem,</p>
+<p><span class="math display">\[
+z^5 = r^5(\cos 5\theta + i\sin 5\theta)
+    = -32
+    = 32\{\cos(\pi + 2k\pi) + i\sin(\pi + 2k\pi)\}.
+\]</span></p>
+<p>Thus</p>
+<p><span class="math display">\[
+r^5 = 32, \qquad r = 2,
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+5\theta = \pi + 2k\pi,
+  \qquad
+\theta = \frac{\pi + 2k\pi}{5},
+  \qquad k = 0,1,2,3,4.
+\]</span></p>
+<p>Hence the five distinct roots are</p>
+<p><span class="math display">\[
+z_k = 2\left\{\cos\frac{\pi + 2k\pi}{5}
+       + i\sin\frac{\pi + 2k\pi}{5}\right\},
+  \qquad k = 0,1,2,3,4.
+\]</span></p>
+<p>Explicitly,</p>
+<p><span class="math display">\[
+z_1 = 2\left(\cos\frac{\pi}{5} + i\sin\frac{\pi}{5}\right),
+\]</span> <span class="math display">\[
+z_2 = 2\left(\cos\frac{3\pi}{5} + i\sin\frac{3\pi}{5}\right),
+\]</span> <span class="math display">\[
+z_3 = 2\left(\cos\frac{5\pi}{5} + i\sin\frac{5\pi}{5}\right)
+    = 2(\cos\pi + i\sin\pi),
+\]</span> <span class="math display">\[
+z_4 = 2\left(\cos\frac{7\pi}{5} + i\sin\frac{7\pi}{5}\right),
+\]</span> <span class="math display">\[
+z_5 = 2\left(\cos\frac{9\pi}{5} + i\sin\frac{9\pi}{5}\right).
+\]</span></p>
+<p>By considering <span class="math inline">\(k = 5,6,\ldots\)</span> as
+well as negative values <span class="math inline">\(k =
+-1,-2,\ldots\)</span>, repetitions of these five values are
+obtained.<br />
+Hence these are the <strong>only solutions</strong> (or
+<strong>roots</strong>) of the given equation.<br />
+They are called the <strong>fifth roots of (-32)</strong> and are
+equally spaced on a circle of radius <span
+class="math inline">\(2\)</span> in the Argand plane.</p>
+<!-- ===== page_51.md ===== -->
+
+<h2 id="variables-and-functions">Variables and Functions</h2>
+<p>A symbol such as <span class="math inline">\(z\)</span>, which can
+stand for any one of a set of complex numbers, is called a
+<strong>complex variable</strong>.</p>
+<p>If to each value which a complex variable <span
+class="math inline">\(z\)</span> can assume there corresponds one or
+more values of a complex variable <span
+class="math inline">\(w\)</span>, we say that <strong><span
+class="math inline">\(w\)</span> is a function of <span
+class="math inline">\(z\)</span></strong> and write</p>
+<p><span class="math display">\[
+w = f(z) \quad\text{or}\quad w = g(z), \ \text{etc.}
+\]</span></p>
+<p>A function is called <strong>single–valued</strong> if for each value
+of <span class="math inline">\(z\)</span> there corresponds only one
+value of <span class="math inline">\(w\)</span>; otherwise it is
+<strong>multiple–valued</strong>.<br />
+Unless otherwise specified we shall assume that <span
+class="math inline">\(f(z)\)</span> is single–valued.</p>
+<p>In general we can write</p>
+<p><span class="math display">\[
+w = f(z) = u(x,y) + iv(x,y),
+\]</span></p>
+<p>where <span class="math inline">\(u\)</span> and <span
+class="math inline">\(v\)</span> are real functions of <span
+class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span>.</p>
+<h3 id="example-1">Example (1)</h3>
+<p>Let</p>
+<p><span class="math display">\[
+w = z^2 = (x + iy)^2
+      = x^2 - y^2 + 2ixy.
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+u(x,y) = x^2 - y^2, \qquad v(x,y) = 2xy.
+\]</span></p>
+<p>These are called the <strong>real</strong> and
+<strong>imaginary</strong> parts of <span class="math inline">\(w =
+z^2\)</span>, respectively.</p>
+<!-- ===== page_52.md ===== -->
+
+<h3 id="example-2">Example (2)</h3>
+<p>Let</p>
+<p><span class="math display">\[
+w = \frac{1}{1 - z}
+  = \frac{1}{1 - (x + iy)}
+  = \frac{1}{1 - x - iy}.
+\]</span></p>
+<p>Multiply numerator and denominator by the conjugate <span
+class="math inline">\(1 - x + iy\)</span>:</p>
+<p><span class="math display">\[
+w = \frac{1 - x + iy}{(1 - x)^2 + y^2}.
+\]</span></p>
+<p>Hence</p>
+<p><span class="math display">\[
+u(x,y) = \frac{1 - x}{(1 - x)^2 + y^2},
+  \qquad
+v(x,y) = \frac{y}{(1 - x)^2 + y^2}.
+\]</span></p>
+<hr />
+<h2 id="limits">Limits</h2>
+<p>The function <span class="math inline">\(f(z)\)</span> is said to
+have the <strong>limit</strong> <span class="math inline">\(L\)</span>
+as <span class="math inline">\(z\)</span> approaches <span
+class="math inline">\(z_0\)</span>, and we write</p>
+<p><span class="math display">\[
+\lim_{z \to z_0} f(z) = L,
+\]</span></p>
+<p>if for any positive number <span
+class="math inline">\(\epsilon\)</span> (however small) we can find some
+positive number <span class="math inline">\(\delta\)</span> such
+that</p>
+<p><span class="math display">\[
+|f(z) - L| &lt; \epsilon
+\]</span></p>
+<p>whenever</p>
+<p><span class="math display">\[
+0 &lt; |z - z_0| &lt; \delta .
+\]</span></p>
+<hr />
+<h2 id="continuity-1">Continuity</h2>
+<p>The function <span class="math inline">\(f(z)\)</span> is said to be
+<strong>continuous</strong> at <span class="math inline">\(z =
+z_0\)</span> if</p>
+<p><span class="math display">\[
+\lim_{z \to z_0} f(z) = f(z_0).
+\]</span></p>
+<p>This implies three conditions in order that <span
+class="math inline">\(f(z)\)</span> be continuous at <span
+class="math inline">\(z = z_0\)</span>:</p>
+<ol type="1">
+<li><span class="math inline">\(\displaystyle \lim_{z \to z_0} f(z) =
+L\)</span> must exist.</li>
+<li><span class="math inline">\(f(z_0)\)</span> must exist, i.e. <span
+class="math inline">\(f(z)\)</span> is defined at <span
+class="math inline">\(z_0\)</span>.</li>
+<li><span class="math inline">\(L = f(z_0)\)</span>.</li>
+</ol>
+<!-- ===== page_53.md ===== -->
+
+<h2 id="derivatives">Derivatives</h2>
+<p>If <span class="math inline">\(f(z)\)</span> is single–valued in some
+region <span class="math inline">\(R\)</span> of the <span
+class="math inline">\(z\)</span>–plane, the <strong>derivative</strong>
+of <span class="math inline">\(f(z)\)</span> is defined as</p>
+<p><span class="math display">\[
+f&#39;(z) = \lim_{\Delta z \to 0}
+        \frac{f(z + \Delta z) - f(z)}{\Delta z}, \tag{1}
+\]</span></p>
+<p>provided that this limit exists <strong>independently of the manner
+in which</strong> <span class="math inline">\(\Delta z \to
+0\)</span>.</p>
+<hr />
+<h2 id="analytic-functions">Analytic Functions</h2>
+<p>If the derivative <span class="math inline">\(f&#39;(z)\)</span>
+exists at all points of a region <span class="math inline">\(R\)</span>,
+then <span class="math inline">\(f(z)\)</span> is said to be
+<strong>analytic in <span class="math inline">\(R\)</span></strong>.</p>
+<hr />
+<h2 id="cauchyriemann-equations">Cauchy–Riemann Equations</h2>
+<p>A necessary condition that</p>
+<p><span class="math display">\[
+w = f(z) = u(x,y) + iv(x,y)
+\]</span></p>
+<p>be analytic in a region <span class="math inline">\(R\)</span> is
+that, in <span class="math inline">\(R\)</span>, <span
+class="math inline">\(u\)</span> and <span
+class="math inline">\(v\)</span> satisfy the <strong>Cauchy–Riemann
+equations</strong></p>
+<p><span class="math display">\[
+\frac{\partial u}{\partial x}
+  = \frac{\partial v}{\partial y},
+  \qquad
+\frac{\partial u}{\partial y}
+  = -\frac{\partial v}{\partial x}. \tag{2}
+\]</span></p>
+<p>If the second partial derivatives of <span
+class="math inline">\(u\)</span> and <span
+class="math inline">\(v\)</span> with respect to <span
+class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span> exist and are continuous, we find by
+differentiating (2) that</p>
+<p><span class="math display">\[
+\frac{\partial^2 u}{\partial x^2}
+  + \frac{\partial^2 u}{\partial y^2} = 0,
+  \qquad
+\frac{\partial^2 v}{\partial x^2}
+  + \frac{\partial^2 v}{\partial y^2} = 0. \tag{3}
+\]</span></p>
+<p>Thus the real and imaginary parts satisfy <strong>Laplace’s
+equation</strong> in two dimensions.<br />
+Functions satisfying Laplace’s equation are called <strong>harmonic
+functions</strong>.</p>
+<!-- ===== page_54.md ===== -->
+
+<h2 id="proof-of-the-cauchyriemann-equations-sketch">Proof of the
+Cauchy–Riemann Equations (Sketch)</h2>
+<p>Since</p>
+<p><span class="math display">\[
+f(z) = f(x + iy) = u(x,y) + iv(x,y),
+\]</span></p>
+<p>we have</p>
+<p><span class="math display">\[
+f(z + \Delta z)
+  = f\big(x + \Delta x + i(y + \Delta y)\big)
+  = u(x + \Delta x, y + \Delta y)
+    + i v(x + \Delta x, y + \Delta y),
+\]</span></p>
+<p>where <span class="math inline">\(\Delta z = \Delta x + i\Delta
+y\)</span>.</p>
+<p>Then, from the definition of the derivative,</p>
+<p><span class="math display">\[
+f&#39;(z)
+  = \lim_{\Delta z \to 0}
+    \frac{f(z + \Delta z) - f(z)}{\Delta z}
+\]</span> <span class="math display">\[
+  = \lim_{\Delta x \to 0,\;\Delta y \to 0}
+    \frac{\big[u(x + \Delta x, y + \Delta y) - u(x,y)\big]
+          + i\big[v(x + \Delta x, y + \Delta y) - v(x,y)\big]}
+           {\Delta x + i\Delta y}.
+\]</span></p>
+<p>If <span class="math inline">\(\Delta y = 0\)</span> (approach along
+the <span class="math inline">\(x\)</span>–direction), the required
+limit is</p>
+<p><span class="math display">\[
+\lim_{\Delta x \to 0}
+\frac{u(x + \Delta x, y) - u(x,y)}{\Delta x}
++ i
+\lim_{\Delta x \to 0}
+\frac{v(x + \Delta x, y) - v(x,y)}{\Delta x}
+\]</span> <span class="math display">\[
+= \frac{\partial u}{\partial x}
+   + i\frac{\partial v}{\partial x}.
+\]</span></p>
+<p>If <span class="math inline">\(\Delta x = 0\)</span> (approach along
+the <span class="math inline">\(y\)</span>–direction), the required
+limit is</p>
+<p><span class="math display">\[
+\lim_{\Delta y \to 0}
+\frac{u(x, y + \Delta y) - u(x,y)}{i\Delta y}
++ \lim_{\Delta y \to 0}
+\frac{v(x, y + \Delta y) - v(x,y)}{\Delta y}
+\]</span> <span class="math display">\[
+= \frac{1}{i}\frac{\partial u}{\partial y}
+   + \frac{\partial v}{\partial y}
+= -i\frac{\partial u}{\partial y}
+   + \frac{\partial v}{\partial y}.
+\]</span></p>
+<p>If the derivative <span class="math inline">\(f&#39;(z)\)</span> is
+to exist, these two special limits must be equal; that is,</p>
+<p><span class="math display">\[
+\frac{\partial u}{\partial x}
+  + i\frac{\partial v}{\partial x}
+  = -i\frac{\partial u}{\partial y}
+    + \frac{\partial v}{\partial y},
+\]</span></p>
+<p>which yields the Cauchy–Riemann equations</p>
+<p><span class="math display">\[
+\frac{\partial u}{\partial x}
+  = \frac{\partial v}{\partial y},
+  \qquad
+\frac{\partial u}{\partial y}
+  = -\frac{\partial v}{\partial x}.
+\]</span></p>
+<!-- ===== page_55.md ===== -->
+
+<h2 id="examples-using-the-cauchyriemann-equations">Examples Using the
+Cauchy–Riemann Equations</h2>
+<h3 id="example-4">Example (4)</h3>
+<p>For</p>
+<p><span class="math display">\[
+f(z) = \overline{z} = x - iy,
+\]</span></p>
+<p>we have</p>
+<p><span class="math display">\[
+u = x, \qquad v = -y.
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+\frac{\partial u}{\partial x} = 1, \qquad
+\frac{\partial u}{\partial y} = 0, \qquad
+\frac{\partial v}{\partial x} = 0, \qquad
+\frac{\partial v}{\partial y} = -1.
+\]</span></p>
+<p>Only the second of the Cauchy–Riemann equations,</p>
+<p><span class="math display">\[
+\frac{\partial u}{\partial y}
+  = -\frac{\partial v}{\partial x},
+\]</span></p>
+<p>is satisfied; the first is not. Hence there is <strong>no
+point</strong> in the <span class="math inline">\(z\)</span>–plane where
+<span class="math inline">\(f&#39;(z)\)</span> exists, and therefore
+<span class="math inline">\(f(z) = \overline{z}\)</span> is nowhere
+analytic.</p>
+<hr />
+<h3 id="example-5">Example (5)</h3>
+<p>For</p>
+<p><span class="math display">\[
+f(z) = z\overline{z}
+     = x^2 + y^2,
+\]</span></p>
+<p>we have</p>
+<p><span class="math display">\[
+u = x^2 + y^2, \qquad v = 0.
+\]</span></p>
+<p>Thus</p>
+<p><span class="math display">\[
+\frac{\partial u}{\partial x} = 2x, \qquad
+\frac{\partial u}{\partial y} = 2y, \qquad
+\frac{\partial v}{\partial x} = 0, \qquad
+\frac{\partial v}{\partial y} = 0.
+\]</span></p>
+<p>The Cauchy–Riemann equations become</p>
+<p><span class="math display">\[
+2x = 0, \qquad 2y = 0,
+\]</span></p>
+<p>which are satisfied <strong>only at the origin</strong>. Hence <span
+class="math inline">\(z = 0\)</span> is the only point at which <span
+class="math inline">\(f&#39;(z)\)</span> exists, and therefore <span
+class="math inline">\(f(z) = z\overline{z}\)</span> is nowhere
+analytic.</p>
+<!-- ===== page_56.md ===== -->
+
+<h2 id="applying-the-cauchyriemann-equations">Applying the
+Cauchy–Riemann Equations</h2>
+<p>For functions which are known to have continuous first partial
+derivatives, the Cauchy–Riemann equations provide a convenient test for
+analyticity:</p>
+<ol type="1">
+<li>Express <span class="math inline">\(f(z)\)</span> in the form <span
+class="math display">\[
+f(z) = u(x,y) + iv(x,y),
+\]</span> where <span class="math inline">\(z = x + iy\)</span>.</li>
+<li>Compute the first partial derivatives <span class="math display">\[
+\frac{\partial u}{\partial x},\quad
+\frac{\partial u}{\partial y},\quad
+\frac{\partial v}{\partial x},\quad
+\frac{\partial v}{\partial y}.
+\]</span></li>
+<li>Determine the points <span class="math inline">\((x,y)\)</span> at
+which the Cauchy–Riemann equations <span class="math display">\[
+\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y},
+\qquad
+\frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
+\]</span> are satisfied.</li>
+</ol>
+<p>If, in addition, the partial derivatives are continuous, then <span
+class="math inline">\(f(z)\)</span> is <strong>analytic</strong> at all
+such points and nowhere else.</p>
+<p>In subsequent sections these equations will be used to construct
+analytic functions, to relate potential and stream functions in fluid
+flow, and to solve boundary–value problems in two dimensions.</p>
+<!-- ===== page_57.md ===== -->
+
+<h3 id="example-6">Example (6)</h3>
+<p>For</p>
+<p><span class="math display">\[
+f(z) = z^2 = (x^2 - y^2) + 2ixy,
+\]</span></p>
+<p>we have</p>
+<p><span class="math display">\[
+u = x^2 - y^2, \qquad v = 2xy,
+\]</span></p>
+<p>and therefore</p>
+<p><span class="math display">\[
+\frac{\partial u}{\partial x} = 2x, \qquad
+\frac{\partial u}{\partial y} = -2y,
+\]</span> <span class="math display">\[
+\frac{\partial v}{\partial x} = 2y, \qquad
+\frac{\partial v}{\partial y} = 2x.
+\]</span></p>
+<p>The Cauchy–Riemann equations are identically satisfied.<br />
+Hence the derivative <span class="math inline">\(f&#39;(z)\)</span>
+exists at all points of the <span
+class="math inline">\(z\)</span>–plane, and its value is</p>
+<p><span class="math display">\[
+f&#39;(z)
+  = \frac{\partial u}{\partial x}
+    + i\frac{\partial v}{\partial x}
+  = -i\frac{\partial u}{\partial y}
+    + \frac{\partial v}{\partial y}
+  = 2x + 2iy
+  = 2z.
+\]</span></p>
+<p>This is exactly what formal differentiation according to the power
+rule would give.</p>
+<hr />
+<h3 id="example-7">Example (7)</h3>
+<p>Prove that in polar form the Cauchy–Riemann equations can be
+written</p>
+<p><span class="math display">\[
+\frac{\partial u}{\partial r}
+  = \frac{1}{r}\frac{\partial v}{\partial \theta},
+  \qquad
+\frac{\partial v}{\partial r}
+  = -\frac{1}{r}\frac{\partial u}{\partial \theta}.
+\]</span></p>
+<p>We use the relations</p>
+<p><span class="math display">\[
+x = r\cos\theta, \qquad y = r\sin\theta,
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+r^2 = x^2 + y^2, \qquad \tan\theta = \frac{y}{x}.
+\]</span></p>
+<p>By the chain rule we can express</p>
+<p><span class="math display">\[
+\frac{\partial u}{\partial x},\;
+\frac{\partial u}{\partial y},\;
+\frac{\partial v}{\partial x},\;
+\frac{\partial v}{\partial y}
+\]</span></p>
+<p>in terms of <span class="math inline">\(\partial u/\partial
+r\)</span>, <span class="math inline">\(\partial u/\partial
+\theta\)</span> and <span class="math inline">\(\partial v/\partial
+r\)</span>, <span class="math inline">\(\partial v/\partial
+\theta\)</span>.<br />
+Substituting these expressions into the Cauchy–Riemann equations and
+solving the resulting simultaneous equations yields the polar form
+displayed above.</p>
+<!-- ===== page_58.md ===== -->
+
+<h2 id="conformal-mapping">Conformal Mapping</h2>
+<h3 id="transformations-or-mappings">Transformations or Mappings</h3>
+<p>The set of equations</p>
+<p><span class="math display">\[
+u = u(x,y), \qquad v = v(x,y) \tag{4}
+\]</span></p>
+<p>defines in general a <strong>transformation</strong> or
+<strong>mapping</strong> which establishes a correspondence between
+points in the <span class="math inline">\(uv\)</span>– and <span
+class="math inline">\(xy\)</span>–planes.</p>
+<p>The equations (4) are called the <strong>transformation
+equations</strong>.<br />
+If to each point of the <span class="math inline">\(uv\)</span>–plane
+there corresponds one and only one point of the <span
+class="math inline">\(xy\)</span>–plane, we speak of a
+<strong>one–to–one</strong> transformation or mapping.</p>
+<p>In such a case a set of points in the <span
+class="math inline">\(xy\)</span>–plane is “wrapped’’ into a set of
+points in the <span class="math inline">\(uv\)</span>–plane and
+conversely.<br />
+The corresponding sets of points in the two planes are often called
+<strong>images</strong> of each other.</p>
+<!-- ===== page_59.md ===== -->
+
+<h2 id="conformal-mapping-continued">Conformal Mapping (continued)</h2>
+<p>Suppose that under a transformation (4) a point <span
+class="math inline">\((x_0, y_0)\)</span> of the <span
+class="math inline">\(xy\)</span>–plane is mapped into a point <span
+class="math inline">\((u_0, v_0)\)</span> of the <span
+class="math inline">\(uv\)</span>–plane, while curves <span
+class="math inline">\(C_1\)</span> and <span
+class="math inline">\(C_2\)</span> (intersecting at <span
+class="math inline">\((x_0, y_0)\)</span>) are mapped respectively into
+curves <span class="math inline">\(C_1&#39;\)</span> and <span
+class="math inline">\(C_2&#39;\)</span> (intersecting at <span
+class="math inline">\((u_0, v_0)\)</span>).</p>
+<p>If the transformation is such that the angle at <span
+class="math inline">\((x_0, y_0)\)</span> between <span
+class="math inline">\(C_1\)</span> and <span
+class="math inline">\(C_2\)</span> is equal to the angle at <span
+class="math inline">\((u_0, v_0)\)</span> between <span
+class="math inline">\(C_1&#39;\)</span> and <span
+class="math inline">\(C_2&#39;\)</span>, both in magnitude and in sense,
+the transformation or mapping is said to be <strong>conformal</strong>
+at <span class="math inline">\((x_0, y_0)\)</span>.</p>
+<p>The following theorem is fundamental.</p>
+<h3 id="theorem">Theorem</h3>
+<p>If <span class="math inline">\(f(z)\)</span> is analytic and <span
+class="math inline">\(f&#39;(z) \ne 0\)</span> in a region <span
+class="math inline">\(R\)</span>, then the mapping</p>
+<p><span class="math display">\[
+w = f(z)
+\]</span></p>
+<p>is <strong>conformal</strong> at all points of <span
+class="math inline">\(R\)</span>.</p>
+<!-- ===== page_60.md ===== -->
+
+<h2 id="riemanns-mapping-theorem">Riemann’s Mapping Theorem</h2>
+<p>Let <span class="math inline">\(C\)</span> be a simple closed curve
+in the <span class="math inline">\(z\)</span>–plane forming the boundary
+of a region <span class="math inline">\(R\)</span>.<br />
+Let <span class="math inline">\(C&#39;\)</span> be a circle of radius
+one and centre at the origin (the <strong>unit circle</strong>) forming
+the boundary of a region <span class="math inline">\(R&#39;\)</span> in
+the <span class="math inline">\(w\)</span>–plane. The region <span
+class="math inline">\(R&#39;\)</span> is sometimes called the
+<strong>unit disk</strong>.</p>
+<p>Then <strong>Riemann’s mapping theorem</strong> states that there
+exists a function</p>
+<p><span class="math display">\[
+w = f(z),
+\]</span></p>
+<p>analytic in <span class="math inline">\(R\)</span>, which maps each
+point of <span class="math inline">\(R\)</span> into a corresponding
+point of <span class="math inline">\(R&#39;\)</span> and each point of
+<span class="math inline">\(C\)</span> into a corresponding point of
+<span class="math inline">\(C&#39;\)</span>, the correspondence being
+one–to–one.</p>
+<p>This function <span class="math inline">\(f(z)\)</span> contains
+three arbitrary real constants which can be determined by making the
+centre of <span class="math inline">\(C&#39;\)</span> correspond to some
+given point in <span class="math inline">\(R\)</span>, while some point
+on <span class="math inline">\(C&#39;\)</span> corresponds to a given
+point on <span class="math inline">\(C\)</span>.</p>
+<p>It should be noted that while Riemann’s mapping theorem demonstrates
+the <strong>existence</strong> of such a mapping, it does not in general
+provide an explicit formula for <span
+class="math inline">\(f(z)\)</span>.</p>
+<!-- ===== page_61.md ===== -->
+
+<h2 id="some-general-transformations">Some General Transformations</h2>
+<p>In the following, <span class="math inline">\(\alpha\)</span> and
+<span class="math inline">\(\beta\)</span> are given complex constants,
+while <span class="math inline">\(a\)</span> and <span
+class="math inline">\(\theta\)</span> are real constants.</p>
+<ol type="1">
+<li><p><strong>Translation</strong></p>
+<p><span class="math display">\[
+w = z + \beta.
+\]</span></p>
+<p>By this transformation, figures in the <span
+class="math inline">\(z\)</span>–plane are <strong>displaced</strong> or
+<strong>translated</strong> in the direction of the vector <span
+class="math inline">\(\beta\)</span>.</p></li>
+<li><p><strong>Rotation</strong></p>
+<p><span class="math display">\[
+w = e^{i\theta} z.
+\]</span></p>
+<p>By this transformation, figures in the <span
+class="math inline">\(z\)</span>–plane are rotated through an angle
+<span class="math inline">\(\theta\)</span>.<br />
+If <span class="math inline">\(\theta &gt; 0\)</span> the rotation is
+counter‑clockwise; if <span class="math inline">\(\theta &lt; 0\)</span>
+the rotation is clockwise.</p></li>
+<li><p><strong>Stretching</strong></p>
+<p><span class="math display">\[
+w = az.
+\]</span></p>
+<p>By this transformation, figures in the <span
+class="math inline">\(z\)</span>–plane are stretched (or contracted) in
+the direction of <span class="math inline">\(z\)</span> if <span
+class="math inline">\(a &gt; 1\)</span> (or <span
+class="math inline">\(0 &lt; a &lt; 1\)</span>).<br />
+We consider contraction as a special case of stretching.</p></li>
+<li><p><strong>Inversion</strong></p>
+<p><span class="math display">\[
+w = \frac{1}{z}.
+\]</span></p></li>
+<li><p><strong>Linear Transformation</strong></p>
+<p><span class="math display">\[
+w = \alpha z + \beta.
+\]</span></p>
+<p>This is a combination of the transformations of translation, rotation
+and stretching.</p></li>
+</ol>
+<!-- ===== page_62.md ===== -->
+
+<ol start="6" type="1">
+<li><p><strong>Bilinear or Fractional Transformation</strong></p>
+<p><span class="math display">\[
+w = \frac{\alpha z + \beta}{\gamma z + \delta},
+\qquad \alpha\delta - \beta\gamma \ne 0.
+\]</span></p>
+<p>This is a combination of the transformations of translation,
+rotation, stretching and inversion.</p></li>
+</ol>
+<hr />
+<h2 id="example-1-1">Example (1)</h2>
+<p>Let the rectangular region <span class="math inline">\(R\)</span> in
+the <span class="math inline">\(z\)</span>–plane be bounded by</p>
+<p><span class="math display">\[
+x = 0,\quad y = 0,\quad x = 2,\quad y = 1.
+\]</span></p>
+<p>Determine the region <span class="math inline">\(R&#39;\)</span> of
+the <span class="math inline">\(w\)</span>–plane into which <span
+class="math inline">\(R\)</span> is mapped under the
+transformations:</p>
+<ol type="1">
+<li><span class="math inline">\(w = z + (1 + 2i)\)</span><br />
+</li>
+<li><span class="math inline">\(w = \sqrt{2}\,e^{i\pi/4} z\)</span></li>
+</ol>
+<h3 id="a-w-z-1-2i">(a) (w = z + (1 + 2i))</h3>
+<p>If</p>
+<p><span class="math display">\[
+w = z + (1 + 2i),
+\]</span></p>
+<p>then</p>
+<p><span class="math display">\[
+u + iv
+  = x + iy + 1 + 2i
+  = (x + 1) + i(y + 2),
+\]</span></p>
+<p>and therefore</p>
+<p><span class="math display">\[
+u = x + 1, \qquad v = y + 2.
+\]</span></p>
+<p>The line <span class="math inline">\(x = 0\)</span> is mapped into
+<span class="math inline">\(u = 1\)</span>, <span
+class="math inline">\(y = 0\)</span> into <span class="math inline">\(v
+= 2\)</span>, <span class="math inline">\(x = 2\)</span> into <span
+class="math inline">\(u = 3\)</span>, and <span class="math inline">\(y
+= 1\)</span> into <span class="math inline">\(v = 3\)</span>.<br />
+Thus <span class="math inline">\(R\)</span> is mapped onto the rectangle
+in the <span class="math inline">\(w\)</span>–plane bounded by</p>
+<p><span class="math display">\[
+u = 1,\quad u = 3,\quad v = 2,\quad v = 3.
+\]</span></p>
+<!-- ===== page_63.md ===== -->
+
+<h3 id="example-1-continued">Example (1) (continued)</h3>
+<h4 id="b-w-ei4-z">(b) (w = ,e^{i/4} z)</h4>
+<p>Let</p>
+<p><span class="math display">\[
+w = \sqrt{2}\,e^{i\pi/4} z.
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+u + iv
+  = \sqrt{2}(\cos\tfrac{\pi}{4} + i\sin\tfrac{\pi}{4})(x + iy)
+  = (1 + i)(x + iy)
+\]</span> <span class="math display">\[
+  = (x - y) + i(x + y),
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+u = x - y, \qquad v = x + y.
+\]</span></p>
+<p>The line <span class="math inline">\(x = 0\)</span> is mapped
+into</p>
+<p><span class="math display">\[
+u = -y,\quad v = y,
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+u = -v.
+\]</span></p>
+<p>The line <span class="math inline">\(y = 0\)</span> is mapped
+into</p>
+<p><span class="math display">\[
+u = x,\quad v = x,
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+u = v.
+\]</span></p>
+<p>The line <span class="math inline">\(x = 2\)</span> is mapped
+into</p>
+<p><span class="math display">\[
+u = 2 - y,\quad v = 2 + y,
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+u + v = 4.
+\]</span></p>
+<p>Finally, <span class="math inline">\(y = 1\)</span> is mapped
+into</p>
+<p><span class="math display">\[
+u = x - 1,\quad v = x + 1,
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+v - u = 2.
+\]</span></p>
+<p>Thus the image <span class="math inline">\(R&#39;\)</span> of the
+rectangle <span class="math inline">\(R\)</span> is the parallelogram in
+the <span class="math inline">\(w\)</span>–plane bounded by the
+lines</p>
+<p><span class="math display">\[
+u = v,\quad u = -v,\quad u + v = 4,\quad v - u = 2.
+\]</span></p>
+<p>The mapping accomplishes a <strong>rotation</strong> of <span
+class="math inline">\(R\)</span> through the angle <span
+class="math inline">\(\pi/4\)</span> and a <strong>stretching</strong>
+of lengths by the factor <span
+class="math inline">\(\sqrt{2}\)</span>.</p>
+<!-- ===== page_64.md ===== -->
+
+<h2 id="example-2-1">Example (2)</h2>
+<p>Determine the region of the <span
+class="math inline">\(w\)</span>–plane into which each of the following
+is mapped by the transformation</p>
+<p><span class="math display">\[
+w = z^2.
+\]</span></p>
+<h3 id="a-first-quadrant-of-the-zplane">(a) First quadrant of the <span
+class="math inline">\(z\)</span>–plane</h3>
+<p>Let</p>
+<p><span class="math display">\[
+z = re^{i\theta}, \qquad w = \rho e^{i\phi}.
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+\rho e^{i\phi} = z^2 e^{2i\theta},
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+\rho = r^2, \qquad \phi = 2\theta.
+\]</span></p>
+<p>Thus points in the <span class="math inline">\(z\)</span>–plane at
+<span class="math inline">\((r,\theta)\)</span> are rotated through
+angle <span class="math inline">\(2\theta\)</span> and have their
+modulus squared.</p>
+<p>All points in the first quadrant of the <span
+class="math inline">\(z\)</span>–plane occupy the region</p>
+<p><span class="math display">\[
+0 &lt; \theta &lt; \frac{\pi}{2},
+\]</span></p>
+<p>and therefore they map into</p>
+<p><span class="math display">\[
+0 &lt; \phi &lt; \pi,
+\]</span></p>
+<p>the upper half–plane of the <span
+class="math inline">\(w\)</span>–plane.</p>
+<!-- ===== page_65.md ===== -->
+
+<h3 id="example-2-continued">Example (2) (continued)</h3>
+<h4 id="b-region-bounded-by-x-1-y-1-and-x-y-1">(b) Region bounded by (x
+= 1), (y = 1) and (x y = 1)</h4>
+<p>Since</p>
+<p><span class="math display">\[
+w = z^2 \quad \Longleftrightarrow \quad
+u + iv = (x + iy)^2 = x^2 - y^2 + 2ixy,
+\]</span></p>
+<p>we see that</p>
+<p><span class="math display">\[
+u = x^2 - y^2, \qquad v = 2xy.
+\]</span></p>
+<p>The line <span class="math inline">\(x = 1\)</span> maps into</p>
+<p><span class="math display">\[
+u = 1 - y^2, \qquad v = 2y,
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+u = 1 - \frac{v^2}{4}.
+\]</span></p>
+<p>The line <span class="math inline">\(y = 1\)</span> maps into</p>
+<p><span class="math display">\[
+u = x^2 - 1, \qquad v = 2x,
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+u = \frac{v^2}{4} - 1.
+\]</span></p>
+<p>The curve <span class="math inline">\(xy = 1\)</span> can be written
+as <span class="math inline">\(y = 1/x\)</span> and maps into</p>
+<p><span class="math display">\[
+u = x^2 - \frac{1}{x^2},
+  \qquad
+v = 2,
+\]</span></p>
+<p>so that</p>
+<p><span class="math display">\[
+v = 2
+\]</span></p>
+<p>is a horizontal line.</p>
+<p>Eliminating <span class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span> in this way, the boundary curves in the
+<span class="math inline">\(w\)</span>–plane are</p>
+<p><span class="math display">\[
+u = 1 - \frac{v^2}{4}, \qquad
+u = \frac{v^2}{4} - 1, \qquad
+v = 2,
+\]</span></p>
+<p>and the corresponding region is the image of the curvilinear triangle
+bounded by <span class="math inline">\(x = 1\)</span>, <span
+class="math inline">\(y = 1\)</span>, and <span class="math inline">\(xy
+= 1\)</span> in the <span class="math inline">\(z\)</span>–plane.</p>
+<!-- ===== page_66.md ===== -->
+
+<h2 id="physical-applications-of-conformal-mapping">Physical
+Applications of Conformal Mapping</h2>
+<p>An important property of analytic functions is that they are
+<strong>harmonic</strong>; that is, their real and imaginary parts
+satisfy Laplace’s equation.<br />
+Another important characteristic is that a <strong>harmonic function
+remains harmonic under a conformal mapping</strong>, which makes
+conformal mapping very useful in solving engineering problems.</p>
+<p>Suppose, for example, that <span
+class="math inline">\(\Phi(x,y)\)</span> is a solution of</p>
+<p><span class="math display">\[
+\frac{\partial^2 \Phi}{\partial x^2}
+  + \frac{\partial^2 \Phi}{\partial y^2}
+  = 0. \tag{3.5}
+\]</span></p>
+<p>Then, when an analytic function</p>
+<p><span class="math display">\[
+z = x + iy = f(u + iv)
+\]</span></p>
+<p>transforms <span class="math inline">\(\Phi\)</span> into a function
+of <span class="math inline">\(u\)</span> and <span
+class="math inline">\(v\)</span>, the transformed function <span
+class="math inline">\(\Phi(u,v)\)</span> will satisfy</p>
+<p><span class="math display">\[
+\frac{\partial^2 \Phi}{\partial u^2}
+  + \frac{\partial^2 \Phi}{\partial v^2}
+  = 0, \tag{3.6}
+\]</span></p>
+<p>wherever the mapping is conformal.</p>
+<!-- ===== page_67.md ===== -->
+
+<h2 id="flow-of-an-ideal-fluid-past-a-circular-cylinder">Flow of an
+Ideal Fluid Past a Circular Cylinder</h2>
+<p>As an illustration, consider a two–dimensional incompressible,
+irrotational flow of an ideal fluid past a circular cylinder of radius
+<span class="math inline">\(1\)</span> whose axis is perpendicular to
+the <span class="math inline">\(xy\)</span>–plane.<br />
+We choose coordinates so that the centre of the cylinder is at the
+origin and the undisturbed stream at infinity is parallel to the <span
+class="math inline">\(x\)</span>–axis.</p>
+<p>Let <span class="math inline">\(\Phi(x,y)\)</span> be the
+<strong>velocity potential</strong> and <span
+class="math inline">\(\psi(x,y)\)</span> the corresponding
+<strong>stream function</strong>.<br />
+Both <span class="math inline">\(\Phi\)</span> and <span
+class="math inline">\(\psi\)</span> are harmonic and satisfy Laplace’s
+equation outside the cylinder.</p>
+<p>Boundary conditions:</p>
+<ol type="1">
+<li>The surface of the cylinder is a streamline, so <span
+class="math display">\[
+\psi = 0 \quad \text{on} \quad r = 1.
+\]</span></li>
+<li>The <span class="math inline">\(x\)</span>–axis is also taken as a
+streamline, <span class="math display">\[
+\psi = 0 \quad \text{on} \quad y = 0,
+\]</span> so that the flow is symmetric about the <span
+class="math inline">\(x\)</span>–axis and the fluid region is the upper
+half of the exterior of the circle <span class="math inline">\(r =
+1\)</span>.</li>
+<li>At large distances from the cylinder the streamlines should be
+parallel (or nearly parallel) to the <span
+class="math inline">\(x\)</span>–axis, corresponding to a uniform flow
+of constant speed <span class="math inline">\(c\)</span>.</li>
+</ol>
+<p>The complex potential of the flow will be constructed using a
+conformal mapping which transforms this region into a simpler one.</p>
+<!-- ===== page_68.md ===== -->
+
+<p>Hence the <strong>complex potential</strong> in the <span
+class="math inline">\(w\)</span>–plane is</p>
+<p><span class="math display">\[
+F = \Phi + i\psi = cu + icv = c w.
+\]</span></p>
+<p>The analytic function</p>
+<p><span class="math display">\[
+w = z + \frac{1}{z} \tag{3.14}
+\]</span></p>
+<p>maps the upper half of the <span
+class="math inline">\(w\)</span>–plane onto the region in the <span
+class="math inline">\(z\)</span>–plane exterior to the unit circle <span
+class="math inline">\(r = 1\)</span> and above the <span
+class="math inline">\(x\)</span>–axis.</p>
+<p>By substituting <span class="math inline">\(x + iy\)</span> for <span
+class="math inline">\(z\)</span>, we find that <span
+class="math inline">\(v = 0\)</span> when <span class="math inline">\(y
+= 0\)</span> or when <span class="math inline">\(x^2 + y^2 =
+1\)</span>.<br />
+Consequently, the <span class="math inline">\(u\)</span>–axis maps onto
+the <span class="math inline">\(x\)</span>–axis for <span
+class="math inline">\(x &lt; -1\)</span> and <span
+class="math inline">\(x &gt; 1\)</span>, and onto the upper half of the
+circle <span class="math inline">\(x^2 + y^2 = 1\)</span> when <span
+class="math inline">\(-1 &lt; x &lt; 1\)</span>.</p>
+<p>Also, for very large values of <span
+class="math inline">\(|z|\)</span>, we have <span
+class="math inline">\(w \approx z\)</span>, so streamlines at large
+distances from the origin in the <span
+class="math inline">\(z\)</span>–plane will be practically unaltered in
+their condition in the <span class="math inline">\(w\)</span>–plane.</p>
+<p>Using equation (3.14) for the transformation of <span
+class="math inline">\(F = cw\)</span>, we get, with <span
+class="math inline">\(z = re^{i\theta}\)</span>,</p>
+<p><span class="math display">\[
+F = c\!\left(z + \frac{1}{z}\right)
+  = c\!\left[\left(r + \frac{1}{r}\right)\cos\theta
+       + i\left(r - \frac{1}{r}\right)\sin\theta\right]. \tag{3.15}
+\]</span></p>
+<!-- ===== page_69.md ===== -->
+
+<p>The streamlines must lie outside the circle <span
+class="math inline">\(r = 1\)</span>.<br />
+At large distances from the cylinder the streamlines should be parallel
+or nearly parallel to the <span
+class="math inline">\(x\)</span>–axis.</p>
+<p>The <strong>complex potential</strong> of the flow is given by the
+analytic function</p>
+<p><span class="math display">\[
+F(z) = \Phi(x,y) + i\psi(x,y).
+\]</span></p>
+<p>Taking advantage of symmetry, only the half of the <span
+class="math inline">\(z\)</span>–plane above the <span
+class="math inline">\(x\)</span>–axis needs to be considered.<br />
+The required solution is then the imaginary part of <span
+class="math inline">\(F(z)\)</span> in the upper half of the <span
+class="math inline">\(z\)</span>–plane.</p>
+<p>Because of the shape of the boundary it is difficult to obtain the
+solution directly.<br />
+However, the solution is known for unobstructed uniform flow.<br />
+We assume that this uniform flow takes place in the <strong>upper half
+of the <span class="math inline">\(w\)</span>–plane</strong>, parallel
+to the <span class="math inline">\(u\)</span>–axis.</p>
+<p>Then</p>
+<p><span class="math display">\[
+V_1 = c, \qquad V_2 = 0,
+\]</span></p>
+<p>and since</p>
+<p><span class="math display">\[
+V_1 = \frac{\partial \psi}{\partial v}, \qquad
+V_2 = -\frac{\partial \psi}{\partial u},
+\]</span></p>
+<p>the stream function in the <span
+class="math inline">\(w\)</span>–plane is</p>
+<p><span class="math display">\[
+\psi = c v,
+\]</span></p>
+<p>where <span class="math inline">\(c\)</span> is a real
+constant.<br />
+The velocity potential must therefore be</p>
+<p><span class="math display">\[
+\Phi = c u
+\]</span></p>
+<p>in order to satisfy the Cauchy–Riemann equations.</p>
+<!-- ===== page_70.md ===== -->
+
+<p>From (3.15) the <strong>imaginary part</strong> gives the
+streamlines:</p>
+<p><span class="math display">\[
+\psi = c\left(r - \frac{1}{r}\right)\sin\theta = \text{constant}.
+\tag{3.16}
+\]</span></p>
+<p>The streamline <span class="math inline">\(\psi = 0\)</span> consists
+of the circle <span class="math inline">\(r = 1\)</span> and the <span
+class="math inline">\(x\)</span>–axis.<br />
+For very large values of <span class="math inline">\(r\)</span>, the
+streamline is given approximately by</p>
+<p><span class="math display">\[
+r\sin\theta = y = \text{constant},
+\]</span></p>
+<p>so that far from the cylinder the flow approaches a uniform stream
+parallel to the <span class="math inline">\(x\)</span>–axis.</p>
+<!-- ===== page_71.md ===== -->
+
+<h2 id="the-complex-potential">The Complex Potential</h2>
+<p>From equations (3.7) and (3.8) it is seen that the velocity potential
+<span class="math inline">\(\Phi\)</span> is
+<strong>harmonic</strong>:</p>
+<p><span class="math display">\[
+\frac{\partial^2 \Phi}{\partial x^2} + \frac{\partial^2 \Phi}{\partial
+y^2} = 0
+\]</span></p>
+<p>Consequently, <span class="math inline">\(\Phi(x,y)\)</span> must
+have a harmonic conjugate <span class="math inline">\(\psi(x,y)\)</span>
+to which it is related by the Cauchy–Riemann equations.<br />
+The function <span class="math inline">\(\psi(x,y)\)</span> is called
+the <strong>stream function</strong>.</p>
+<p>As <span class="math inline">\(\Phi\)</span> and <span
+class="math inline">\(\psi\)</span> are harmonic conjugates, they define
+an analytic function</p>
+<p><span class="math display">\[
+F(z) = \Phi(x,y) + i\psi(x,y) \tag{3.9}
+\]</span></p>
+<p>This function is called the <strong>complex potential</strong> of the
+flow.</p>
+<p>By differentiation,</p>
+<p><span class="math display">\[
+\frac{dF(z)}{dz}
+  = \frac{\partial \Phi}{\partial x} + i\frac{\partial \psi}{\partial x}
+  = \frac{\partial \Phi}{\partial x} - i\frac{\partial \Phi}{\partial y}
+  = V_1 - iV_2 \tag{3.10}
+\]</span></p>
+<p>and the velocity is given by</p>
+<p><span class="math display">\[
+V = V_1 + iV_2 \tag{3.11}
+\]</span></p>
+<p>with magnitude</p>
+<p><span class="math display">\[
+|V| = \sqrt{V_1^2 + V_2^2} \tag{3.12}
+\]</span></p>
+<h2 id="equipotential-lines-and-streamlines">Equipotential Lines and
+Streamlines</h2>
+<p>The families of curves</p>
+<p><span class="math display">\[
+\Phi(x,y) = c,
+  \qquad
+\psi(x,y) = k \tag{3.13}
+\]</span></p>
+<p>where <span class="math inline">\(c\)</span> and <span
+class="math inline">\(k\)</span> are constants, are the
+<strong>equipotential lines</strong> and <strong>streamlines</strong> of
+the flow, respectively.</p>
+<!-- ===== page_72.md ===== -->
+
+<p>Continuing the procedure for solving boundary–value problems by
+conformal mapping:</p>
+<ol start="2" type="i">
+<li><p><strong>Solve the problem for the simpler
+region.</strong></p></li>
+<li><p><strong>Use the solution in (ii) to solve the given problem by
+employing the inverse mapping function.</strong></p></li>
+</ol>
+<hr />
+<h2 id="applications-to-fluid-flow">Applications to Fluid Flow</h2>
+<p>The solution of many important problems in fluid flow is often
+achieved by complex–variable methods under the following
+assumptions.</p>
+<ol type="1">
+<li><p><strong>The fluid flow is two–dimensional.</strong></p></li>
+<li><p><strong>The flow is steady</strong>, i.e. the velocity of the
+fluid at any point depends only on the position <span
+class="math inline">\((x,y)\)</span> and not on time.</p></li>
+<li><p><strong>There exists a function <span
+class="math inline">\(\Phi\)</span> called the velocity
+potential</strong>, such that</p></li>
+</ol>
+<p><span class="math display">\[
+V_1 = \frac{\partial \Phi}{\partial x},
+  \qquad
+V_2 = \frac{\partial \Phi}{\partial y} \tag{3.7}
+\]</span></p>
+<ol start="4" type="1">
+<li><strong>The fluid is incompressible</strong>, i.e. the mass per unit
+volume of the fluid is constant.<br />
+Then</li>
+</ol>
+<p><span class="math display">\[
+\frac{\partial V_1}{\partial x} + \frac{\partial V_2}{\partial y} = 0
+\tag{3.8}
+\]</span></p>
+<p>which is the <strong>equation of continuity</strong>.</p>
+<ol start="5" type="1">
+<li><strong>The fluid is non–viscous.</strong></li>
+</ol>
+<!-- ===== page_73.md ===== -->
+
+<h2 id="dirichlet-and-neumann-problems">Dirichlet and Neumann
+Problems</h2>
+<p>Let <span class="math inline">\(R\)</span> be a simply–connected
+region bounded by a simple closed curve <span
+class="math inline">\(C\)</span>.<br />
+Two types of boundary–value problems are of great importance.</p>
+<ol type="1">
+<li><p><strong>Dirichlet problems</strong> seek the determination of a
+function <span class="math inline">\(\Phi\)</span> which satisfies
+Laplace’s equation in <span class="math inline">\(R\)</span> and takes
+prescribed values on the boundary <span
+class="math inline">\(C\)</span>.</p></li>
+<li><p><strong>Neumann problems</strong> seek the determination of a
+function <span class="math inline">\(\Phi\)</span> which satisfies
+Laplace’s equation in <span class="math inline">\(R\)</span> and whose
+normal derivative</p></li>
+</ol>
+<p><span class="math display">\[
+\frac{\partial \Phi}{\partial n}
+\]</span></p>
+<p>takes prescribed values on the boundary <span
+class="math inline">\(C\)</span>.</p>
+<hr />
+<h2 id="solutions-for-problems-by-conformal-mapping">Solutions for
+Problems by Conformal Mapping</h2>
+<p>Boundary–value problems can be solved for any simply–connected region
+<span class="math inline">\(R\)</span> which can be mapped conformally
+by an analytic function onto a simpler region.</p>
+<p>The basic procedure is the following:</p>
+<ol type="1">
+<li><strong>Use the mapping function</strong> to transform the
+boundary–value problem for the region <span
+class="math inline">\(R\)</span> into a corresponding one for a simpler
+region.</li>
+<li><strong>Solve the problem for the simpler region.</strong></li>
+<li><strong>Use the solution</strong> in step (2) to solve the given
+problem by employing the <strong>inverse mapping function</strong>.</li>
+</ol>
+</body>
+</html>
