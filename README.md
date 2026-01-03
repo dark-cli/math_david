@@ -10,7 +10,7 @@ A comprehensive collection of mathematical problems, solutions, and reference ma
 | [Fundamentals](#fundamentals) | Reference guides and cheat sheets | [View Index](./fundamentals/index.md) |
 | [Vector Analysis](#vector-analysis) | Textbook content (73 pages) | [View Index](./vector_analysis/README.md) |
 | [Collections](#collections) | Organized problem indexes by topic | [View Index](./collections/index.md) |
-| [Exam Questions](#exam-questions) | Past exam problems and solutions | [View Index](./exam_questions/README.md) |
+| [Exam Questions](#exam-questions) | Past exam problems and solutions | [View Index](./additional_questions/index.md) |
 | [Notes](#notes) | Study notes and review materials | [View Index](./notes/index.md) |
 
 ## Problems
@@ -43,9 +43,9 @@ Organized indexes and collections of problems by topic:
 
 ## Exam Questions
 
-**Index:** [exam_questions/README.md](./exam_questions/README.md)
+**Index:** [additional_questions/index.md](./additional_questions/index.md)
 
-Past exam questions and solutions, including Final Exam 2015 with 5 questions covering vector calculus, line integrals, Green's theorem, and complex analysis.
+Past exam questions and solutions from various years (2014, 2015, 2019, 2021, 2022, 2023, 2025), covering vector calculus, line integrals, Green's theorem, and complex analysis. Explained versions with detailed step-by-step solutions are available in [additional_questions_explained/](./additional_questions_explained/index.md).
 
 ## Notes
 

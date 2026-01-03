@@ -55,7 +55,7 @@ All problems are numbered sequentially from 001 to 214:
 
 - [Fundamentals](../fundamentals/) - Reference materials and cheat sheets
 - [Vector Analysis](../vector_analysis/) - Textbook content
-- [Exam Questions](../exam_questions/) - Past exam problems
+- [Exam Questions](../additional_questions/) - Past exam problems
 - [Collections](../collections/) - Organized problem indexes
 
 ## Notes
