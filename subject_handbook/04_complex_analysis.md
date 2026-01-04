@@ -12,6 +12,54 @@ For $f(z) = u + iv$ to be analytic, the **Cauchy-Riemann equations** must be sat
 
 $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
 
+#### Proof of Cauchy-Riemann Equations
+
+**Step 1: Definition of Complex Derivative**
+
+For $f(z) = u(x, y) + iv(x, y)$ where $z = x + iy$, the derivative is:
+
+$$f'(z) = \lim_{\Delta z \to 0} \frac{f(z + \Delta z) - f(z)}{\Delta z}$$
+
+where $\Delta z = \Delta x + i\Delta y$.
+
+**Step 2: Approach Along Real Axis ($\Delta y = 0$)**
+
+If we approach along the real axis ($\Delta y = 0$), then $\Delta z = \Delta x$:
+
+$$f'(z) = \lim_{\Delta x \to 0} \frac{u(x + \Delta x, y) + iv(x + \Delta x, y) - u(x, y) - iv(x, y)}{\Delta x}$$
+
+$$= \lim_{\Delta x \to 0} \frac{u(x + \Delta x, y) - u(x, y)}{\Delta x} + i\lim_{\Delta x \to 0} \frac{v(x + \Delta x, y) - v(x, y)}{\Delta x}$$
+
+$$= \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$$
+
+**Step 3: Approach Along Imaginary Axis ($\Delta x = 0$)**
+
+If we approach along the imaginary axis ($\Delta x = 0$), then $\Delta z = i\Delta y$:
+
+$$f'(z) = \lim_{\Delta y \to 0} \frac{u(x, y + \Delta y) + iv(x, y + \Delta y) - u(x, y) - iv(x, y)}{i\Delta y}$$
+
+$$= \lim_{\Delta y \to 0} \frac{u(x, y + \Delta y) - u(x, y)}{i\Delta y} + i\lim_{\Delta y \to 0} \frac{v(x, y + \Delta y) - v(x, y)}{i\Delta y}$$
+
+$$= \frac{1}{i}\frac{\partial u}{\partial y} + \frac{\partial v}{\partial y} = -i\frac{\partial u}{\partial y} + \frac{\partial v}{\partial y}$$
+
+**Step 4: Equate the Two Expressions**
+
+For the derivative to exist, it must be independent of the path of approach. Therefore, the two expressions must be equal:
+
+$$\frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x} = -i\frac{\partial u}{\partial y} + \frac{\partial v}{\partial y}$$
+
+**Step 5: Equate Real and Imaginary Parts**
+
+Equating real and imaginary parts:
+
+**Real parts:**
+$$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}$$
+
+**Imaginary parts:**
+$$\frac{\partial v}{\partial x} = -\frac{\partial u}{\partial y}$$
+
+These are the **Cauchy-Riemann equations**.
+
 ### Derivative of Analytic Function
 
 If $f(z)$ is analytic:

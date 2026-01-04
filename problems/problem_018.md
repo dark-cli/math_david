@@ -13,10 +13,16 @@ Using the chain rule:
 $$\frac{\partial u}{\partial x} = \frac{\partial u}{\partial r} \frac{\partial r}{\partial x} + \frac{\partial u}{\partial \theta} \frac{\partial \theta}{\partial x}$$
 
 Since $r = \sqrt{x^2 + y^2}$:
-$$\frac{\partial r}{\partial x} = \frac{x}{r} = \cos\theta$$
+$$\frac{\partial r}{\partial x} = \frac{1}{2}(x^2 + y^2)^{-1/2} \cdot 2x = \frac{x}{\sqrt{x^2 + y^2}} = \frac{x}{r} = \cos\theta$$
 
-Since $\theta = \arctan\left(\frac{y}{x}\right)$:
-$$\frac{\partial \theta}{\partial x} = -\frac{y}{r^2} = -\frac{\sin\theta}{r}$$
+Since $\theta = \arctan\left(\frac{y}{x}\right)$, we use the chain rule. Recall that $\frac{d}{du}\arctan(u) = \frac{1}{1 + u^2}$:
+
+$$\frac{\partial \theta}{\partial x} = \frac{1}{1 + \left(\frac{y}{x}\right)^2} \cdot \frac{\partial}{\partial x}\left(\frac{y}{x}\right) = \frac{1}{1 + \left(\frac{y}{x}\right)^2} \cdot \left(-\frac{y}{x^2}\right)$$
+
+$$= \frac{x^2}{x^2 + y^2} \cdot \left(-\frac{y}{x^2}\right) = -\frac{y}{x^2 + y^2} = -\frac{y}{r^2}$$
+
+Since $y = r\sin\theta$:
+$$\frac{\partial \theta}{\partial x} = -\frac{y}{r^2} = -\frac{r\sin\theta}{r^2} = -\frac{\sin\theta}{r}$$
 
 Therefore:
 $$\frac{\partial u}{\partial x} = \frac{\partial u}{\partial r} \cos\theta - \frac{\partial u}{\partial \theta} \frac{\sin\theta}{r}$$
@@ -26,10 +32,15 @@ $$\frac{\partial u}{\partial x} = \frac{\partial u}{\partial r} \cos\theta - \fr
 $$\frac{\partial u}{\partial y} = \frac{\partial u}{\partial r} \frac{\partial r}{\partial y} + \frac{\partial u}{\partial \theta} \frac{\partial \theta}{\partial y}$$
 
 Since $r = \sqrt{x^2 + y^2}$:
-$$\frac{\partial r}{\partial y} = \frac{y}{r} = \sin\theta$$
+$$\frac{\partial r}{\partial y} = \frac{1}{2}(x^2 + y^2)^{-1/2} \cdot 2y = \frac{y}{\sqrt{x^2 + y^2}} = \frac{y}{r} = \sin\theta$$
 
 Since $\theta = \arctan\left(\frac{y}{x}\right)$:
-$$\frac{\partial \theta}{\partial y} = \frac{x}{r^2} = \frac{\cos\theta}{r}$$
+$$\frac{\partial \theta}{\partial y} = \frac{1}{1 + \left(\frac{y}{x}\right)^2} \cdot \frac{\partial}{\partial y}\left(\frac{y}{x}\right) = \frac{1}{1 + \left(\frac{y}{x}\right)^2} \cdot \frac{1}{x}$$
+
+$$= \frac{x^2}{x^2 + y^2} \cdot \frac{1}{x} = \frac{x}{x^2 + y^2} = \frac{x}{r^2}$$
+
+Since $x = r\cos\theta$:
+$$\frac{\partial \theta}{\partial y} = \frac{x}{r^2} = \frac{r\cos\theta}{r^2} = \frac{\cos\theta}{r}$$
 
 Therefore:
 $$\frac{\partial u}{\partial y} = \frac{\partial u}{\partial r} \sin\theta + \frac{\partial u}{\partial \theta} \frac{\cos\theta}{r}$$

@@ -12,11 +12,25 @@ where $f(z) = u(x, y) + iv(x, y)$.
 
 ### Step 1: Express f'(z) in Terms of Partial Derivatives
 
-For an analytic function $f(z) = u + iv$, the derivative is:
+For an analytic function $f(z) = u + iv$, we compute the derivative using the limit definition:
+
+$$f'(z) = \lim_{\Delta z \to 0} \frac{f(z + \Delta z) - f(z)}{\Delta z}$$
+
+Since $f$ is analytic, the derivative exists and is independent of the path along which $\Delta z \to 0$. We can compute it along the real axis by letting $\Delta z = h$ where $h \in \mathbb{R}$:
+
+$$f'(z) = \lim_{h \to 0} \frac{f(z + h) - f(z)}{h}$$
+
+Writing $z = x + iy$ and $f(z) = u(x, y) + iv(x, y)$, we have:
+
+$$f'(z) = \lim_{h \to 0} \frac{u(x + h, y) + iv(x + h, y) - u(x, y) - iv(x, y)}{h}$$
+
+$$= \lim_{h \to 0} \frac{u(x + h, y) - u(x, y)}{h} + i\lim_{h \to 0} \frac{v(x + h, y) - v(x, y)}{h}$$
+
+$$= \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$$
+
+Therefore:
 
 $$f'(z) = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$$
-
-This follows from the fact that for analytic functions, $\frac{df}{dz} = \frac{\partial f}{\partial x}$.
 
 ### Step 2: Compute |f'(z)|²
 

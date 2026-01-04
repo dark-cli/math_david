@@ -12,17 +12,31 @@ where $f(z) = u(x, y) + iv(x, y)$.
 
 ### Step 1: Express f'(z) in Terms of Partial Derivatives
 
-For an analytic function $f(z) = u + iv$, the derivative is:
+For an analytic function $f(z) = u + iv$, we compute the derivative using the limit definition:
+
+$$f'(z) = \lim_{\Delta z \to 0} \frac{f(z + \Delta z) - f(z)}{\Delta z}$$
+
+Since $f$ is analytic, the derivative exists and is independent of the path along which $\Delta z \to 0$. We can compute it along the real axis by letting $\Delta z = h$ where $h \in \mathbb{R}$:
+
+$$f'(z) = \lim_{h \to 0} \frac{f(z + h) - f(z)}{h}$$
+
+Writing $z = x + iy$ and $f(z) = u(x, y) + iv(x, y)$, we have:
+
+$$f'(z) = \lim_{h \to 0} \frac{u(x + h, y) + iv(x + h, y) - u(x, y) - iv(x, y)}{h}$$
+
+$$= \lim_{h \to 0} \frac{u(x + h, y) - u(x, y)}{h} + i\lim_{h \to 0} \frac{v(x + h, y) - v(x, y)}{h}$$
+
+$$= \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$$
+
+Therefore:
 
 $$f'(z) = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x}$$
 
-This follows from the fact that for analytic functions, $\frac{df}{dz} = \frac{\partial f}{\partial x}$.
+**Why we did this:** We need to express $f'(z)$ in terms of partial derivatives. Since $f$ is analytic, the derivative exists and is path-independent, so we can compute it along the real axis. This gives us $f'(z) = u_x + iv_x$ directly from the limit definition.
 
-**Why we did this:** For an analytic function, the derivative can be computed as $f'(z) = \partial f/\partial x$ (treating $z$ as a complex variable). Since $f = u + iv$, we get $f' = u_x + iv_x$.
+**The idea:** For analytic functions, the complex derivative is well-defined and path-independent. By computing the limit along the real axis (where $\Delta z = h \in \mathbb{R}$), we get the standard expression $f'(z) = \partial u/\partial x + i\partial v/\partial x$ without needing to assume $\frac{df}{dz} = \frac{\partial f}{\partial x}$.
 
-**The idea:** For analytic functions, the complex derivative equals the partial derivative with respect to $x$ (when treating $z$ as a single variable). This is a fundamental property: $df/dz = \partial f/\partial x$.
-
-**How to come up with it:** This is a standard result: for analytic functions, $f'(z) = \partial u/\partial x + i\partial v/\partial x$. You should know this formula.
+**How to come up with it:** Start from the fundamental limit definition of the derivative. Since the derivative exists and is path-independent for analytic functions, choose the simplest path (the real axis) to compute it. This gives the desired expression.
 
 ### Step 2: Compute |f'(z)|²
 

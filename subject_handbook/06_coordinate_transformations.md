@@ -17,6 +17,46 @@ $$\frac{\partial r}{\partial x} = \frac{x}{r} = \cos\theta, \quad \frac{\partial
 
 $$\frac{\partial \theta}{\partial x} = -\frac{y}{r^2} = -\frac{\sin\theta}{r}, \quad \frac{\partial \theta}{\partial y} = \frac{x}{r^2} = \frac{\cos\theta}{r}$$
 
+### Derivation of Partial Derivatives
+
+**Deriving $\frac{\partial r}{\partial x}$ and $\frac{\partial r}{\partial y}$:**
+
+Since $r = \sqrt{x^2 + y^2}$:
+
+$$\frac{\partial r}{\partial x} = \frac{1}{2}(x^2 + y^2)^{-1/2} \cdot 2x = \frac{x}{\sqrt{x^2 + y^2}} = \frac{x}{r} = \cos\theta$$
+
+$$\frac{\partial r}{\partial y} = \frac{1}{2}(x^2 + y^2)^{-1/2} \cdot 2y = \frac{y}{\sqrt{x^2 + y^2}} = \frac{y}{r} = \sin\theta$$
+
+**Deriving $\frac{\partial \theta}{\partial x}$ and $\frac{\partial \theta}{\partial y}$:**
+
+Since $\theta = \arctan\left(\frac{y}{x}\right)$, we use the chain rule. Recall that:
+
+$$\frac{d}{du}\arctan(u) = \frac{1}{1 + u^2}$$
+
+For $\theta = \arctan\left(\frac{y}{x}\right)$, let $u = \frac{y}{x}$. Then:
+
+$$\frac{\partial \theta}{\partial x} = \frac{d}{du}\arctan(u) \cdot \frac{\partial u}{\partial x} = \frac{1}{1 + u^2} \cdot \frac{\partial}{\partial x}\left(\frac{y}{x}\right)$$
+
+Since $\frac{\partial}{\partial x}\left(\frac{y}{x}\right) = -\frac{y}{x^2}$:
+
+$$\frac{\partial \theta}{\partial x} = \frac{1}{1 + \left(\frac{y}{x}\right)^2} \cdot \left(-\frac{y}{x^2}\right) = \frac{1}{\frac{x^2 + y^2}{x^2}} \cdot \left(-\frac{y}{x^2}\right)$$
+
+$$= \frac{x^2}{x^2 + y^2} \cdot \left(-\frac{y}{x^2}\right) = -\frac{y}{x^2 + y^2} = -\frac{y}{r^2}$$
+
+Since $y = r\sin\theta$ and $r^2 = x^2 + y^2$:
+
+$$\frac{\partial \theta}{\partial x} = -\frac{y}{r^2} = -\frac{r\sin\theta}{r^2} = -\frac{\sin\theta}{r}$$
+
+Similarly, for $\frac{\partial \theta}{\partial y}$:
+
+$$\frac{\partial \theta}{\partial y} = \frac{1}{1 + \left(\frac{y}{x}\right)^2} \cdot \frac{\partial}{\partial y}\left(\frac{y}{x}\right) = \frac{1}{\frac{x^2 + y^2}{x^2}} \cdot \frac{1}{x}$$
+
+$$= \frac{x^2}{x^2 + y^2} \cdot \frac{1}{x} = \frac{x}{x^2 + y^2} = \frac{x}{r^2}$$
+
+Since $x = r\cos\theta$:
+
+$$\frac{\partial \theta}{\partial y} = \frac{x}{r^2} = \frac{r\cos\theta}{r^2} = \frac{\cos\theta}{r}$$
+
 **Differentials:**
 $$dx = \cos\theta \, dr - r\sin\theta \, d\theta$$
 $$dy = \sin\theta \, dr + r\cos\theta \, d\theta$$

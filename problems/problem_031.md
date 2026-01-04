@@ -38,15 +38,73 @@ Similarly:
 
 $$\frac{\partial u}{\partial y} = \frac{\partial u}{\partial r}\sin\theta + \frac{\partial u}{\partial \theta}\frac{\cos\theta}{r}$$
 
-#### Step 3: Apply Standard Cauchy-Riemann Equations
+#### Step 3: Express v Derivatives in Polar Form
+
+Similarly, for $v$:
+
+$$\frac{\partial v}{\partial x} = \frac{\partial v}{\partial r}\cos\theta - \frac{\partial v}{\partial \theta}\frac{\sin\theta}{r}$$
+
+$$\frac{\partial v}{\partial y} = \frac{\partial v}{\partial r}\sin\theta + \frac{\partial v}{\partial \theta}\frac{\cos\theta}{r}$$
+
+#### Step 4: Apply Standard Cauchy-Riemann Equations
 
 The standard Cauchy-Riemann equations are:
 
 $$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}$$
 
-Substituting the polar coordinate expressions and simplifying leads to:
+Substituting the polar coordinate expressions:
 
-$$\frac{\partial u}{\partial r} = \frac{1}{r}\frac{\partial v}{\partial \theta}, \quad \frac{\partial v}{\partial r} = -\frac{1}{r}\frac{\partial u}{\partial \theta}$$
+**From the first equation:**
+$$\frac{\partial u}{\partial r}\cos\theta - \frac{\partial u}{\partial \theta}\frac{\sin\theta}{r} = \frac{\partial v}{\partial r}\sin\theta + \frac{\partial v}{\partial \theta}\frac{\cos\theta}{r}$$
+
+**From the second equation:**
+$$\frac{\partial u}{\partial r}\sin\theta + \frac{\partial u}{\partial \theta}\frac{\cos\theta}{r} = -\frac{\partial v}{\partial r}\cos\theta + \frac{\partial v}{\partial \theta}\frac{\sin\theta}{r}$$
+
+#### Step 5: Derive First Polar Cauchy-Riemann Equation
+
+From the chain rule, we also have:
+
+$$\frac{\partial u}{\partial r} = \frac{\partial u}{\partial x}\frac{\partial x}{\partial r} + \frac{\partial u}{\partial y}\frac{\partial y}{\partial r} = \frac{\partial u}{\partial x}\cos\theta + \frac{\partial u}{\partial y}\sin\theta$$
+
+Using the Cauchy-Riemann equations ($u_x = v_y$ and $u_y = -v_x$):
+
+$$\frac{\partial u}{\partial r} = \frac{\partial v}{\partial y}\cos\theta - \frac{\partial v}{\partial x}\sin\theta$$
+
+Now, from the chain rule for $v$:
+
+$$\frac{\partial v}{\partial \theta} = \frac{\partial v}{\partial x}\frac{\partial x}{\partial \theta} + \frac{\partial v}{\partial y}\frac{\partial y}{\partial \theta} = \frac{\partial v}{\partial x}(-r\sin\theta) + \frac{\partial v}{\partial y}(r\cos\theta)$$
+
+$$= r\left(\frac{\partial v}{\partial y}\cos\theta - \frac{\partial v}{\partial x}\sin\theta\right)$$
+
+The expression in parentheses equals $\frac{\partial u}{\partial r}$, so:
+
+$$\frac{\partial v}{\partial \theta} = r\frac{\partial u}{\partial r}$$
+
+Therefore:
+
+$$\frac{\partial u}{\partial r} = \frac{1}{r}\frac{\partial v}{\partial \theta}$$
+
+#### Step 6: Derive Second Polar Cauchy-Riemann Equation
+
+From the chain rule:
+
+$$\frac{\partial u}{\partial \theta} = \frac{\partial u}{\partial x}\frac{\partial x}{\partial \theta} + \frac{\partial u}{\partial y}\frac{\partial y}{\partial \theta} = \frac{\partial u}{\partial x}(-r\sin\theta) + \frac{\partial u}{\partial y}(r\cos\theta)$$
+
+Using the Cauchy-Riemann equations:
+
+$$\frac{\partial u}{\partial \theta} = \frac{\partial v}{\partial y}(-r\sin\theta) - \frac{\partial v}{\partial x}(r\cos\theta) = -r\left(\frac{\partial v}{\partial x}\cos\theta + \frac{\partial v}{\partial y}\sin\theta\right)$$
+
+From the chain rule for $v$:
+
+$$\frac{\partial v}{\partial r} = \frac{\partial v}{\partial x}\frac{\partial x}{\partial r} + \frac{\partial v}{\partial y}\frac{\partial y}{\partial r} = \frac{\partial v}{\partial x}\cos\theta + \frac{\partial v}{\partial y}\sin\theta$$
+
+Therefore:
+
+$$\frac{\partial u}{\partial \theta} = -r\frac{\partial v}{\partial r}$$
+
+Solving for $\frac{\partial v}{\partial r}$:
+
+$$\frac{\partial v}{\partial r} = -\frac{1}{r}\frac{\partial u}{\partial \theta}$$
 
 ### Part (ii): Laplace's Equation in Polar Coordinates
 
